@@ -1,4 +1,5 @@
 import { test } from "node:test";
+import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { toCsv, validateEcosystem, validateArcNumbers, validateApps, ecosystemCsvRows, appsCsvRows, arcDailyCsvRows, renderReadme, ECOSYSTEM_HEADER, ARC_DAILY_HEADER } from "./lib.mjs";
 
@@ -44,4 +45,15 @@ test("README: counts, date, every category link, page links, citation, no undefi
   assert.ok(md.includes("cc.registrai/arc-data"));
   assert.match(md, /Registrai, Arc ecosystem data, builder\.registrai\.cc, CC BY 4\.0, retrieved 2026-10-23\./);
   assert.ok(!/undefined|NaN/.test(md));
+});
+
+test("workflow, license and citation are in place; no secrets in the workflow", () => {
+  const wf = readFileSync(new URL("../.github/workflows/refresh.yml", import.meta.url), "utf8");
+  assert.match(wf, /cron: "30 0 \* \* \*"/);
+  assert.match(wf, /workflow_dispatch/);
+  assert.match(wf, /contents: write/);
+  assert.ok(wf.indexOf("node --test scripts/") < wf.indexOf("node scripts/refresh.mjs"));
+  assert.ok(!/secrets\./.test(wf));
+  assert.match(readFileSync(new URL("../LICENSE", import.meta.url), "utf8"), /Creative Commons Attribution 4\.0[\s\S]*MIT License/);
+  assert.match(readFileSync(new URL("../CITATION.cff", import.meta.url), "utf8"), /cff-version: 1\.2\.0[\s\S]*license: CC-BY-4\.0/);
 });

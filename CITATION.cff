@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+title: "Arc ecosystem data (Registrai)"
+authors:
+  - name: "Registrai"
+url: "https://builder.registrai.cc"
+repository-code: "https://github.com/registrai-multichain/arc-ecosystem"
+license: CC-BY-4.0
+type: dataset
+keywords: [Arc, USDC, stablecoins, open data, blockchain data]
