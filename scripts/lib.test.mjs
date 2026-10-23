@@ -54,7 +54,7 @@ test("workflow, license and citation are in place; no secrets in the workflow", 
   assert.match(wf, /cron: "30 0 \* \* \*"/);
   assert.match(wf, /workflow_dispatch/);
   assert.match(wf, /contents: write/);
-  assert.ok(wf.indexOf("node --test scripts/") < wf.indexOf("node scripts/refresh.mjs"));
+  assert.ok(wf.indexOf("node --test scripts/*.test.mjs") > 0 && wf.indexOf("node --test scripts/*.test.mjs") < wf.indexOf("node scripts/refresh.mjs"));   // Node 24 reads a bare directory as a module path
   assert.ok(!/secrets\./.test(wf));
   assert.match(readFileSync(new URL("../LICENSE", import.meta.url), "utf8"), /Attribution 4\.0 International Public License/);   // full CC BY legal code: GitHub detects it
   assert.match(readFileSync(new URL("../scripts/LICENSE", import.meta.url), "utf8"), /MIT License/);
