@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-23T08:43:52.043Z",
+  "network": {
+    "chain_id": 5042,
+    "gas_token": "USDC",
+    "mainnet_since": "2026-09-16",
+    "block_height": 27427030,
+    "block_time_s": 0.5069,
+    "as_of": "2026-10-23T08:43:52.043Z"
+  },
+  "stablecoins": {
+    "usdc_supply": 823630966.477234,
+    "eurc_supply": 8629941.922623,
+    "as_of": "2026-10-23T08:43:52.043Z",
+    "all_stablecoins_usd": 830293435,
+    "tvl_usd": 636446426,
+    "defillama_date": "2026-10-23"
+  },
+  "activity_24h": {
+    "data_until": "2026-10-23T08:00:00Z",
+    "usdc_moved_usd_est": 583752249,
+    "eurc_moved_usd_est": 117904419.9,
+    "usdc_transfers_est": 305820,
+    "app_payments": 78565,
+    "app_usd": 28040650.32,
+    "attributed_share_pct": 4.8
+  },
+  "ecosystem": {
+    "projects": 258,
+    "live": 83,
+    "deployed": 20,
+    "announced": 155,
+    "top_categories": [
+      {
+        "id": "payments",
+        "label": "Payment apps on Arc",
+        "count": 39
+      },
+      {
+        "id": "dexs",
+        "label": "DEXs on Arc",
+        "count": 25
+      },
+      {
+        "id": "launchpads",
+        "label": "Launchpads on Arc",
+        "count": 24
+      },
+      {
+        "id": "wallets",
+        "label": "Wallets that support Arc",
+        "count": 23
+      },
+      {
+        "id": "infrastructure",
+        "label": "Infrastructure for Arc",
+        "count": 20
+      },
+      {
+        "id": "exchanges",
+        "label": "Exchanges that support Arc",
+        "count": 19
+      }
+    ],
+    "index_members": {
+      "abi": 19,
+      "aii": 23,
+      "aei": 42
+    },
+    "index_close": {
+      "abi": 929.473,
+      "aii": 957.512,
+      "aei": 971.981
+    },
+    "data_until": "2026-10-23T08:00:00Z"
+  },
+  "timeline": [
+    {
+      "date": "2025-10-28",
+      "text": "Arc public testnet launched",
+      "source": "https://www.arc.io/pressroom/circle-launches-arc-public-testnet"
+    },
+    {
+      "date": "2026-08-05",
+      "text": "Founding validator cohort announced",
+      "source": "https://www.arc.io/pressroom/circle-announces-founding-validator-cohort-and-major-integrations-for-arc-ahead-of-september-16-mainnet-launch"
+    },
+    {
+      "date": "2026-09-16",
+      "text": "Arc mainnet launched",
+      "source": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet"
+    }
+  ],
+  "errors": [],
+  "attributed_share_7d": {
+    "window_days": 3,
+    "until": "2026-10-23T00:00:00Z",
+    "pct": 2.7,
+    "daily_min": 1.04,
+    "daily_max": 5.58,
+    "complete": false
+  }
+}

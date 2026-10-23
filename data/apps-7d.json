@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "until": "2026-10-23T08:00:00Z",
+  "window_hours": 168,
+  "apps": [
+    {
+      "id": "integration:uniswap",
+      "name": "Uniswap",
+      "category": "dexs",
+      "usd": 23025442.43,
+      "payments": 299759,
+      "new_payers": 446,
+      "url": "https://builder.registrai.cc/ecosystem/uniswap/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:kyberswap",
+      "name": "KyberSwap",
+      "category": "dexs",
+      "usd": 2599832.73,
+      "payments": 14101,
+      "new_payers": 55,
+      "url": "https://builder.registrai.cc/ecosystem/kyberswap/",
+      "first_hour": "2026-10-11T11:00:00Z"
+    },
+    {
+      "id": "domain:archery.wtf",
+      "name": "Archery",
+      "category": "dexs",
+      "usd": 2408451.01,
+      "payments": 16413,
+      "new_payers": 22,
+      "url": "https://builder.registrai.cc/ecosystem/archery/",
+      "first_hour": "2026-10-11T19:00:00Z"
+    },
+    {
+      "id": "integration:relay",
+      "name": "Relay",
+      "category": "bridges",
+      "usd": 1944608.75,
+      "payments": 17165,
+      "new_payers": 2510,
+      "url": "https://builder.registrai.cc/ecosystem/relay/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:0x",
+      "name": "0x",
+      "category": "dexs",
+      "usd": 1731176.3,
+      "payments": 7746,
+      "new_payers": 321,
+      "url": "https://builder.registrai.cc/ecosystem/0x/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:okx-dex",
+      "name": "OKX Wallet",
+      "category": "wallets",
+      "usd": 1248737.9,
+      "payments": 36596,
+      "new_payers": 191,
+      "url": "https://builder.registrai.cc/ecosystem/okx-wallet/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:aerodrome",
+      "name": "Aero",
+      "category": "dexs",
+      "usd": 1173772.51,
+      "payments": 1592,
+      "new_payers": 66,
+      "url": "https://builder.registrai.cc/ecosystem/aerodrome/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:li-fi",
+      "name": "LI.FI",
+      "category": "bridges",
+      "usd": 1136173.45,
+      "payments": 15898,
+      "new_payers": 220,
+      "url": "https://builder.registrai.cc/ecosystem/li-fi/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:morpho",
+      "name": "Morpho",
+      "category": "lending",
+      "usd": 1030967.97,
+      "payments": 1759,
+      "new_payers": 51,
+      "url": "https://builder.registrai.cc/ecosystem/morpho/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:aave",
+      "name": "Aave",
+      "category": "lending",
+      "usd": 599484.64,
+      "payments": 1136,
+      "new_payers": 35,
+      "url": "https://builder.registrai.cc/ecosystem/aave/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:across",
+      "name": "Across",
+      "category": "bridges",
+      "usd": 466838.64,
+      "payments": 1689,
+      "new_payers": 179,
+      "url": "https://builder.registrai.cc/ecosystem/across/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:1inch",
+      "name": "1inch",
+      "category": "dexs",
+      "usd": 272653.17,
+      "payments": 642,
+      "new_payers": 27,
+      "url": "https://builder.registrai.cc/ecosystem/1inch/",
+      "first_hour": "2026-10-11T11:00:00Z"
+    },
+    {
+      "id": "integration:rhino-fi",
+      "name": "rhino.fi",
+      "category": "bridges",
+      "usd": 221500.17,
+      "payments": 715,
+      "new_payers": 145,
+      "url": "https://builder.registrai.cc/ecosystem/rhino-fi/",
+      "first_hour": "2026-10-11T11:00:00Z"
+    },
+    {
+      "id": "integration:bungee",
+      "name": "Bungee",
+      "category": "bridges",
+      "usd": 185156.54,
+      "payments": 596,
+      "new_payers": 18,
+      "url": "https://builder.registrai.cc/ecosystem/bungee/",
+      "first_hour": "2026-10-11T11:00:00Z"
+    },
+    {
+      "id": "domain:argus.world",
+      "name": "Argus World",
+      "category": "launchpads",
+      "usd": 141956.86,
+      "payments": 2453,
+      "new_payers": 64,
+      "url": "https://builder.registrai.cc/ecosystem/argus/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:metamask",
+      "name": "MetaMask",
+      "category": "wallets",
+      "usd": 139269.88,
+      "payments": 789,
+      "new_payers": 287,
+      "url": "https://builder.registrai.cc/ecosystem/metamask/",
+      "first_hour": "2026-10-11T11:00:00Z"
+    },
+    {
+      "id": "domain:peach.ag",
+      "name": "Peach",
+      "category": "dexs",
+      "usd": 33000.98,
+      "payments": 21299,
+      "new_payers": 8,
+      "url": "https://builder.registrai.cc/ecosystem/peach/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:synthra",
+      "name": "Synthra",
+      "category": "dexs",
+      "usd": 20519.21,
+      "payments": 321,
+      "new_payers": 5,
+      "url": "https://builder.registrai.cc/ecosystem/synthra/",
+      "first_hour": "2026-10-11T19:00:00Z"
+    },
+    {
+      "id": "integration:rango",
+      "name": "Rango",
+      "category": "bridges",
+      "usd": 18496.08,
+      "payments": 139,
+      "new_payers": 29,
+      "url": "https://builder.registrai.cc/ecosystem/rango/",
+      "first_hour": "2026-10-11T11:00:00Z"
+    },
+    {
+      "id": "domain:unitflow.finance",
+      "name": "UnitFlow Finance",
+      "category": "dexs",
+      "usd": 10590.38,
+      "payments": 8530,
+      "new_payers": 14,
+      "url": "https://builder.registrai.cc/ecosystem/unitflow-finance/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:dyor-swap",
+      "name": "DYOR Swap",
+      "category": null,
+      "usd": 5479.47,
+      "payments": 270,
+      "new_payers": 4,
+      "url": "https://builder.registrai.cc/apps/integration/dyor-swap/",
+      "first_hour": "2026-10-11T19:00:00Z"
+    },
+    {
+      "id": "integration:steakhouse-financial",
+      "name": "Steakhouse Financial",
+      "category": "lending",
+      "usd": 5432.29,
+      "payments": 104,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/steakhouse-financial/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:arctide.app",
+      "name": "Arctide",
+      "category": "dexs",
+      "usd": 3679.39,
+      "payments": 92,
+      "new_payers": 7,
+      "url": "https://builder.registrai.cc/ecosystem/arctide/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:lift.fun",
+      "name": "Lift",
+      "category": "launchpads",
+      "usd": 2880.17,
+      "payments": 2491,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/lift/",
+      "first_hour": "2026-10-11T14:00:00Z"
+    },
+    {
+      "id": "domain:tollylabs.com",
+      "name": "Tolly",
+      "category": "launchpads",
+      "usd": 2379.01,
+      "payments": 229,
+      "new_payers": 4,
+      "url": "https://builder.registrai.cc/ecosystem/tolly/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:arctools.fun",
+      "name": "ArcTools",
+      "category": "trading",
+      "usd": 1061.48,
+      "payments": 6587,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/arctools/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:opensea",
+      "name": "OpenSea",
+      "category": "consumer",
+      "usd": 835.6,
+      "payments": 61,
+      "new_payers": 4,
+      "url": "https://builder.registrai.cc/ecosystem/opensea/",
+      "first_hour": "2026-10-11T11:00:00Z"
+    },
+    {
+      "id": "domain:ubi.fun",
+      "name": "UBI.fun",
+      "category": "launchpads",
+      "usd": 682.73,
+      "payments": 978,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/ubi-fun/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:layerzero",
+      "name": "LayerZero",
+      "category": "bridges",
+      "usd": 237.26,
+      "payments": 194,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/layerzero/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:arcstocks.app",
+      "name": "Astock",
+      "category": "rwa",
+      "usd": 127.09,
+      "payments": 5,
+      "new_payers": 2,
+      "url": "https://builder.registrai.cc/ecosystem/arcstocks/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:foci.family",
+      "name": "Foci",
+      "category": "launchpads",
+      "usd": 83.27,
+      "payments": 52,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/foci/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:blockrun",
+      "name": "BlockRun",
+      "category": "ai-agents",
+      "usd": 16.33,
+      "payments": 70,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/blockrun/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:chainlink",
+      "name": "Chainlink",
+      "category": "infrastructure",
+      "usd": 12.71,
+      "payments": 6,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/chainlink/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "base:arc",
+      "name": "Arc base layer",
+      "category": null,
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/apps/base/arc/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:arcland.app",
+      "name": "ArcLand",
+      "category": "consumer",
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/arcland/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:www.myarcade.fun",
+      "name": "Arcade",
+      "category": "consumer",
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/arcade/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:arclight.finance",
+      "name": "Arclight",
+      "category": "dexs",
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/arclight/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:flipt.fun",
+      "name": "Flipt.fun",
+      "category": "launchpads",
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/flipt-fun/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:hashfly.fun",
+      "name": "HashFly",
+      "category": "consumer",
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/hashfly/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:kairo.market",
+      "name": "Kairo",
+      "category": "trading",
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/kairo/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "domain:muros.live",
+      "name": "MurMur",
+      "category": "consumer",
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/ecosystem/murmur/",
+      "first_hour": "2026-10-10T23:00:00Z"
+    },
+    {
+      "id": "integration:mysphere",
+      "name": "MySphere",
+      "category": null,
+      "usd": 0,
+      "payments": 0,
+      "new_payers": 0,
+      "url": "https://builder.registrai.cc/apps/integration/mysphere/",
+      "first_hour": "2026-10-11T21:00:00Z"
+    }
+  ]
+}
