@@ -27,9 +27,10 @@ test("row builders", () => {
     [["a", "A", "dexs", "live", null, null, "2026-10-20", "https://u"]]);
   assert.deepEqual(appsCsvRows([{ id: "i", name: "N", category: null, usd: 1.5, payments: 2, new_payers: 0, first_hour: "2026-10-10T00:00:00Z", url: "https://x" }]),
     [["i", "N", null, 1.5, 2, 0, "2026-10-10T00:00:00Z", "https://x"]]);
-  assert.deepEqual(ARC_DAILY_HEADER, ["day", "usdc_supply", "eurc_supply", "all_stablecoins_usd", "tvl_usd", "usdc_moved_usd_est", "app_usd", "attributed_share_pct_24h"]);
-  const d = (day, s) => ({ generated_at: `${day}T00:03:00.000Z`, stablecoins: { usdc_supply: s, eurc_supply: 1, all_stablecoins_usd: 2, tvl_usd: 3 }, activity_24h: { usdc_moved_usd_est: 4, app_usd: 5, attributed_share_pct: 6 } });
-  assert.deepEqual(arcDailyCsvRows([d("2026-10-23", 10), d("2026-10-22", 9)]).map((r) => r.slice(0, 2)), [["2026-10-22", 9], ["2026-10-23", 10]]);
+  assert.deepEqual(ARC_DAILY_HEADER, ["snapshot_date", "activity_date", "defillama_date", "usdc_supply", "eurc_supply", "all_stablecoins_usd", "tvl_usd", "usdc_moved_usd_est", "app_usd", "attributed_share_pct_24h"]);
+  const d = (day, s) => ({ generated_at: `${day}T00:03:00.000Z`, stablecoins: { usdc_supply: s, eurc_supply: 1, all_stablecoins_usd: 2, tvl_usd: 3, defillama_date: "2026-10-01" }, activity_24h: { data_until: `${day}T00:00:00Z`, usdc_moved_usd_est: 4, app_usd: 5, attributed_share_pct: 6 } });
+  // review #2: the 24 h activity ending at 00:00 on the snapshot date covers the PREVIOUS day
+  assert.deepEqual(arcDailyCsvRows([d("2026-10-23", 10), d("2026-10-22", 9)]).map((r) => r.slice(0, 4)), [["2026-10-22", "2026-10-21", "2026-10-01", 9], ["2026-10-23", "2026-10-22", "2026-10-01", 10]]);
 });
 
 test("README: counts, date, every category link, page links, citation, no undefined", () => {
@@ -44,6 +45,7 @@ test("README: counts, date, every category link, page links, citation, no undefi
   assert.ok(md.includes("https://builder.registrai.cc/api/mcp"));
   assert.ok(md.includes("cc.registrai/arc-data"));
   assert.match(md, /Registrai, Arc ecosystem data, builder\.registrai\.cc, CC BY 4\.0, retrieved 2026-10-23\./);
+  assert.match(md, /tvl_usd.*all_stablecoins_usd.*DefiLlama/s);   // third-party fields are attributed
   assert.ok(!/undefined|NaN/.test(md));
 });
 
@@ -54,6 +56,12 @@ test("workflow, license and citation are in place; no secrets in the workflow", 
   assert.match(wf, /contents: write/);
   assert.ok(wf.indexOf("node --test scripts/") < wf.indexOf("node scripts/refresh.mjs"));
   assert.ok(!/secrets\./.test(wf));
-  assert.match(readFileSync(new URL("../LICENSE", import.meta.url), "utf8"), /Creative Commons Attribution 4\.0[\s\S]*MIT License/);
+  assert.match(readFileSync(new URL("../LICENSE", import.meta.url), "utf8"), /Attribution 4\.0 International Public License/);   // full CC BY legal code: GitHub detects it
+  assert.match(readFileSync(new URL("../scripts/LICENSE", import.meta.url), "utf8"), /MIT License/);
+  assert.match(wf, /concurrency:/);
+  assert.match(wf, /git pull --rebase/);
+  assert.match(wf, /git status --porcelain -- data README\.md/);
+  assert.match(wf, /node-version: "24"/);
+  assert.match(wf, /actions\/checkout@v5/);
   assert.match(readFileSync(new URL("../CITATION.cff", import.meta.url), "utf8"), /cff-version: 1\.2\.0[\s\S]*license: CC-BY-4\.0/);
 });

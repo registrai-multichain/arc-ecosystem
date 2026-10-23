@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generated_at": "2026-10-23T08:43:52.043Z",
+  "generated_at": "2026-10-23T08:55:09.118Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 27427030,
+    "block_height": 27428365,
     "block_time_s": 0.5069,
-    "as_of": "2026-10-23T08:43:52.043Z"
+    "as_of": "2026-10-23T08:55:09.118Z"
   },
   "stablecoins": {
-    "usdc_supply": 823630966.477234,
-    "eurc_supply": 8629941.922623,
-    "as_of": "2026-10-23T08:43:52.043Z",
+    "usdc_supply": 822125908.94303,
+    "eurc_supply": 8621062.142623,
+    "as_of": "2026-10-23T08:55:09.118Z",
     "all_stablecoins_usd": 830293435,
     "tvl_usd": 636446426,
     "defillama_date": "2026-10-23"

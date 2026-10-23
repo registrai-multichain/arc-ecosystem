@@ -2,7 +2,7 @@
 export const SITE = "https://builder.registrai.cc";
 export const ECOSYSTEM_HEADER = ["slug", "name", "category", "status", "website", "first_live", "last_reviewed", "url"];
 export const APPS_HEADER = ["id", "name", "category", "usd", "payments", "new_payers", "first_hour", "url"];
-export const ARC_DAILY_HEADER = ["day", "usdc_supply", "eurc_supply", "all_stablecoins_usd", "tvl_usd", "usdc_moved_usd_est", "app_usd", "attributed_share_pct_24h"];
+export const ARC_DAILY_HEADER = ["snapshot_date", "activity_date", "defillama_date", "usdc_supply", "eurc_supply", "all_stablecoins_usd", "tvl_usd", "usdc_moved_usd_est", "app_usd", "attributed_share_pct_24h"];
 /** The site's category labels (src/lib/arc-ecosystem.ts CATEGORIES); an unknown id falls back to the id. */
 export const CATEGORY_LABELS = {
   payments: "Payment apps on Arc", wallets: "Wallets that support Arc", exchanges: "Exchanges that support Arc", banks: "Banks building on Arc",
@@ -34,8 +34,12 @@ export const validateApps = (x) => (Array.isArray(x?.apps) ? [] : ["apps-7d: app
 
 export const ecosystemCsvRows = (entities) => entities.map((e) => [e.slug, e.name, e.category ?? null, e.status, e.website ?? null, e.first_live ?? null, e.last_reviewed ?? null, e.url ?? null]);
 export const appsCsvRows = (apps) => apps.map((a) => [a.id, a.name, a.category ?? null, a.usd, a.payments, a.new_payers, a.first_hour ?? null, a.url ?? null]);
-export const arcDailyCsvRows = (days) => [...days].reverse().map((d) => [String(d.generated_at).slice(0, 10), d.stablecoins?.usdc_supply ?? null, d.stablecoins?.eurc_supply ?? null,
-  d.stablecoins?.all_stablecoins_usd ?? null, d.stablecoins?.tvl_usd ?? null, d.activity_24h?.usdc_moved_usd_est ?? null, d.activity_24h?.app_usd ?? null, d.activity_24h?.attributed_share_pct ?? null]);
+/** One row per daily snapshot, oldest first. Supplies are read at the snapshot (≈00:03 UTC); the 24 h activity ends at
+ *  data_until (00:00 UTC), so it covers the day before (activity_date); DefiLlama figures carry their own date. */
+const dayBefore = (iso) => (iso ? new Date(Date.parse(iso) - 86400e3).toISOString().slice(0, 10) : null);
+export const arcDailyCsvRows = (days) => [...days].reverse().map((d) => [String(d.generated_at).slice(0, 10), dayBefore(d.activity_24h?.data_until), d.stablecoins?.defillama_date ?? null,
+  d.stablecoins?.usdc_supply ?? null, d.stablecoins?.eurc_supply ?? null, d.stablecoins?.all_stablecoins_usd ?? null, d.stablecoins?.tvl_usd ?? null,
+  d.activity_24h?.usdc_moved_usd_est ?? null, d.activity_24h?.app_usd ?? null, d.activity_24h?.attributed_share_pct ?? null]);
 
 export function renderReadme({ count, live, deployed, announced, categories, updated }) {
   const cats = categories.map((c) => `- [${c.label}](${SITE}/ecosystem/${c.id}/) (${c.count})`).join("\n");
@@ -78,6 +82,8 @@ ${cats}
 
 API base: ${SITE}/api/v1. Definitions of every field: ${SITE}/methodology/.
 
+In \`arc-daily.csv\`, \`snapshot_date\` is the day of the 00:00 UTC snapshot: supplies are read then, while the 24 h activity columns cover \`activity_date\`, the day before. \`tvl_usd\` and \`all_stablecoins_usd\` come from DefiLlama (defillama.com) as of \`defillama_date\`; DefiLlama's terms apply to those two fields.
+
 ## Cite
 
 Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved ${updated}.
@@ -92,6 +98,6 @@ Suggest one from any project page on ${SITE}/ecosystem/. Approved corrections ar
 
 ## License
 
-Data and this README: CC BY 4.0. Scripts: MIT. Registrai is independent and not affiliated with Circle or Arc.
+Data and this README: CC BY 4.0 (LICENSE). Scripts: MIT (scripts/LICENSE). Registrai is independent and not affiliated with Circle or Arc.
 `;
 }

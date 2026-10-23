@@ -21,25 +21,25 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 258 projects with 
 
 ### Categories
 
-- [Payment apps on Arc](https://builder.registrai.cc/ecosystem/payments/) (35)
+- [Payment apps on Arc](https://builder.registrai.cc/ecosystem/payments/) (39)
+- [DEXs on Arc](https://builder.registrai.cc/ecosystem/dexs/) (25)
+- [Launchpads on Arc](https://builder.registrai.cc/ecosystem/launchpads/) (24)
+- [Wallets that support Arc](https://builder.registrai.cc/ecosystem/wallets/) (23)
 - [Infrastructure for Arc](https://builder.registrai.cc/ecosystem/infrastructure/) (20)
-- [Wallets that support Arc](https://builder.registrai.cc/ecosystem/wallets/) (20)
-- [Launchpads on Arc](https://builder.registrai.cc/ecosystem/launchpads/) (19)
+- [Exchanges that support Arc](https://builder.registrai.cc/ecosystem/exchanges/) (19)
 - [Banks building on Arc](https://builder.registrai.cc/ecosystem/banks/) (18)
-- [Exchanges that support Arc](https://builder.registrai.cc/ecosystem/exchanges/) (18)
-- [DEXs on Arc](https://builder.registrai.cc/ecosystem/dexs/) (17)
-- [Asset managers on Arc](https://builder.registrai.cc/ecosystem/asset-managers/) (13)
+- [Asset managers on Arc](https://builder.registrai.cc/ecosystem/asset-managers/) (14)
+- [Lending on Arc](https://builder.registrai.cc/ecosystem/lending/) (14)
 - [Bridges and cross-chain on Arc](https://builder.registrai.cc/ecosystem/bridges/) (12)
-- [Trading on Arc](https://builder.registrai.cc/ecosystem/trading/) (11)
+- [Custody on Arc](https://builder.registrai.cc/ecosystem/custody/) (12)
+- [Trading on Arc](https://builder.registrai.cc/ecosystem/trading/) (12)
+- [Tokenization and RWA on Arc](https://builder.registrai.cc/ecosystem/rwa/) (11)
 - [AI agents on Arc](https://builder.registrai.cc/ecosystem/ai-agents/) (10)
-- [Lending on Arc](https://builder.registrai.cc/ecosystem/lending/) (10)
+- [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (10)
 - [Market makers on Arc](https://builder.registrai.cc/ecosystem/market-makers/) (10)
-- [Tokenization and RWA on Arc](https://builder.registrai.cc/ecosystem/rwa/) (9)
-- [Custody on Arc](https://builder.registrai.cc/ecosystem/custody/) (8)
+- [Arc validators](https://builder.registrai.cc/ecosystem/validators/) (9)
+- [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (8)
 - [Stablecoin issuers on Arc](https://builder.registrai.cc/ecosystem/stablecoin-issuers/) (8)
-- [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (7)
-- [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (7)
-- [Arc validators](https://builder.registrai.cc/ecosystem/validators/) (3)
 - [On/off-ramps for Arc](https://builder.registrai.cc/ecosystem/ramps/) (3)
 
 ## Files
@@ -56,6 +56,8 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 258 projects with 
 
 API base: https://builder.registrai.cc/api/v1. Definitions of every field: https://builder.registrai.cc/methodology/.
 
+In `arc-daily.csv`, `snapshot_date` is the day of the 00:00 UTC snapshot: supplies are read then, while the 24 h activity columns cover `activity_date`, the day before. `tvl_usd` and `all_stablecoins_usd` come from DefiLlama (defillama.com) as of `defillama_date`; DefiLlama's terms apply to those two fields.
+
 ## Cite
 
 Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-23.
@@ -70,4 +72,4 @@ Suggest one from any project page on https://builder.registrai.cc/ecosystem/. Ap
 
 ## License
 
-Data and this README: CC BY 4.0. Scripts: MIT. Registrai is independent and not affiliated with Circle or Arc.
+Data and this README: CC BY 4.0 (LICENSE). Scripts: MIT (scripts/LICENSE). Registrai is independent and not affiliated with Circle or Arc.

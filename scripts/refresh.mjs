@@ -10,23 +10,29 @@ const json = (x) => JSON.stringify(x, null, 2) + "\n";
 
 const realSleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/** 3 tries for errors; a 429 from the edge backs off (Retry-After seconds, else 2 s × 2^(n-1)) and retries up to 6 times. */
-async function getJson(fetcher, url, { allow503 = false, sleep = realSleep } = {}) {
+/** Errors: 3 tries with 1 s then 4 s between them. A 429 from the edge backs off (Retry-After seconds capped at 30, else
+ *  2 s × 2^(n-1)) up to 6 times, with no sleep after the last. The response body is always released. */
+async function getJson(fetcher, url, { allow503 = false, sleep = realSleep, check = () => {} } = {}) {
   let last, errors = 0, limited = 0;
   while (errors < 3 && limited < 6) {
+    check(url);
     try {
       const r = await fetcher(url, { headers: { "user-agent": UA, accept: "application/json" }, signal: AbortSignal.timeout(20_000) });
       if (r.status === 429) {
+        await r.body?.cancel?.();
         limited++;
-        const ra = Number(r.headers.get("retry-after"));
-        await sleep(Number.isFinite(ra) && ra > 0 ? ra * 1000 : 2000 * 2 ** (limited - 1));
         last = new Error("HTTP 429");
+        if (limited < 6) { const ra = Number(r.headers.get("retry-after")); await sleep(Number.isFinite(ra) && ra > 0 ? Math.min(ra, 30) * 1000 : 2000 * 2 ** (limited - 1)); }
         continue;
       }
-      if (allow503 && r.status === 503) return null;
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      if (allow503 && r.status === 503) { await r.body?.cancel?.(); return null; }
+      if (!r.ok) { await r.body?.cancel?.(); throw new Error(`HTTP ${r.status}`); }
       return await r.json();
-    } catch (e) { last = e; errors++; }
+    } catch (e) {
+      if (String(e?.message).startsWith("deadline")) throw e;
+      last = e; errors++;
+      if (errors < 3) await sleep(errors === 1 ? 1000 : 4000);
+    }
   }
   throw new Error(`${url}: ${last?.message ?? last}`);
 }
@@ -37,8 +43,11 @@ async function pool(items, n, fn) {
   return out;
 }
 
-export async function refresh({ root, fetcher = fetch, today = new Date().toISOString().slice(0, 10), log = console.log, sleep = realSleep }) {
-  const get = (url, o = {}) => getJson(fetcher, url, { ...o, sleep });
+export async function refresh({ root, fetcher = fetch, today = new Date().toISOString().slice(0, 10), log = console.log, sleep = realSleep, now = Date.now, deadlineMs = 12 * 60_000 }) {
+  // an overall deadline under the job's 15 min timeout: a slow API ends as a failed run (GitHub emails), never a cancelled one
+  const start = now();
+  const check = (url) => { if (now() - start > deadlineMs) throw new Error(`deadline: refresh took over ${Math.round(deadlineMs / 60_000)} min (at ${url})`); };
+  const get = (url, o = {}) => getJson(fetcher, url, { ...o, sleep, check });
   const list = await get(`${API}/ecosystem`);
   const entities = (await pool(list.entities.map((e) => e.slug), 2, async (slug) => (await get(`${API}/ecosystem/${slug}`)).entity))
     .sort((a, b) => (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0));
@@ -60,7 +69,11 @@ export async function refresh({ root, fetcher = fetch, today = new Date().toISOS
   for (const [f, body] of Object.entries(files)) writeFileSync(join(tmp, f), body);
 
   const counts = { live: 0, deployed: 0, announced: 0 }; const byCat = new Map();
-  for (const e of entities) { counts[e.status] = (counts[e.status] ?? 0) + 1; byCat.set(e.category, (byCat.get(e.category) ?? 0) + 1); }
+  for (const e of entities) {
+    counts[e.status] = (counts[e.status] ?? 0) + 1;
+    // primary category plus tags, as the site's category pages count (review #1)
+    for (const c of new Set([e.category, ...(e.tags ?? [])].filter(Boolean))) byCat.set(c, (byCat.get(c) ?? 0) + 1);
+  }
   const categories = [...byCat].map(([id, count]) => ({ id, label: CATEGORY_LABELS[id] ?? id, count })).sort((a, b) => b.count - a.count || (a.label < b.label ? -1 : 1));
   writeFileSync(join(tmp, "README.md"), renderReadme({ count: entities.length, ...counts, categories, updated: today }));
 

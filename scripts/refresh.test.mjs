@@ -6,7 +6,7 @@ import { tmpdir } from "node:os";
 import { refresh } from "./refresh.mjs";
 
 const B = "https://builder.registrai.cc/api/v1";
-const ent = (i) => ({ slug: `p${String(i).padStart(3, "0")}`, name: i === 0 ? "=EVIL()" : `P${i}`, category: i % 2 ? "dexs" : "payments", status: i < 10 ? "live" : "announced", sources: [{ url: "https://s" }], url: `https://builder.registrai.cc/ecosystem/p${i}/`, last_reviewed: "2026-10-20" });
+const ent = (i) => ({ slug: `p${String(i).padStart(3, "0")}`, name: i === 0 ? "=EVIL()" : `P${i}`, category: i % 2 ? "dexs" : "payments", ...(i === 0 ? { tags: ["dexs", "launchpads"] } : {}), status: i < 10 ? "live" : "announced", sources: [{ url: "https://s" }], url: `https://builder.registrai.cc/ecosystem/p${i}/`, last_reviewed: "2026-10-20" });
 function fake({ failSlug, appsDown } = {}) {
   const ents = Array.from({ length: 120 }, (_, i) => ent(i));
   const routes = {
@@ -38,6 +38,9 @@ test("writes every file, README, deterministic across runs", async () => {
   const md = readFileSync(join(r, "README.md"), "utf8");
   assert.match(md, /120 projects with status and sources/);
   assert.match(md, /\[DEXs on Arc\]/);
+  // review #1: categories count primary + tags, like the site's category pages (p000 is tagged "dexs")
+  assert.match(md, /\[DEXs on Arc\]\(https:\/\/builder\.registrai\.cc\/ecosystem\/dexs\/\) \(61\)/);
+  assert.match(md, /\[Launchpads on Arc\]\(https:\/\/builder\.registrai\.cc\/ecosystem\/launchpads\/\) \(1\)/);
   const before = ["ecosystem.json", "ecosystem.csv", "README.md"].map((f) => readFileSync(join(r, f.startsWith("README") ? f : `data/${f}`), "utf8"));
   await refresh({ root: r, fetcher: fake(), today: "2026-10-23", log: () => {} });
   const after = ["ecosystem.json", "ecosystem.csv", "README.md"].map((f) => readFileSync(join(r, f.startsWith("README") ? f : `data/${f}`), "utf8"));
@@ -76,4 +79,16 @@ test("429 from the edge: backs off (Retry-After or exponential) and retries inst
   assert.equal(hits.get("https://builder.registrai.cc/api/v1/ecosystem/p007"), 3);
   assert.deepEqual(waits.slice(0, 2), [3000, 4000]);
   assert.ok(existsSync(join(r, "data/ecosystem.json")));
+});
+
+test("errors back off between tries, and an overall deadline fails the run with a clear message", async () => {
+  const r = repo();
+  const waits = [];
+  let n = 0;
+  const flaky = async (url, init) => { if (url.endsWith("/ecosystem/p003") && ++n <= 2) throw new Error("ECONNRESET"); return fake()(url, init); };
+  await refresh({ root: r, fetcher: flaky, today: "2026-10-23", log: () => {}, sleep: async (ms) => { waits.push(ms); } });
+  assert.deepEqual(waits.slice(0, 2), [1000, 4000]);
+  let t = 0;
+  const clock = () => (t += 60_000);   // every call advances a minute
+  await assert.rejects(refresh({ root: repo(), fetcher: fake(), today: "2026-10-23", log: () => {}, sleep: async () => {}, now: clock, deadlineMs: 12 * 60_000 }), /deadline/);
 });
