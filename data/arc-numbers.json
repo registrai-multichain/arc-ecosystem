@@ -1,30 +1,30 @@
 {
   "version": 1,
-  "generated_at": "2026-10-23T08:55:09.118Z",
+  "generated_at": "2026-10-23T09:40:59.112Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 27428365,
+    "block_height": 27433792,
     "block_time_s": 0.5069,
-    "as_of": "2026-10-23T08:55:09.118Z"
+    "as_of": "2026-10-23T09:40:59.112Z"
   },
   "stablecoins": {
-    "usdc_supply": 822125908.94303,
+    "usdc_supply": 823059455.53648,
     "eurc_supply": 8621062.142623,
-    "as_of": "2026-10-23T08:55:09.118Z",
-    "all_stablecoins_usd": 830293435,
-    "tvl_usd": 636446426,
+    "as_of": "2026-10-23T09:40:59.112Z",
+    "all_stablecoins_usd": 830325482.9300001,
+    "tvl_usd": 636173301,
     "defillama_date": "2026-10-23"
   },
   "activity_24h": {
-    "data_until": "2026-10-23T08:00:00Z",
-    "usdc_moved_usd_est": 583752249,
-    "eurc_moved_usd_est": 117904419.9,
-    "usdc_transfers_est": 305820,
-    "app_payments": 78565,
-    "app_usd": 28040650.32,
-    "attributed_share_pct": 4.8
+    "data_until": "2026-10-23T09:00:00Z",
+    "usdc_moved_usd_est": 610648789.5,
+    "eurc_moved_usd_est": 126437543.7,
+    "usdc_transfers_est": 310050,
+    "app_payments": 78360,
+    "app_usd": 28280091.57,
+    "attributed_share_pct": 4.63
   },
   "ecosystem": {
     "projects": 258,
@@ -69,11 +69,11 @@
       "aei": 42
     },
     "index_close": {
-      "abi": 929.473,
-      "aii": 957.512,
-      "aei": 971.981
+      "abi": 929.263,
+      "aii": 957.444,
+      "aei": 971.99
     },
-    "data_until": "2026-10-23T08:00:00Z"
+    "data_until": "2026-10-23T09:00:00Z"
   },
   "timeline": [
     {

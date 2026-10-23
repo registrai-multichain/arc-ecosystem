@@ -1,27 +1,27 @@
 {
   "version": 1,
-  "data_until": "2026-10-23T08:00:00Z",
+  "data_until": "2026-10-23T09:00:00Z",
   "indices": {
     "abi": {
       "name": "Arc Builders Index",
-      "close": 929.473,
-      "close_24h_ago": 930.86,
+      "close": 929.263,
+      "close_24h_ago": 931.05,
       "base": 1000,
       "base_date": "2026-10-02T00:00:00Z",
       "members": 19
     },
     "aii": {
       "name": "Arc Integrations Index",
-      "close": 957.512,
-      "close_24h_ago": 960.77,
+      "close": 957.444,
+      "close_24h_ago": 960.7,
       "base": 1000,
       "base_date": "2026-10-02T00:00:00Z",
       "members": 23
     },
     "aei": {
       "name": "Arc Ecosystem Index",
-      "close": 971.981,
-      "close_24h_ago": 973.44,
+      "close": 971.99,
+      "close_24h_ago": 973.43,
       "base": 1000,
       "base_date": "2026-10-02T00:00:00Z",
       "members": 42
