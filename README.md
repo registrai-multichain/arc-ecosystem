@@ -1,8 +1,8 @@
 # Arc ecosystem data
 
-Open data on the Arc ecosystem from Registrai (registrai.cc): 258 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-10-23 UTC.
+Open data on the Arc ecosystem from Registrai (registrai.cc): 258 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-10-24 UTC.
 
-258 projects: 83 live on Arc mainnet, 20 deployed, 155 announced. Each has a page with its status, the evidence for it, its sources and a review date.
+258 projects: 104 live on Arc mainnet, 19 deployed, 135 announced. Each has a page with its status, the evidence for it, its sources and a review date.
 
 ## Pages
 
@@ -33,11 +33,11 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 258 projects with 
 - [Bridges and cross-chain on Arc](https://builder.registrai.cc/ecosystem/bridges/) (12)
 - [Custody on Arc](https://builder.registrai.cc/ecosystem/custody/) (12)
 - [Trading on Arc](https://builder.registrai.cc/ecosystem/trading/) (12)
+- [Arc validators](https://builder.registrai.cc/ecosystem/validators/) (11)
 - [Tokenization and RWA on Arc](https://builder.registrai.cc/ecosystem/rwa/) (11)
 - [AI agents on Arc](https://builder.registrai.cc/ecosystem/ai-agents/) (10)
 - [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (10)
 - [Market makers on Arc](https://builder.registrai.cc/ecosystem/market-makers/) (10)
-- [Arc validators](https://builder.registrai.cc/ecosystem/validators/) (9)
 - [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (8)
 - [Stablecoin issuers on Arc](https://builder.registrai.cc/ecosystem/stablecoin-issuers/) (8)
 - [On/off-ramps for Arc](https://builder.registrai.cc/ecosystem/ramps/) (3)
@@ -60,7 +60,7 @@ In `arc-daily.csv`, `snapshot_date` is the day of the 00:00 UTC snapshot: suppli
 
 ## Cite
 
-Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-23.
+Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-24.
 
 ## Schedule
 

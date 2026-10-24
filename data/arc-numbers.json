@@ -1,36 +1,143 @@
 {
   "version": 1,
-  "generated_at": "2026-10-23T09:40:59.112Z",
+  "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
+  "generated_at": "2026-10-24T04:50:59.092Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 27433792,
-    "block_time_s": 0.5069,
-    "as_of": "2026-10-23T09:40:59.112Z"
+    "block_height": 27569908,
+    "block_time_s": 0.507,
+    "as_of": "2026-10-24T04:50:59.092Z",
+    "rpc_url": "https://rpc.mainnet.arc.io",
+    "explorer_url": "https://explorer.arc.io"
   },
   "stablecoins": {
-    "usdc_supply": 823059455.53648,
-    "eurc_supply": 8621062.142623,
-    "as_of": "2026-10-23T09:40:59.112Z",
-    "all_stablecoins_usd": 830325482.9300001,
-    "tvl_usd": 636173301,
-    "defillama_date": "2026-10-23"
+    "usdc_supply": 914836829.380389,
+    "eurc_supply": 7392059.637276,
+    "as_of": "2026-10-24T04:50:59.092Z",
+    "all_stablecoins_usd": 924680555.69,
+    "tvl_usd": 631336215,
+    "defillama_date": "2026-10-24",
+    "tokens": [
+      {
+        "symbol": "USDC",
+        "issuer": "Circle",
+        "address": "0x3600000000000000000000000000000000000000",
+        "supply": 914836829.380389
+      },
+      {
+        "symbol": "EURC",
+        "issuer": "Circle",
+        "address": "0xbef5f6d51cb62b58e6a8f77868681825c6fe21c1",
+        "supply": 7392059.637276
+      },
+      {
+        "symbol": "AUDD",
+        "issuer": "Novatti",
+        "address": "0xdec15d98d8c16d9ca2f8cc94ba4b88fe4f259393",
+        "supply": 10
+      },
+      {
+        "symbol": "AUDF",
+        "issuer": "Forte Securities Australia",
+        "address": "0xd2a530170d71a9cfe1651fb468e2b98f7ed7456b",
+        "supply": 201000
+      },
+      {
+        "symbol": "BRLA",
+        "issuer": "Avenia",
+        "address": "0x75700e137c05b2beb2b3a436ccb551652e3d8b11",
+        "supply": 100
+      },
+      {
+        "symbol": "CADD",
+        "issuer": "CAD Digital",
+        "address": "0x24bf8ae7b8e073d766a3509c25b45a6ad30e9046",
+        "supply": 1
+      },
+      {
+        "symbol": "CHFAU",
+        "issuer": "AllUnity",
+        "address": "0xc6df1b92a6ae61a27059c41e541a91ce8dcb1605",
+        "supply": 0
+      },
+      {
+        "symbol": "EURAU",
+        "issuer": "AllUnity",
+        "address": "0x4933a85b5b5466fbaf179f72d3de273c287ec2c2",
+        "supply": 0
+      },
+      {
+        "symbol": "GBPA",
+        "issuer": "Agant",
+        "address": "0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b",
+        "supply": 575218.373645
+      },
+      {
+        "symbol": "JPYC",
+        "issuer": "JPYC",
+        "address": "0xe7c3d8c9a439fede00d2600032d5db0be71c3c29",
+        "supply": 0
+      },
+      {
+        "symbol": "KRW1",
+        "issuer": "BDACS",
+        "address": "0x303dbb88ba14626c7a927e983b73267c575315f7",
+        "supply": 500000
+      },
+      {
+        "symbol": "MXNB",
+        "issuer": "Bitso",
+        "address": "0xf197ffc28c23e0309b5559e7a166f2c6164c80aa",
+        "supply": 1198457.466859
+      },
+      {
+        "symbol": "QCAD",
+        "issuer": "Canada Stablecorp",
+        "address": "0xd70c2fa4232e054b373efaea98e4138511c2a309",
+        "supply": 500
+      },
+      {
+        "symbol": "SEKAU",
+        "issuer": "AllUnity",
+        "address": "0xf8524b5ab17d5eca2f78abe8377ceffd323b1dc1",
+        "supply": 0
+      },
+      {
+        "symbol": "TRYB",
+        "issuer": "Bilira",
+        "address": "0xfb0705023603dc86325b83d9ff6b0da7921fec17",
+        "supply": 4428178.0949140005
+      },
+      {
+        "symbol": "ZARU",
+        "issuer": "Luno",
+        "address": "0xe205b4e7ac03e3f7b2060c3edf2171aa7126c0d5",
+        "supply": 0
+      }
+    ]
   },
   "activity_24h": {
-    "data_until": "2026-10-23T09:00:00Z",
-    "usdc_moved_usd_est": 610648789.5,
-    "eurc_moved_usd_est": 126437543.7,
-    "usdc_transfers_est": 310050,
-    "app_payments": 78360,
-    "app_usd": 28280091.57,
-    "attributed_share_pct": 4.63
+    "data_until": "2026-10-24T04:00:00Z",
+    "usdc_moved_usd_est": 536681003.1,
+    "eurc_moved_usd_est": 208693890.9,
+    "usdc_transfers_est": 319500,
+    "app_payments": 74489,
+    "app_usd": 16621852.42,
+    "attributed_share_pct": 3.1,
+    "transactions_est": 398000,
+    "tx_sample": {
+      "blocks": 240,
+      "from_block": 27400204,
+      "to_block": 27569908
+    }
   },
   "ecosystem": {
     "projects": 258,
-    "live": 83,
-    "deployed": 20,
-    "announced": 155,
+    "live": 104,
+    "deployed": 19,
+    "announced": 135,
     "top_categories": [
       {
         "id": "payments",
@@ -69,11 +176,11 @@
       "aei": 42
     },
     "index_close": {
-      "abi": 929.263,
-      "aii": 957.444,
-      "aei": 971.99
+      "abi": 925.304,
+      "aii": 954.074,
+      "aei": 969.889
     },
-    "data_until": "2026-10-23T09:00:00Z"
+    "data_until": "2026-10-24T04:00:00Z"
   },
   "timeline": [
     {
@@ -94,9 +201,9 @@
   ],
   "errors": [],
   "attributed_share_7d": {
-    "window_days": 3,
-    "until": "2026-10-23T00:00:00Z",
-    "pct": 2.7,
+    "window_days": 4,
+    "until": "2026-10-24T00:00:00Z",
+    "pct": 2.77,
     "daily_min": 1.04,
     "daily_max": 5.58,
     "complete": false

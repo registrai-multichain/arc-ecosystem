@@ -1,37 +1,37 @@
 id,name,category,usd,payments,new_payers,first_hour,url
-integration:uniswap,Uniswap,dexs,23102376.09,299263,442,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/uniswap/
-integration:kyberswap,KyberSwap,dexs,2631791.54,14055,53,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/kyberswap/
-domain:archery.wtf,Archery,dexs,2433405.05,16398,22,2026-10-11T19:00:00Z,https://builder.registrai.cc/ecosystem/archery/
-integration:relay,Relay,bridges,1951035.5,17110,2493,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/relay/
-integration:0x,0x,dexs,1767689.71,7764,322,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/0x/
-integration:okx-dex,OKX Wallet,wallets,1247479.07,36870,191,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/okx-wallet/
-integration:aerodrome,Aero,dexs,1162421.82,1573,64,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/aerodrome/
-integration:li-fi,LI.FI,bridges,1126926.39,15974,216,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/li-fi/
-integration:morpho,Morpho,lending,1018555.42,1753,49,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/morpho/
-integration:aave,Aave,lending,619422.64,1136,33,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/aave/
-integration:across,Across,bridges,454415.9,1689,177,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/across/
-integration:1inch,1inch,dexs,283348.23,651,27,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/1inch/
-integration:rhino-fi,rhino.fi,bridges,231317.22,735,144,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/rhino-fi/
-integration:bungee,Bungee,bridges,185544.53,599,18,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/bungee/
-domain:argus.world,Argus World,launchpads,140291.42,2420,63,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/argus/
-integration:metamask,MetaMask,wallets,138366.82,785,283,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/metamask/
-domain:peach.ag,Peach,dexs,32951.63,21322,7,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/peach/
-integration:synthra,Synthra,dexs,19520.1,318,5,2026-10-11T19:00:00Z,https://builder.registrai.cc/ecosystem/synthra/
-integration:rango,Rango,bridges,18366.12,137,27,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/rango/
-domain:unitflow.finance,UnitFlow Finance,dexs,10654.29,8446,14,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/unitflow-finance/
-integration:dyor-swap,DYOR Swap,,5478.39,267,4,2026-10-11T19:00:00Z,https://builder.registrai.cc/apps/integration/dyor-swap/
-integration:steakhouse-financial,Steakhouse Financial,lending,5433.17,106,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/steakhouse-financial/
-domain:arctide.app,Arctide,dexs,3679.39,92,7,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arctide/
-domain:lift.fun,Lift,launchpads,2719.35,2450,0,2026-10-11T14:00:00Z,https://builder.registrai.cc/ecosystem/lift/
-domain:tollylabs.com,Tolly,launchpads,2325.15,227,3,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/tolly/
-domain:arctools.fun,ArcTools,trading,1058.99,6573,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arctools/
-integration:opensea,OpenSea,consumer,833.34,58,4,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/opensea/
-domain:ubi.fun,UBI.fun,launchpads,678.03,966,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/ubi-fun/
-integration:layerzero,LayerZero,bridges,237.58,191,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/layerzero/
-domain:arcstocks.app,Astock,rwa,127.09,5,2,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arcstocks/
-domain:foci.family,Foci,launchpads,83.27,52,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/foci/
-integration:blockrun,BlockRun,ai-agents,16.33,70,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/blockrun/
-integration:chainlink,Chainlink,infrastructure,12.71,6,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/chainlink/
+integration:uniswap,Uniswap,dexs,23205863.34,277391,420,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/uniswap/
+integration:kyberswap,KyberSwap,dexs,2407965.65,12735,58,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/kyberswap/
+domain:archery.wtf,Archery,dexs,2399010.47,15586,16,2026-10-11T19:00:00Z,https://builder.registrai.cc/ecosystem/archery/
+integration:relay,Relay,bridges,1931038.77,16475,2253,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/relay/
+integration:0x,0x,dexs,1862344.8,7935,390,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/0x/
+integration:okx-dex,OKX Wallet,wallets,1299249.22,41282,198,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/okx-wallet/
+integration:li-fi,LI.FI,bridges,1252419.65,15443,220,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/li-fi/
+integration:morpho,Morpho,lending,1049882.12,1773,47,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/morpho/
+integration:aerodrome,Aero,dexs,860730.86,1032,49,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/aerodrome/
+integration:aave,Aave,lending,615890.24,1038,35,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/aave/
+integration:across,Across,bridges,473398.34,1687,171,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/across/
+integration:rhino-fi,rhino.fi,bridges,411677.04,1031,156,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/rhino-fi/
+integration:1inch,1inch,dexs,330391.4,690,29,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/1inch/
+integration:bungee,Bungee,bridges,159280.34,666,16,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/bungee/
+integration:metamask,MetaMask,wallets,143659,775,266,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/metamask/
+domain:argus.world,Argus World,launchpads,119009.23,2006,58,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/argus/
+domain:peach.ag,Peach,dexs,43991.27,21384,5,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/peach/
+integration:synthra,Synthra,dexs,22544.78,361,6,2026-10-11T19:00:00Z,https://builder.registrai.cc/ecosystem/synthra/
+integration:rango,Rango,bridges,20401.89,139,26,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/rango/
+integration:steakhouse-financial,Steakhouse Financial,lending,17634.16,111,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/steakhouse-financial/
+domain:unitflow.finance,UnitFlow Finance,dexs,11140.38,8444,14,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/unitflow-finance/
+integration:dyor-swap,DYOR Swap,,5143.06,192,3,2026-10-11T19:00:00Z,https://builder.registrai.cc/apps/integration/dyor-swap/
+domain:arctide.app,Arctide,dexs,4021.77,77,6,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arctide/
+domain:lift.fun,Lift,launchpads,2192.44,1960,0,2026-10-11T14:00:00Z,https://builder.registrai.cc/ecosystem/lift/
+domain:tollylabs.com,Tolly,launchpads,1947.35,256,2,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/tolly/
+domain:arctools.fun,ArcTools,trading,984.26,6396,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arctools/
+integration:opensea,OpenSea,consumer,808.41,56,4,2026-10-11T11:00:00Z,https://builder.registrai.cc/ecosystem/opensea/
+domain:ubi.fun,UBI.fun,launchpads,561.73,749,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/ubi-fun/
+integration:layerzero,LayerZero,bridges,312.56,252,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/layerzero/
+domain:arcstocks.app,Astock,rwa,97.09,4,2,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arcstocks/
+domain:foci.family,Foci,launchpads,88.59,50,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/foci/
+integration:blockrun,BlockRun,ai-agents,21.21,108,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/blockrun/
+integration:chainlink,Chainlink,infrastructure,11.14,6,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/chainlink/
 base:arc,Arc base layer,,0,0,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/apps/base/arc/
 domain:arcland.app,ArcLand,consumer,0,0,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arcland/
 domain:www.myarcade.fun,Arcade,consumer,0,0,0,2026-10-10T23:00:00Z,https://builder.registrai.cc/ecosystem/arcade/
