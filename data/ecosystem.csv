@@ -13,6 +13,7 @@ amazon-web-services,Amazon Web Services,infrastructure,announced,https://aws.ama
 anchorage,Anchorage Digital,custody,announced,https://www.anchorage.com,,2026-10-20,https://builder.registrai.cc/ecosystem/anchorage/
 anthropic,Anthropic,ai-agents,announced,https://www.anthropic.com,,2026-10-20,https://builder.registrai.cc/ecosystem/anthropic/
 apollo,Apollo,asset-managers,announced,https://www.apollo.com,,2026-10-20,https://builder.registrai.cc/ecosystem/apollo/
+arc-spend,Arc Spend,consumer,live,https://arcspend.vercel.app,,2026-10-25,https://builder.registrai.cc/ecosystem/arc-spend/
 arcade,Arcade,consumer,live,https://www.myarcade.fun/,2026-09-22,2026-10-23,https://builder.registrai.cc/ecosystem/arcade/
 archery,Archery,dexs,live,https://archery.wtf/,2026-09-24,2026-10-23,https://builder.registrai.cc/ecosystem/archery/
 arcland,ArcLand,consumer,live,https://arcland.app/,,2026-10-23,https://builder.registrai.cc/ecosystem/arcland/
@@ -61,7 +62,7 @@ bungee,Bungee,bridges,live,https://bungee.exchange,,2026-10-23,https://builder.r
 bybit,Bybit,exchanges,live,https://www.bybit.com,2026-09-17,2026-10-20,https://builder.registrai.cc/ecosystem/bybit/
 cactus-custody,Cactus Custody,custody,announced,,,2026-10-20,https://builder.registrai.cc/ecosystem/cactus-custody/
 careem,Careem,payments,announced,https://www.careem.com,,2026-10-20,https://builder.registrai.cc/ecosystem/careem/
-catena-labs,Catena Labs,ai-agents,announced,https://catena.com,,2026-10-20,https://builder.registrai.cc/ecosystem/catena-labs/
+catena-labs,Catena Labs,ai-agents,live,https://catena.com,2026-09-16,2026-10-25,https://builder.registrai.cc/ecosystem/catena-labs/
 ceffu,Ceffu,custody,announced,https://www.ceffu.com,,2026-10-20,https://builder.registrai.cc/ecosystem/ceffu/
 centrifuge,Centrifuge,rwa,announced,https://centrifuge.io,,2026-10-20,https://builder.registrai.cc/ecosystem/centrifuge/
 chainalysis,Chainalysis,infrastructure,announced,https://www.chainalysis.com/,,2026-10-20,https://builder.registrai.cc/ecosystem/chainalysis/
@@ -81,7 +82,7 @@ corpay,Corpay,payments,announced,https://www.corpay.com/,,2026-10-20,https://bui
 crossmint,Crossmint,developer-tools,live,https://www.crossmint.com,,2026-10-20,https://builder.registrai.cc/ecosystem/crossmint/
 cumberland,Cumberland,market-makers,announced,https://www.cumberland.io/,,2026-10-20,https://builder.registrai.cc/ecosystem/cumberland/
 curve,Curve,dexs,live,https://curve.fi,2026-09-17,2026-10-20,https://builder.registrai.cc/ecosystem/curve/
-cycles,Cycles,payments,announced,https://cycles.money/,,2026-10-20,https://builder.registrai.cc/ecosystem/cycles/
+cycles,Cycles,payments,live,https://cycles.money/,,2026-10-25,https://builder.registrai.cc/ecosystem/cycles/
 dcent,DCent,wallets,live,https://dcentwallet.com/,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/dcent/
 definitive,Definitive,dexs,announced,https://www.definitive.fi/,,2026-10-20,https://builder.registrai.cc/ecosystem/definitive/
 deutsche-bank,Deutsche Bank,banks,announced,https://www.db.com/,,2026-10-20,https://builder.registrai.cc/ecosystem/deutsche-bank/
@@ -121,6 +122,7 @@ fun-xyz,Fun.xyz,developer-tools,announced,https://fun.xyz,,2026-10-20,https://bu
 galaxy,Galaxy,market-makers,deployed,https://www.galaxy.com,,2026-10-20,https://builder.registrai.cc/ecosystem/galaxy/
 gate,Gate,exchanges,live,https://www.gate.com,2026-09-16,2026-10-20,https://builder.registrai.cc/ecosystem/gate/
 gauntlet,Gauntlet,lending,announced,https://www.gauntlet.xyz/,,2026-10-20,https://builder.registrai.cc/ecosystem/gauntlet/
+glidepay,Glidepay,consumer,live,https://glidepay.cash,2026-09-24,2026-10-25,https://builder.registrai.cc/ecosystem/glidepay/
 global-payments,Global Payments,validators,announced,https://www.globalpayments.com,,2026-10-20,https://builder.registrai.cc/ecosystem/global-payments/
 goldman-sachs,Goldman Sachs,banks,announced,https://www.goldmansachs.com,,2026-10-20,https://builder.registrai.cc/ecosystem/goldman-sachs/
 goldsky,Goldsky,infrastructure,live,https://goldsky.com,,2026-10-20,https://builder.registrai.cc/ecosystem/goldsky/
@@ -130,7 +132,7 @@ hashkey,Hashkey,exchanges,announced,https://www.hashkey.com,,2026-10-20,https://
 hecto-financial,Hecto Financial,payments,announced,https://www.hectofinancial.co.kr,,2026-10-20,https://builder.registrai.cc/ecosystem/hecto-financial/
 hecto-innovation,Hecto Innovation,wallets,announced,https://www.hecto.co.kr,,2026-10-20,https://builder.registrai.cc/ecosystem/hecto-innovation/
 hibachi,Hibachi,trading,announced,https://hibachi.xyz,,2026-10-20,https://builder.registrai.cc/ecosystem/hibachi/
-hifi,HIFI,payments,announced,https://www.hifi.com,,2026-10-20,https://builder.registrai.cc/ecosystem/hifi/
+hifi,HIFI,payments,live,https://www.hifi.com,2026-09-18,2026-10-25,https://builder.registrai.cc/ecosystem/hifi/
 hinkal,Hinkal,infrastructure,deployed,https://hinkal.io,,2026-10-20,https://builder.registrai.cc/ecosystem/hinkal/
 hsbc,HSBC,banks,announced,https://www.hsbc.com,,2026-10-20,https://builder.registrai.cc/ecosystem/hsbc/
 huma-finance,Huma Finance,rwa,announced,https://www.huma.finance,,2026-10-20,https://builder.registrai.cc/ecosystem/huma-finance/
@@ -196,7 +198,7 @@ photonpay,PhotonPay,payments,announced,https://www.photonpay.com,,2026-10-20,htt
 pimlico,Pimlico,developer-tools,live,https://pimlico.io,,2026-10-20,https://builder.registrai.cc/ecosystem/pimlico/
 privy,Privy,wallets,announced,https://privy.io,,2026-10-20,https://builder.registrai.cc/ecosystem/privy/
 proshares,ProShares,asset-managers,announced,https://www.proshares.com,,2026-10-20,https://builder.registrai.cc/ecosystem/proshares/
-pulsar,Pulsar,payments,announced,https://pulsar.money/,,2026-10-20,https://builder.registrai.cc/ecosystem/pulsar/
+pulsar,Pulsar,payments,live,https://pulsar.money/,,2026-10-25,https://builder.registrai.cc/ecosystem/pulsar/
 pump-fun,Pump.fun,trading,announced,https://pump.fun,,2026-10-20,https://builder.registrai.cc/ecosystem/pump-fun/
 quicknode,Quicknode,infrastructure,live,https://www.quicknode.com,,2026-10-20,https://builder.registrai.cc/ecosystem/quicknode/
 rabby,Rabby,wallets,live,https://rabby.io,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/rabby/
@@ -241,14 +243,15 @@ ubi-fun,UBI.fun,launchpads,live,https://ubi.fun/,,2026-10-23,https://builder.reg
 uniswap,Uniswap,dexs,live,https://app.uniswap.org/,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/uniswap/
 unitflow-finance,UnitFlow Finance,dexs,live,https://unitflow.finance/,,2026-10-23,https://builder.registrai.cc/ecosystem/unitflow-finance/
 upbit,Upbit,exchanges,live,https://www.upbit.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/upbit/
-uqpay,UQPay,payments,announced,https://www.uqpay.com,,2026-10-20,https://builder.registrai.cc/ecosystem/uqpay/
+uqpay,UQPay,payments,live,https://www.uqpay.com,2026-09-16,2026-10-25,https://builder.registrai.cc/ecosystem/uqpay/
 vfat-io,vfat.io,asset-managers,deployed,https://vfat.io/yield,,2026-10-20,https://builder.registrai.cc/ecosystem/vfat-io/
 virtuals,Virtuals,ai-agents,announced,https://www.virtuals.io,,2026-10-20,https://builder.registrai.cc/ecosystem/virtuals/
 visa,Visa,payments,announced,https://www.visa.com,,2026-10-20,https://builder.registrai.cc/ecosystem/visa/
 vultisig,Vultisig,wallets,announced,https://vultisig.com,,2026-10-20,https://builder.registrai.cc/ecosystem/vultisig/
+walletconnect-pay,WalletConnect Pay,payments,live,https://walletconnect.com/payments,2026-09-16,2026-10-25,https://builder.registrai.cc/ecosystem/walletconnect-pay/
 wenia,Wenia,exchanges,live,https://www.wenia.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/wenia/
 wintermute,Wintermute,market-makers,announced,https://www.wintermute.com,,2026-10-20,https://builder.registrai.cc/ecosystem/wintermute/
-wirex,Wirex,payments,announced,https://wirexapp.com,,2026-10-20,https://builder.registrai.cc/ecosystem/wirex/
+wirex,Wirex,payments,live,https://wirexapp.com,2026-09-16,2026-10-25,https://builder.registrai.cc/ecosystem/wirex/
 wisdomtree,WisdomTree,asset-managers,announced,https://www.wisdomtree.com,,2026-10-20,https://builder.registrai.cc/ecosystem/wisdomtree/
 wonk-fun,Wonk Fun,launchpads,deployed,,,2026-10-20,https://builder.registrai.cc/ecosystem/wonk-fun/
 wormhole,Wormhole,bridges,announced,https://wormhole.com,,2026-10-20,https://builder.registrai.cc/ecosystem/wormhole/
