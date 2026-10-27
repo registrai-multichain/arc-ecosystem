@@ -14,11 +14,11 @@ anchorage,Anchorage Digital,custody,announced,https://www.anchorage.com,,2026-10
 anthropic,Anthropic,ai-agents,announced,https://www.anthropic.com,,2026-10-20,https://builder.registrai.cc/ecosystem/anthropic/
 apollo,Apollo,asset-managers,announced,https://www.apollo.com,,2026-10-20,https://builder.registrai.cc/ecosystem/apollo/
 arc-spend,Arc Spend,consumer,live,https://arcspend.vercel.app,,2026-10-25,https://builder.registrai.cc/ecosystem/arc-spend/
-arcade,Arcade,consumer,live,https://www.myarcade.fun/,2026-09-22,2026-10-23,https://builder.registrai.cc/ecosystem/arcade/
+arcade,Arcade,games,live,https://www.myarcade.fun/,2026-09-22,2026-10-26,https://builder.registrai.cc/ecosystem/arcade/
 archery,Archery,dexs,live,https://archery.wtf/,2026-09-24,2026-10-23,https://builder.registrai.cc/ecosystem/archery/
-arcland,ArcLand,consumer,live,https://arcland.app/,,2026-10-23,https://builder.registrai.cc/ecosystem/arcland/
-arclight,Arclight,dexs,live,https://arclight.finance/,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/arclight/
-arclotls,ArcLotls,consumer,live,https://www.arclotls.com,2026-09-17,2026-10-23,https://builder.registrai.cc/ecosystem/arclotls/
+arcland,ArcLand,games,deployed,https://arcland.app/,,2026-10-26,https://builder.registrai.cc/ecosystem/arcland/
+arclight,Arclight,dexs,live,https://arclight.finance/,2026-09-16,2026-10-25,https://builder.registrai.cc/ecosystem/arclight/
+arclotls,ArcLotls,games,live,https://www.arclotls.com,2026-09-17,2026-10-26,https://builder.registrai.cc/ecosystem/arclotls/
 arcpad-meme,arcpad.meme,launchpads,deployed,https://arcpad.meme/,,2026-10-20,https://builder.registrai.cc/ecosystem/arcpad-meme/
 arcstocks,Astock,rwa,live,https://astock.fi/,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/arcstocks/
 arctide,Arctide,dexs,live,https://arctide.app/,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/arctide/
@@ -127,7 +127,7 @@ global-payments,Global Payments,validators,announced,https://www.globalpayments.
 goldman-sachs,Goldman Sachs,banks,announced,https://www.goldmansachs.com,,2026-10-20,https://builder.registrai.cc/ecosystem/goldman-sachs/
 goldsky,Goldsky,infrastructure,live,https://goldsky.com,,2026-10-20,https://builder.registrai.cc/ecosystem/goldsky/
 gsr,GSR,market-makers,announced,https://www.gsr.io,,2026-10-20,https://builder.registrai.cc/ecosystem/gsr/
-hashfly,HashFly,consumer,live,https://hashfly.fun/,2026-09-23,2026-10-23,https://builder.registrai.cc/ecosystem/hashfly/
+hashfly,HashFly,games,live,https://hashfly.fun/,2026-09-23,2026-10-26,https://builder.registrai.cc/ecosystem/hashfly/
 hashkey,Hashkey,exchanges,announced,https://www.hashkey.com,,2026-10-20,https://builder.registrai.cc/ecosystem/hashkey/
 hecto-financial,Hecto Financial,payments,announced,https://www.hectofinancial.co.kr,,2026-10-20,https://builder.registrai.cc/ecosystem/hecto-financial/
 hecto-innovation,Hecto Innovation,wallets,announced,https://www.hecto.co.kr,,2026-10-20,https://builder.registrai.cc/ecosystem/hecto-innovation/
@@ -174,7 +174,7 @@ mexc,MEXC,exchanges,live,https://www.mexc.com,2026-09-16,2026-10-23,https://buil
 moneygram,MoneyGram,payments,announced,https://www.moneygram.com,,2026-10-20,https://builder.registrai.cc/ecosystem/moneygram/
 moonpay,MoonPay,ramps,live,https://moonpay.com/,,2026-10-23,https://builder.registrai.cc/ecosystem/moonpay/
 morpho,Morpho,lending,live,https://morpho.org,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/morpho/
-murmur,MurMur,consumer,live,https://muros.live/,2026-09-17,2026-10-23,https://builder.registrai.cc/ecosystem/murmur/
+murmur,MurMur,games,live,https://muros.live/,2026-09-17,2026-10-26,https://builder.registrai.cc/ecosystem/murmur/
 new-york-life-investment-management,New York Life Investment Management,asset-managers,announced,https://www.nylim.com/,,2026-10-20,https://builder.registrai.cc/ecosystem/new-york-life-investment-management/
 noah,Noah,payments,announced,https://noah.com/,,2026-10-20,https://builder.registrai.cc/ecosystem/noah/
 nonco,Nonco,market-makers,announced,https://www.nonco.com/,,2026-10-20,https://builder.registrai.cc/ecosystem/nonco/
@@ -183,7 +183,7 @@ nuvei,Nuvei,payments,announced,https://www.nuvei.com/,,2026-10-20,https://builde
 o1-exchange,o1.exchange,trading,live,https://o1.exchange/,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/o1-exchange/
 okx,OKX,exchanges,live,https://www.okx.com,2026-09-16,2026-10-20,https://builder.registrai.cc/ecosystem/okx/
 okx-wallet,OKX Wallet,wallets,live,https://web3.okx.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/okx-wallet/
-opensea,OpenSea,consumer,live,https://opensea.io,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/opensea/
+opensea,OpenSea,games,live,https://opensea.io,2026-09-16,2026-10-26,https://builder.registrai.cc/ecosystem/opensea/
 ornn,Ornn,trading,announced,https://ornn.com,,2026-10-20,https://builder.registrai.cc/ecosystem/ornn/
 orthogonal,Orthogonal,ai-agents,announced,https://orthogonal.com,,2026-10-20,https://builder.registrai.cc/ecosystem/orthogonal/
 osl,OSL,exchanges,live,https://osl.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/osl/
@@ -191,7 +191,7 @@ owlpay,OwlPay,payments,announced,https://www.owlting.com/owlpay/,,2026-10-20,htt
 pairpoint-by-vodafone,Pairpoint by Vodafone,payments,announced,,,2026-10-20,https://builder.registrai.cc/ecosystem/pairpoint-by-vodafone/
 parabolarc,Parabolarc,launchpads,deployed,https://www.parabolarc.xyz,,2026-10-20,https://builder.registrai.cc/ecosystem/parabolarc/
 paysafe,Paysafe,payments,announced,https://www.paysafe.com,,2026-10-20,https://builder.registrai.cc/ecosystem/paysafe/
-peach,Peach,dexs,live,https://peach.ag/,,2026-10-23,https://builder.registrai.cc/ecosystem/peach/
+peach,Peach,dexs,live,https://peach.ag/,,2026-10-25,https://builder.registrai.cc/ecosystem/peach/
 peddles,Peddles,launchpads,deployed,https://peddles.xyz,,2026-10-20,https://builder.registrai.cc/ecosystem/peddles/
 phantom,Phantom,wallets,live,https://phantom.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/phantom/
 photonpay,PhotonPay,payments,announced,https://www.photonpay.com,,2026-10-20,https://builder.registrai.cc/ecosystem/photonpay/
@@ -233,7 +233,7 @@ team-finance,Team Finance,developer-tools,live,https://www.team.finance,,2026-10
 tenderly,Tenderly,infrastructure,live,https://tenderly.co,,2026-10-20,https://builder.registrai.cc/ecosystem/tenderly/
 thirdweb,Thirdweb,developer-tools,live,https://thirdweb.com,,2026-10-20,https://builder.registrai.cc/ecosystem/thirdweb/
 thunes,Thunes,payments,announced,https://www.thunes.com,,2026-10-20,https://builder.registrai.cc/ecosystem/thunes/
-tolly,Tolly,launchpads,live,https://tollylabs.com/,,2026-10-23,https://builder.registrai.cc/ecosystem/tolly/
+tolly,Tolly,launchpads,live,https://tollylabs.com/,,2026-10-25,https://builder.registrai.cc/ecosystem/tolly/
 topaz-cl,Topaz DEX,dexs,live,https://www.topazdex.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/topaz-cl/
 transak,Transak,ramps,announced,https://transak.com,,2026-10-20,https://builder.registrai.cc/ecosystem/transak/
 trm,TRM,infrastructure,announced,https://www.trmlabs.com,,2026-10-20,https://builder.registrai.cc/ecosystem/trm/

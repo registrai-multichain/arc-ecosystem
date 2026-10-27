@@ -1,8 +1,8 @@
 # Arc ecosystem data
 
-Open data on the Arc ecosystem from Registrai (registrai.cc): 261 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-10-26 UTC.
+Open data on the Arc ecosystem from Registrai (registrai.cc): 261 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-10-27 UTC.
 
-261 projects: 113 live on Arc mainnet, 19 deployed, 129 announced. Each has a page with its status, the evidence for it, its sources and a review date.
+261 projects: 112 live on Arc mainnet, 20 deployed, 129 announced. Each has a page with its status, the evidence for it, its sources and a review date.
 
 ## Pages
 
@@ -37,9 +37,10 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 261 projects with 
 - [Tokenization and RWA on Arc](https://builder.registrai.cc/ecosystem/rwa/) (11)
 - [AI agents on Arc](https://builder.registrai.cc/ecosystem/ai-agents/) (10)
 - [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (10)
-- [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (10)
 - [Market makers on Arc](https://builder.registrai.cc/ecosystem/market-makers/) (10)
 - [Stablecoin issuers on Arc](https://builder.registrai.cc/ecosystem/stablecoin-issuers/) (8)
+- [games](https://builder.registrai.cc/ecosystem/games/) (6)
+- [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (4)
 - [On/off-ramps for Arc](https://builder.registrai.cc/ecosystem/ramps/) (3)
 
 ## Files
@@ -60,7 +61,7 @@ In `arc-daily.csv`, `snapshot_date` is the day of the 00:00 UTC snapshot: suppli
 
 ## Cite
 
-Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-26.
+Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-27.
 
 ## Schedule
 
