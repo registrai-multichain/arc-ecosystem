@@ -9969,6 +9969,11 @@
           "url": "https://explorer.arc.io/address/0x81d732702f87d2d652ae79e9f52bf44928eca210",
           "title": "SushiSwap V4 CL pool manager on Arc explorer",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/SushiSwap/status/2100320558919360771",
+          "title": "Sushi on X: Sushi is now live on Arc",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Decentralized exchange with concentrated-liquidity AMMs and a swap aggregator on many chains. On Arc, its V3 and V4 contracts are deployed and listed by DefiLlama with liquidity.",
@@ -10033,7 +10038,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/sushiswap/"
     },
     {
@@ -10087,6 +10093,11 @@
           "url": "https://synthra.org",
           "title": "Synthra website (metadata describes a DEX on Arc)",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/synthra_finance/status/2100190367593193769",
+          "title": "Synthra on X: live on mainnet, Arc included",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Trading interface offering swaps across supported chains, Hyperliquid perpetuals and concentrated liquidity. Its site metadata describes it as a DEX on Arc, and DefiLlama lists it in the DEX category.",
@@ -10107,7 +10118,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/synthra/"
     },
     {
@@ -10152,6 +10164,11 @@
           "title": "Team Finance on Arc",
           "date": "2026-10-20",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://x.com/TeamFinance_/status/2100216048649674821",
+          "title": "Team Finance on X: live on Arc from day one",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Token tooling platform for creating tokens and for locking liquidity, team tokens and NFTs, with vesting, staking pools, airdrops and multisender. Its Arc page lists these services on Arc mainnet, including Uniswap V3 liquidity locks.",
@@ -10174,7 +10191,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/team-finance/"
     },
     {
@@ -10188,6 +10206,11 @@
           "title": "Tenderly docs: Node RPC supported networks (Arc, chain 5042)",
           "date": "2026-10-20",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://x.com/TenderlyApp/status/2100242777187512615",
+          "title": "Tenderly on X: live on Arc from day 1",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Developer platform for simulating, debugging and monitoring smart contracts. Its Node RPC docs list Arc (chain 5042) with a gateway endpoint at arc.gateway.tenderly.co, and it was named an Arc infrastructure partner on 2025-10-28.",
@@ -10213,7 +10236,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/tenderly/"
     },
     {
@@ -10230,6 +10254,11 @@
           "title": "thirdweb chain page: Arc (chain 5042, Mainnets)",
           "date": "2026-10-20",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://github.com/thirdweb-dev/js/commit/e3f4e490312c79f952877c3f08f235af66b14187",
+          "title": "thirdweb dashboard: Arc Mainnet added to the dedicated-relayer chain list",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Web3 developer platform for wallets, payments, bridging and tokens. It publishes a chain page for Arc (chain ID 5042) with a public RPC at 5042.rpc.thirdweb.com and links to the Arc explorer.",
@@ -10249,7 +10278,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/thirdweb/"
     },
     {
@@ -10304,6 +10334,11 @@
           "title": "Tolly website: launchpad and DEX live on Arc mainnet",
           "date": "2026-10-20",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://x.com/TollyLabs/status/2100173333983645903",
+          "title": "Tolly Labs on X: Arc mainnet is live, Tolly is live with it",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Token launchpad and DEX. A token launches in one transaction, its supply becomes locked liquidity, and every trade pays a 1% fee split between the creator, holder rewards, the protocol and token burns.",
@@ -10328,7 +10363,7 @@
           "date": "2026-10-25"
         }
       ],
-      "last_reviewed": "2026-10-25",
+      "last_reviewed": "2026-10-28",
       "contracts": [
         {
           "address": "0x04b8a7aeafce846acd3838ad5961787810339db1",
@@ -10401,6 +10436,7 @@
           "owner() reverts on Deployer, UniversalForge, RouterForge and LiquidityForge. Apart from the TOLLY token, none of these contracts has verified source on Sourcify."
         ]
       },
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/tolly/"
     },
     {
@@ -10632,6 +10668,11 @@
           "title": "Turnkey docs: Arc support (Arc Mainnet 5042)",
           "date": "2026-10-20",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://x.com/turnkeyhq/status/2100217010512613804",
+          "title": "Turnkey on X: Day 1 support for Arc",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Wallet and key-management infrastructure with enclave-based key storage and transaction policies. Its docs list Arc Mainnet (5042) and Arc Testnet (5042002) as supported networks.",
@@ -10652,7 +10693,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/turnkey/"
     },
     {
@@ -10665,6 +10707,11 @@
           "url": "https://ubi.fun/",
           "title": "UBI.fun website (memecoin launchpad on Arc)",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/UBIdotFUN/status/2100197584640061801",
+          "title": "UBI.fun on X: launches on Arc, fair launch or straight to Uniswap v4",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Memecoin launchpad on Arc. Its site says coins launch in one click and that a share of trading fees is paid to holders in USDC daily.",
@@ -10679,7 +10726,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/ubi-fun/"
     },
     {
@@ -10772,6 +10820,11 @@
           "url": "https://docs.unitflow.finance/",
           "title": "UnitFlow docs: exchange on Arc Mainnet, chain ID 5042",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/UnitFlowFinance/status/2100206834887934076",
+          "title": "UnitFlow Finance on X: now live on Arc mainnet",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Self-custodial exchange on Arc with V3 liquidity, farms, points, a Genesis Pass NFT and no-code token creation, according to its docs.",
@@ -10794,7 +10847,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/unitflow-finance/"
     },
     {
@@ -11427,6 +11481,11 @@
           "url": "https://explorer.arc.io/address/0xd703aae79538628d27099b8c4f621be4ccd142d5",
           "title": "Arc explorer, Kernel v3.0 Meta Factory",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://x.com/ZeroDev/status/2100210222782390280",
+          "title": "ZeroDev on X: live on Arc on Day 1",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Smart account infrastructure covering account abstraction, gas sponsorship, session keys and embedded wallets. Its docs list Arc Mainnet (5042) among supported networks, and its Kernel contracts are deployed on Arc.",
@@ -11479,7 +11538,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/zerodev/"
     },
     {

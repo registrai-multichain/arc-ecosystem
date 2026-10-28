@@ -225,23 +225,23 @@ state-street,State Street,banks,announced,https://www.statestreet.com/,,2026-10-
 steakhouse-financial,Steakhouse Financial,lending,live,https://www.steakhouse.financial/,2026-09-22,2026-10-23,https://builder.registrai.cc/ecosystem/steakhouse-financial/
 sumitomo-corporation,Sumitomo Corporation,validators,announced,https://www.sumitomocorp.com/en/jp,,2026-10-20,https://builder.registrai.cc/ecosystem/sumitomo-corporation/
 superform,Superform,lending,announced,https://www.superform.xyz/,,2026-10-20,https://builder.registrai.cc/ecosystem/superform/
-sushiswap,SushiSwap,dexs,live,https://sushi.com/,,2026-10-20,https://builder.registrai.cc/ecosystem/sushiswap/
+sushiswap,SushiSwap,dexs,live,https://sushi.com/,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/sushiswap/
 symbiosis,Symbiosis,bridges,live,https://symbiosis.finance/,,2026-10-20,https://builder.registrai.cc/ecosystem/symbiosis/
-synthra,Synthra,dexs,live,https://app.synthra.org/,,2026-10-23,https://builder.registrai.cc/ecosystem/synthra/
+synthra,Synthra,dexs,live,https://app.synthra.org/,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/synthra/
 taurus,Taurus,custody,announced,https://www.taurushq.com/,,2026-10-20,https://builder.registrai.cc/ecosystem/taurus/
-team-finance,Team Finance,developer-tools,live,https://www.team.finance,,2026-10-20,https://builder.registrai.cc/ecosystem/team-finance/
-tenderly,Tenderly,infrastructure,live,https://tenderly.co,,2026-10-20,https://builder.registrai.cc/ecosystem/tenderly/
-thirdweb,Thirdweb,developer-tools,live,https://thirdweb.com,,2026-10-20,https://builder.registrai.cc/ecosystem/thirdweb/
+team-finance,Team Finance,developer-tools,live,https://www.team.finance,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/team-finance/
+tenderly,Tenderly,infrastructure,live,https://tenderly.co,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/tenderly/
+thirdweb,Thirdweb,developer-tools,live,https://thirdweb.com,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/thirdweb/
 thunes,Thunes,payments,announced,https://www.thunes.com,,2026-10-20,https://builder.registrai.cc/ecosystem/thunes/
-tolly,Tolly,launchpads,live,https://tollylabs.com/,,2026-10-25,https://builder.registrai.cc/ecosystem/tolly/
+tolly,Tolly,launchpads,live,https://tollylabs.com/,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/tolly/
 topaz-cl,Topaz DEX,dexs,live,https://www.topazdex.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/topaz-cl/
 transak,Transak,ramps,announced,https://transak.com,,2026-10-20,https://builder.registrai.cc/ecosystem/transak/
 trm,TRM,infrastructure,announced,https://www.trmlabs.com,,2026-10-20,https://builder.registrai.cc/ecosystem/trm/
 trust-wallet,Trust Wallet,wallets,live,https://trustwallet.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/trust-wallet/
-turnkey,Turnkey,wallets,live,https://www.turnkey.com,,2026-10-20,https://builder.registrai.cc/ecosystem/turnkey/
-ubi-fun,UBI.fun,launchpads,live,https://ubi.fun/,,2026-10-23,https://builder.registrai.cc/ecosystem/ubi-fun/
+turnkey,Turnkey,wallets,live,https://www.turnkey.com,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/turnkey/
+ubi-fun,UBI.fun,launchpads,live,https://ubi.fun/,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/ubi-fun/
 uniswap,Uniswap,dexs,live,https://app.uniswap.org/,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/uniswap/
-unitflow-finance,UnitFlow Finance,dexs,live,https://unitflow.finance/,,2026-10-23,https://builder.registrai.cc/ecosystem/unitflow-finance/
+unitflow-finance,UnitFlow Finance,dexs,live,https://unitflow.finance/,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/unitflow-finance/
 upbit,Upbit,exchanges,live,https://www.upbit.com,2026-09-16,2026-10-23,https://builder.registrai.cc/ecosystem/upbit/
 uqpay,UQPay,payments,live,https://www.uqpay.com,2026-09-16,2026-10-25,https://builder.registrai.cc/ecosystem/uqpay/
 vfat-io,vfat.io,asset-managers,deployed,https://vfat.io/yield,,2026-10-20,https://builder.registrai.cc/ecosystem/vfat-io/
@@ -257,6 +257,6 @@ wonk-fun,Wonk Fun,launchpads,deployed,,,2026-10-20,https://builder.registrai.cc/
 wormhole,Wormhole,bridges,announced,https://wormhole.com,,2026-10-20,https://builder.registrai.cc/ecosystem/wormhole/
 xstocks,xStocks,rwa,announced,https://xstocks.fi,,2026-10-20,https://builder.registrai.cc/ecosystem/xstocks/
 yellow-card,Yellow Card,payments,announced,https://yellowcard.io,,2026-10-20,https://builder.registrai.cc/ecosystem/yellow-card/
-zerodev,ZeroDev,developer-tools,live,https://zerodev.app,,2026-10-20,https://builder.registrai.cc/ecosystem/zerodev/
+zerodev,ZeroDev,developer-tools,live,https://zerodev.app,2026-09-16,2026-10-28,https://builder.registrai.cc/ecosystem/zerodev/
 zodia-custody,Zodia Custody,custody,announced,https://www.zodia-custody.com,,2026-10-20,https://builder.registrai.cc/ecosystem/zodia-custody/
 zodia-markets,Zodia Markets,market-makers,announced,https://zodiamarkets.com,,2026-10-20,https://builder.registrai.cc/ecosystem/zodia-markets/
