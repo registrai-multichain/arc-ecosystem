@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { toCsv, validateEcosystem, validateArcNumbers, validateApps, ecosystemCsvRows, appsCsvRows, arcDailyCsvRows, renderReadme, ECOSYSTEM_HEADER, ARC_DAILY_HEADER } from "./lib.mjs";
+import { toCsv, validateEcosystem, validateArcNumbers, validateApps, ecosystemCsvRows, appsCsvRows, arcDailyCsvRows, renderReadme, renderHfCard, summarize, ECOSYSTEM_HEADER, ARC_DAILY_HEADER } from "./lib.mjs";
 
 test("toCsv: RFC 4180 quoting, nulls empty, formula guard on text only", () => {
   const csv = toCsv(["a", "b", "c"], [["x,y", 'say "hi"', "line1\nline2"], [null, undefined, 5], ["=HYPERLINK(1)", "-3", "@x"], ["+1", -2, "plain"]]);
@@ -64,4 +64,25 @@ test("workflow, license and citation are in place; no secrets in the workflow", 
   assert.match(wf, /node-version: "24"/);
   assert.match(wf, /actions\/checkout@v5/);
   assert.match(readFileSync(new URL("../CITATION.cff", import.meta.url), "utf8"), /cff-version: 1\.2\.0[\s\S]*license: CC-BY-4\.0/);
+});
+
+test("summarize: status counts; categories count tags, most first", () => {
+  const s = summarize([{ status: "live", category: "dexs", tags: ["launchpads"] }, { status: "announced", category: "dexs" }, { status: "live", category: "wallets", tags: ["wallets"] }]);
+  assert.deepEqual([s.count, s.live, s.deployed, s.announced], [3, 2, 0, 1]);
+  assert.deepEqual(s.categories.map((c) => [c.id, c.count]), [["dexs", 2], ["launchpads", 1], ["wallets", 1]]);
+  assert.equal(s.categories[0].label, "DEXs on Arc");
+});
+
+test("Hugging Face card: metadata the Hub reads, then the README with the GitHub repo as the source", () => {
+  const md = renderHfCard({ count: 258, live: 83, deployed: 20, announced: 155, updated: "2026-10-29", categories: [{ id: "dexs", label: "DEXs on Arc", count: 25 }] });
+  const [, meta, body] = md.split(/^---$/m);
+  assert.match(meta, /^license: cc-by-4\.0$/m);
+  assert.match(meta, /config_name: projects\n  data_files: data\/ecosystem\.csv\n  default: true/);
+  for (const f of ["data/arc-daily.csv", "data/apps-7d.csv"]) assert.ok(meta.includes(`data_files: ${f}`), f);
+  assert.match(body, /^# Arc ecosystem data/m);
+  assert.ok(body.includes("https://builder.registrai.cc/ecosystem/dexs/"));
+  assert.match(body, /Copied here daily from https:\/\/github\.com\/registrai-multichain\/arc-ecosystem/);
+  assert.ok(!body.includes("scripts/LICENSE"));
+  // the GitHub README is unchanged
+  assert.ok(renderReadme({ count: 1, live: 1, deployed: 0, announced: 0, updated: "x", categories: [] }).includes("Scripts: MIT (scripts/LICENSE)."));
 });

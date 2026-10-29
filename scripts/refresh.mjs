@@ -2,7 +2,7 @@
 import { mkdirSync, rmSync, writeFileSync, renameSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { APPS_HEADER, ARC_DAILY_HEADER, CATEGORY_LABELS, ECOSYSTEM_HEADER, appsCsvRows, arcDailyCsvRows, ecosystemCsvRows, renderReadme, toCsv, validateApps, validateArcNumbers, validateEcosystem } from "./lib.mjs";
+import { APPS_HEADER, ARC_DAILY_HEADER, ECOSYSTEM_HEADER, appsCsvRows, arcDailyCsvRows, ecosystemCsvRows, renderReadme, summarize, toCsv, validateApps, validateArcNumbers, validateEcosystem } from "./lib.mjs";
 
 const API = "https://builder.registrai.cc/api/v1";
 const UA = "registrai-arc-ecosystem-data";
@@ -68,14 +68,7 @@ export async function refresh({ root, fetcher = fetch, today = new Date().toISOS
   else log("apps-week: 503, keeping yesterday's apps-7d files");
   for (const [f, body] of Object.entries(files)) writeFileSync(join(tmp, f), body);
 
-  const counts = { live: 0, deployed: 0, announced: 0 }; const byCat = new Map();
-  for (const e of entities) {
-    counts[e.status] = (counts[e.status] ?? 0) + 1;
-    // primary category plus tags, as the site's category pages count (review #1)
-    for (const c of new Set([e.category, ...(e.tags ?? [])].filter(Boolean))) byCat.set(c, (byCat.get(c) ?? 0) + 1);
-  }
-  const categories = [...byCat].map(([id, count]) => ({ id, label: CATEGORY_LABELS[id] ?? id, count })).sort((a, b) => b.count - a.count || (a.label < b.label ? -1 : 1));
-  writeFileSync(join(tmp, "README.md"), renderReadme({ count: entities.length, ...counts, categories, updated: today }));
+  writeFileSync(join(tmp, "README.md"), renderReadme({ ...summarize(entities), updated: today }));
 
   mkdirSync(join(root, "data"), { recursive: true });
   for (const f of readdirSync(tmp)) renameSync(join(tmp, f), f === "README.md" ? join(root, f) : join(root, "data", f));

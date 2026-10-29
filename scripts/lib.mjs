@@ -41,7 +41,21 @@ export const arcDailyCsvRows = (days) => [...days].reverse().map((d) => [String(
   d.stablecoins?.usdc_supply ?? null, d.stablecoins?.eurc_supply ?? null, d.stablecoins?.all_stablecoins_usd ?? null, d.stablecoins?.tvl_usd ?? null,
   d.activity_24h?.usdc_moved_usd_est ?? null, d.activity_24h?.app_usd ?? null, d.activity_24h?.attributed_share_pct ?? null]);
 
-export function renderReadme({ count, live, deployed, announced, categories, updated }) {
+export const GITHUB = "https://github.com/registrai-multichain/arc-ecosystem";
+
+/** Status counts and category counts (primary category plus tags, as the site's category pages count). */
+export function summarize(entities) {
+  const counts = { live: 0, deployed: 0, announced: 0 }; const byCat = new Map();
+  for (const e of entities) {
+    counts[e.status] = (counts[e.status] ?? 0) + 1;
+    for (const c of new Set([e.category, ...(e.tags ?? [])].filter(Boolean))) byCat.set(c, (byCat.get(c) ?? 0) + 1);
+  }
+  const categories = [...byCat].map(([id, count]) => ({ id, label: CATEGORY_LABELS[id] ?? id, count })).sort((a, b) => b.count - a.count || (a.label < b.label ? -1 : 1));
+  return { count: entities.length, ...counts, categories };
+}
+
+/** `hf`: the Hugging Face copy, which carries data/ and LICENSE but not the scripts. */
+export function renderReadme({ count, live, deployed, announced, categories, updated, hf = false }) {
   const cats = categories.map((c) => `- [${c.label}](${SITE}/ecosystem/${c.id}/) (${c.count})`).join("\n");
   return `# Arc ecosystem data
 
@@ -90,7 +104,7 @@ Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved ${upda
 
 ## Schedule
 
-Refreshed daily at 00:30 UTC by a GitHub Action from the public API; each day is one commit.
+${hf ? `Copied here daily from ${GITHUB}, which is refreshed at 00:30 UTC by a GitHub Action from the public API.` : "Refreshed daily at 00:30 UTC by a GitHub Action from the public API; each day is one commit."}
 
 ## Corrections
 
@@ -98,6 +112,32 @@ Suggest one from any project page on ${SITE}/ecosystem/. Approved corrections ar
 
 ## License
 
-Data and this README: CC BY 4.0 (LICENSE). Scripts: MIT (scripts/LICENSE). Registrai is independent and not affiliated with Circle or Arc.
+${hf ? `Data and this card: CC BY 4.0 (LICENSE). The scripts are in ${GITHUB} (MIT).` : "Data and this README: CC BY 4.0 (LICENSE). Scripts: MIT (scripts/LICENSE)."} Registrai is independent and not affiliated with Circle or Arc.
 `;
 }
+
+/** Hugging Face dataset card: metadata block, then the README. The viewer reads the CSVs; the JSON files are downloads. */
+export const renderHfCard = (a) => `---
+license: cc-by-4.0
+pretty_name: Arc ecosystem data
+language:
+- en
+tags:
+- arc
+- blockchain
+- stablecoins
+- usdc
+- open-data
+size_categories:
+- n<1K
+configs:
+- config_name: projects
+  data_files: data/ecosystem.csv
+  default: true
+- config_name: arc_daily
+  data_files: data/arc-daily.csv
+- config_name: apps_7d
+  data_files: data/apps-7d.csv
+---
+
+${renderReadme({ ...a, hf: true })}`;
