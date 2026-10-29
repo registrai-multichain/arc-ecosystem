@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "count": 261,
   "entities": [
     {
@@ -1088,6 +1088,11 @@
         {
           "url": "https://github.com/ArcToolsRepo/arctools/blob/main/README.md",
           "title": "ArcTools README (deployed contracts on chain 5042)"
+        },
+        {
+          "url": "https://github.com/ArcToolsRepo/arctools/commit/e6b0f1585bfb71d7513e24ee73e91b31e721d2de",
+          "title": "ArcTools first commit: README lists its Arc mainnet contracts and the live site (in use before the public launch)",
+          "date": "2026-09-10"
         }
       ],
       "summary": "Trading terminal for Arc that routes swaps across launchpads and DEX liquidity, settling in USDC. Its README also lists a launchpad, token locker, pay links, perpetuals and Telegram bots.",
@@ -1160,7 +1165,7 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
       "facts_source": "domain:arctools.fun",
       "url": "https://builder.registrai.cc/ecosystem/arctools/"
     },
@@ -1570,6 +1575,16 @@
           "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
           "title": "Arc mainnet launch announcement",
           "date": "2026-09-16"
+        },
+        {
+          "url": "https://docs.bankr.bot/docs/cli-changelog.md",
+          "title": "Bankr CLI changelog 0.3.35: --chain arc",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc Mainnet Is Live (arc.io blog): listed under \"Live and liquid markets from launch\"",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Platform for AI agents with built-in wallets, trading and token launches. Its docs list Arc as a supported chain with USDC as gas, including token launches on Arc.",
@@ -1595,7 +1610,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/bankr/"
     },
     {
@@ -2723,6 +2739,11 @@
         {
           "url": "https://github.com/SocketDotTech/openrouter/blob/main/deployments.csv",
           "title": "Socket deployments file with chainId 5042 row"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc Mainnet Is Live (arc.io blog): listed under \"Live and liquid markets from launch\"",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Cross-chain swap and routing product from Socket. Socket's deployments file lists OpenRouter, BungeeReceiver and CalldataExecutor contracts on Arc (chain 5042).",
@@ -2771,7 +2792,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/bungee/"
     },
     {
@@ -3065,6 +3087,11 @@
         {
           "url": "https://explorer.arc.io/address/0xb79791184973589c38e114d43eb8e4588c283a18",
           "title": "CCIP Router on Arc explorer"
+        },
+        {
+          "url": "https://dev.chain.link/changelog/data-feeds-expands-to-arc-mainnet",
+          "title": "Chainlink changelog: Data Feeds available on Arc Mainnet (before the public launch)",
+          "date": "2026-09-09"
         }
       ],
       "summary": "Decentralized oracle and cross-chain messaging network. Its CCIP directory lists Arc Network Mainnet with a router, token pool factory, RMN proxy and 4 supported tokens.",
@@ -3125,7 +3152,7 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
       "url": "https://builder.registrai.cc/ecosystem/chainlink/"
     },
     {
@@ -3960,6 +3987,16 @@
           "url": "https://docs.dfns.co/networks",
           "title": "Project documentation lists Arc mainnet",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc Mainnet Is Live (arc.io blog): listed under \"Live and liquid markets from launch\"",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://docs.dfns.co/changelog/platform",
+          "title": "DFNS platform changelog v2.0.80, week of 14 Sep 2026: supports Arc",
+          "date": "2026-09-14"
         }
       ],
       "summary": "Wallet-as-a-service and key management platform for banks, fintechs and businesses. Listed as an Arc ecosystem partner; its documentation lists Arc in the Mainnet column of supported networks.",
@@ -3984,7 +4021,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/dfns/"
     },
     {
@@ -6157,7 +6195,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/juno/"
     },
     {
@@ -6833,7 +6872,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/layerzero/"
     },
     {
@@ -8537,6 +8577,11 @@
           "url": "https://cryptobriefing.com/peach-usdc-bridging-arc-liquidity/",
           "title": "Crypto Briefing: Peach adds native USDC bridging for Arc",
           "date": "2026-10-13"
+        },
+        {
+          "url": "https://x.com/peachlfg/status/2100175559406063968",
+          "title": "Peach on X: officially live on Arc mainnet",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Swap aggregator and token launchpad on Arc, with Trade (0.5% fee shown), Terminal, Launchpad and Bridge sections. The Bridge, added 8 Oct 2026, moves native USDC to Arc with Circle's CCTP and the Arc App Kit. Its contracts were deployed on Arc mainnet on 7 Sep 2026.",
@@ -8551,7 +8596,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-25",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/peach/"
     },
     {
@@ -8746,6 +8792,11 @@
           "url": "https://docs.pimlico.io/guides/supported-chains",
           "title": "Pimlico supported chains: Arc Mainnet",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://github.com/pimlicolabs/docs/commit/3ac49698c1e280404a7ddf287b4417cbffc116f8",
+          "title": "Pimlico docs: Arc Mainnet added to supported chains",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Account abstraction infrastructure providing ERC-4337 bundler and paymaster services. Its docs list Arc Mainnet (chain ID 5042) with EntryPoint v0.6 to v0.9 and EIP-7702 support.",
@@ -8766,7 +8817,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/pimlico/"
     },
     {
@@ -8849,6 +8901,11 @@
           "title": "Arc blog: How Pulsar is building a cross-border money experience with Arc",
           "date": "2026-10-06",
           "type": "arc-official-live"
+        },
+        {
+          "url": "https://pulsar.money/en/blog/pulsar-goes-live",
+          "title": "Pulsar blog: Pulsar goes live on Arc mainnet",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Non-custodial consumer money app covering dollar, euro and pound balances, bank and stablecoin transfers, swaps and card spending. Announced on Arc 2026-09-16; Arc's blog of 2026-10-06 says it is live on mainnet, onboarding from a waitlist.",
@@ -8873,7 +8930,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-25",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/pulsar/"
     },
     {
@@ -8927,6 +8985,11 @@
           "url": "https://www.quicknode.com/docs/arc",
           "title": "Quicknode docs: Arc",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://www.quicknode.com/blog/quicknode-supports-arc-mainnet",
+          "title": "Quicknode blog: Arc RPC access available from day one",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Blockchain infrastructure provider. Its docs list managed Arc mainnet endpoints (chain ID 5042, HTTP and WSS, archive data), and Arc's docs list a Quicknode mainnet RPC.",
@@ -8952,7 +9015,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/quicknode/"
     },
     {
@@ -9148,6 +9212,11 @@
         {
           "url": "https://rango.exchange/integrations",
           "title": "Rango integrations list Arc"
+        },
+        {
+          "url": "https://x.com/RangoExchange/status/2100247059324600803",
+          "title": "Rango on X: Arc is live on Rango",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Cross-chain DEX and bridge aggregator. Rango's integrations page lists Arc, and its RangoDiamond contract is deployed on Arc.",
@@ -9177,7 +9246,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/rango/"
     },
     {
@@ -9223,6 +9293,11 @@
         {
           "url": "https://api.relay.link/chains",
           "title": "Relay chains API lists Arc (5042)"
+        },
+        {
+          "url": "https://x.com/RelayProtocol/status/2100172610327945309",
+          "title": "Relay on X: Relay is live on Arc",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Cross-chain payments and bridging protocol. Its chains API lists Arc (chain ID 5042) with deposits enabled, plus an ERC-20 router and approval proxy.",
@@ -9256,7 +9331,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/relay/"
     },
     {
@@ -9601,6 +9677,11 @@
           "url": "https://solonpad.fun/docs/changelog",
           "title": "SolonPad changelog: V3 live on Arc mainnet",
           "date": "2026-10-03"
+        },
+        {
+          "url": "https://x.com/Solonlabs1/status/2100205327388123563",
+          "title": "Solon on X: SOLON live, one-click launches on solonpad.fun",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Token launchpad on Arc where a share of each coin's trading fee is paid to holders in stock tokens backed 1:1 on Robinhood Chain. Also runs SolonLend, a USDC vault and NVDA.sol-collateral market on Arc's Morpho deployment.",
@@ -9667,7 +9748,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/solonpad/"
     },
     {
@@ -10056,6 +10138,11 @@
           "title": "Symbiosis API: supported chains include Arc (chain id 5042)",
           "date": "2026-10-20",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://x.com/symbiosis_fi/status/2100303192378442196",
+          "title": "Symbiosis on X: Arc mainnet support live",
+          "date": "2026-09-16"
         }
       ],
       "summary": "Cross-chain swap and liquidity protocol connecting EVM and non-EVM networks. Its API lists Arc (chain id 5042) among supported chains, and DefiLlama shows Symbiosis liquidity on Arc.",
@@ -10080,7 +10167,8 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-28",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/symbiosis/"
     },
     {
