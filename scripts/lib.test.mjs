@@ -49,13 +49,16 @@ test("README: counts, date, every category link, page links, citation, no undefi
   assert.ok(!/undefined|NaN/.test(md));
 });
 
-test("workflow, license and citation are in place; no secrets in the workflow", () => {
+test("workflow, license and citation are in place; the refresh uses no secrets", () => {
   const wf = readFileSync(new URL("../.github/workflows/refresh.yml", import.meta.url), "utf8");
   assert.match(wf, /cron: "30 0 \* \* \*"/);
   assert.match(wf, /workflow_dispatch/);
   assert.match(wf, /contents: write/);
   assert.ok(wf.indexOf("node --test scripts/*.test.mjs") > 0 && wf.indexOf("node --test scripts/*.test.mjs") < wf.indexOf("node scripts/refresh.mjs"));   // Node 24 reads a bare directory as a module path
-  assert.ok(!/secrets\./.test(wf));
+  // the only secret is the Hugging Face token, and only the copy step after the commit gets its value
+  assert.deepEqual([...new Set(wf.match(/secrets\.\w+/g))], ["secrets.HF_TOKEN"]);
+  assert.equal(wf.split("HF_TOKEN: ${{ secrets.HF_TOKEN }}").length, 2);
+  assert.ok(wf.indexOf("HF_TOKEN: ${{ secrets.HF_TOKEN }}") > wf.indexOf("- name: Copy to Hugging Face") && wf.indexOf("- name: Copy to Hugging Face") > wf.indexOf("Commit if changed"));
   assert.match(readFileSync(new URL("../LICENSE", import.meta.url), "utf8"), /Attribution 4\.0 International Public License/);   // full CC BY legal code: GitHub detects it
   assert.match(readFileSync(new URL("../scripts/LICENSE", import.meta.url), "utf8"), /MIT License/);
   assert.match(wf, /concurrency:/);
