@@ -1,36 +1,36 @@
 {
   "version": 1,
   "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
-  "generated_at": "2026-10-29T08:26:56.648Z",
+  "generated_at": "2026-10-30T06:06:29.303Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 28447590,
-    "block_time_s": 0.507,
-    "as_of": "2026-10-29T08:26:56.648Z",
+    "block_height": 28601395,
+    "block_time_s": 0.5069,
+    "as_of": "2026-10-30T06:06:29.303Z",
     "rpc_url": "https://rpc.mainnet.arc.io",
     "explorer_url": "https://explorer.arc.io"
   },
   "stablecoins": {
-    "usdc_supply": 1105219605.762566,
-    "eurc_supply": 9149341.033646,
-    "as_of": "2026-10-29T08:26:56.648Z",
-    "all_stablecoins_usd": 1102783887.55,
-    "tvl_usd": 617801101,
-    "defillama_date": "2026-10-29",
+    "usdc_supply": 1073571274.474489,
+    "eurc_supply": 8489464.810339,
+    "as_of": "2026-10-30T06:06:29.303Z",
+    "all_stablecoins_usd": 1081091020.93,
+    "tvl_usd": 574030427,
+    "defillama_date": "2026-10-30",
     "tokens": [
       {
         "symbol": "USDC",
         "issuer": "Circle",
         "address": "0x3600000000000000000000000000000000000000",
-        "supply": 1105219605.762566
+        "supply": 1073571274.474489
       },
       {
         "symbol": "EURC",
         "issuer": "Circle",
         "address": "0xbef5f6d51cb62b58e6a8f77868681825c6fe21c1",
-        "supply": 9149341.033646
+        "supply": 8489464.810339
       },
       {
         "symbol": "AUDD",
@@ -42,7 +42,7 @@
         "symbol": "AUDF",
         "issuer": "Forte Securities Australia",
         "address": "0xd2a530170d71a9cfe1651fb468e2b98f7ed7456b",
-        "supply": 201000
+        "supply": 301000
       },
       {
         "symbol": "BRLA",
@@ -90,7 +90,7 @@
         "symbol": "MXNB",
         "issuer": "Bitso",
         "address": "0xf197ffc28c23e0309b5559e7a166f2c6164c80aa",
-        "supply": 1198457.466859
+        "supply": 1198977.257144
       },
       {
         "symbol": "QCAD",
@@ -119,22 +119,22 @@
     ]
   },
   "activity_24h": {
-    "data_until": "2026-10-29T08:00:00Z",
-    "usdc_moved_usd_est": 668333566.2,
-    "eurc_moved_usd_est": 114050111.1,
-    "usdc_transfers_est": 385200,
-    "app_payments": 82996,
-    "app_usd": 38271947.21,
-    "attributed_share_pct": 5.73,
-    "transactions_est": 538000,
+    "data_until": "2026-10-30T06:00:00Z",
+    "usdc_moved_usd_est": 715024598.7,
+    "eurc_moved_usd_est": 103121093.7,
+    "usdc_transfers_est": 384240,
+    "app_payments": 86538,
+    "app_usd": 46507131.11,
+    "attributed_share_pct": 6.5,
+    "transactions_est": 744000,
     "tx_sample": {
       "blocks": 240,
-      "from_block": 28277886,
-      "to_block": 28447590
+      "from_block": 28431657,
+      "to_block": 28601395
     },
     "active_accounts": {
-      "date": "2026-10-28",
-      "count": 19709
+      "date": "2026-10-29",
+      "count": 16488
     }
   },
   "ecosystem": {
@@ -180,11 +180,11 @@
       "aei": 42
     },
     "index_close": {
-      "abi": 929.328,
-      "aii": 929.144,
-      "aei": 953.158
+      "abi": 935.233,
+      "aii": 927.217,
+      "aei": 952.257
     },
-    "data_until": "2026-10-29T08:00:00Z"
+    "data_until": "2026-10-30T06:00:00Z"
   },
   "timeline": [
     {
@@ -206,8 +206,8 @@
   "errors": [],
   "attributed_share_7d": {
     "window_days": 7,
-    "until": "2026-10-29T00:00:00Z",
-    "pct": 5.42,
+    "until": "2026-10-30T00:00:00Z",
+    "pct": 5.44,
     "daily_min": 3.06,
     "daily_max": 9.12,
     "complete": true

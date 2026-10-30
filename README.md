@@ -1,6 +1,6 @@
 # Arc ecosystem data
 
-Open data on the Arc ecosystem from Registrai (registrai.cc): 261 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-10-29 UTC.
+Open data on the Arc ecosystem from Registrai (registrai.cc): 261 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-10-30 UTC.
 
 261 projects: 112 live on Arc mainnet, 20 deployed, 129 announced. Each has a page with its status, the evidence for it, its sources and a review date.
 
@@ -61,7 +61,7 @@ In `arc-daily.csv`, `snapshot_date` is the day of the 00:00 UTC snapshot: suppli
 
 ## Cite
 
-Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-29.
+Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-30.
 
 ## Schedule
 
