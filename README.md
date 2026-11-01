@@ -1,8 +1,8 @@
 # Arc ecosystem data
 
-Open data on the Arc ecosystem from Registrai (registrai.cc): 261 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-10-31 UTC.
+Open data on the Arc ecosystem from Registrai (registrai.cc): 291 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-11-01 UTC.
 
-261 projects: 112 live on Arc mainnet, 20 deployed, 129 announced. Each has a page with its status, the evidence for it, its sources and a review date.
+291 projects: 136 live on Arc mainnet, 21 deployed, 134 announced. Each has a page with its status, the evidence for it, its sources and a review date.
 
 ## Pages
 
@@ -21,24 +21,24 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 261 projects with 
 
 ### Categories
 
-- [Payment apps on Arc](https://builder.registrai.cc/ecosystem/payments/) (42)
-- [DEXs on Arc](https://builder.registrai.cc/ecosystem/dexs/) (25)
-- [Launchpads on Arc](https://builder.registrai.cc/ecosystem/launchpads/) (24)
-- [Wallets that support Arc](https://builder.registrai.cc/ecosystem/wallets/) (23)
-- [Infrastructure for Arc](https://builder.registrai.cc/ecosystem/infrastructure/) (20)
-- [Exchanges that support Arc](https://builder.registrai.cc/ecosystem/exchanges/) (19)
+- [Payment apps on Arc](https://builder.registrai.cc/ecosystem/payments/) (48)
+- [Infrastructure for Arc](https://builder.registrai.cc/ecosystem/infrastructure/) (28)
+- [DEXs on Arc](https://builder.registrai.cc/ecosystem/dexs/) (27)
+- [Launchpads on Arc](https://builder.registrai.cc/ecosystem/launchpads/) (27)
+- [Wallets that support Arc](https://builder.registrai.cc/ecosystem/wallets/) (27)
+- [Exchanges that support Arc](https://builder.registrai.cc/ecosystem/exchanges/) (20)
 - [Banks building on Arc](https://builder.registrai.cc/ecosystem/banks/) (18)
-- [Asset managers on Arc](https://builder.registrai.cc/ecosystem/asset-managers/) (14)
-- [Lending on Arc](https://builder.registrai.cc/ecosystem/lending/) (14)
-- [Bridges and cross-chain on Arc](https://builder.registrai.cc/ecosystem/bridges/) (12)
-- [Custody on Arc](https://builder.registrai.cc/ecosystem/custody/) (12)
-- [Trading on Arc](https://builder.registrai.cc/ecosystem/trading/) (12)
-- [Arc validators](https://builder.registrai.cc/ecosystem/validators/) (11)
-- [Tokenization and RWA on Arc](https://builder.registrai.cc/ecosystem/rwa/) (11)
-- [AI agents on Arc](https://builder.registrai.cc/ecosystem/ai-agents/) (10)
-- [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (10)
+- [Asset managers on Arc](https://builder.registrai.cc/ecosystem/asset-managers/) (15)
+- [Bridges and cross-chain on Arc](https://builder.registrai.cc/ecosystem/bridges/) (15)
+- [Lending on Arc](https://builder.registrai.cc/ecosystem/lending/) (15)
+- [AI agents on Arc](https://builder.registrai.cc/ecosystem/ai-agents/) (13)
+- [Custody on Arc](https://builder.registrai.cc/ecosystem/custody/) (13)
+- [Trading on Arc](https://builder.registrai.cc/ecosystem/trading/) (13)
+- [Arc validators](https://builder.registrai.cc/ecosystem/validators/) (12)
+- [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (12)
+- [Tokenization and RWA on Arc](https://builder.registrai.cc/ecosystem/rwa/) (12)
+- [Stablecoin issuers on Arc](https://builder.registrai.cc/ecosystem/stablecoin-issuers/) (11)
 - [Market makers on Arc](https://builder.registrai.cc/ecosystem/market-makers/) (10)
-- [Stablecoin issuers on Arc](https://builder.registrai.cc/ecosystem/stablecoin-issuers/) (8)
 - [games](https://builder.registrai.cc/ecosystem/games/) (6)
 - [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (4)
 - [On/off-ramps for Arc](https://builder.registrai.cc/ecosystem/ramps/) (3)
@@ -61,7 +61,7 @@ In `arc-daily.csv`, `snapshot_date` is the day of the 00:00 UTC snapshot: suppli
 
 ## Cite
 
-Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-10-31.
+Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-11-01.
 
 ## Schedule
 

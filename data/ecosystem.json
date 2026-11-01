@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-10-28",
-  "count": 261,
+  "updated": "2026-10-31",
+  "count": 291,
   "entities": [
     {
       "slug": "0x",
@@ -122,6 +122,73 @@
       ],
       "last_reviewed": "2026-10-23",
       "url": "https://builder.registrai.cc/ecosystem/1inch/"
+    },
+    {
+      "slug": "a-new-one",
+      "name": "A New One",
+      "aliases": [
+        "AnewOne",
+        "AnewOne.Fun",
+        "anewone.xyz"
+      ],
+      "category": "lending",
+      "tags": [
+        "rwa"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://anewone.xyz/docs.html",
+          "title": "A NEW ONE docs: Contracts",
+          "date": "2026-09-16",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://partners.circle.com/partner/a-new-one",
+          "title": "Circle Alliance Directory: A New One",
+          "date": "2026-10-14"
+        }
+      ],
+      "summary": "Non-custodial front end on Arc for Aave V4 and Morpho lending, CCTP V2 bridging and AnewOne.Fun, a USDC bonding-curve launchpad. Its docs list the platform contract on Arc mainnet (chain ID 5042), live since 2026-09-16.",
+      "website": "https://www.anewone.xyz",
+      "x": "anewone_xyz",
+      "github": "https://github.com/izzetcakmak/anewone",
+      "docs": "https://anewone.xyz/docs.html",
+      "first_live": "2026-09-16",
+      "contracts": [
+        {
+          "address": "0x3dda5ad5e74c658aff3d082afe404a71615b1bc5",
+          "role": "AnewOne.Fun platform (launchpad)",
+          "source": "https://anewone.xyz/docs.html"
+        },
+        {
+          "address": "0x26cc2b608df6be8ff63c64c9464b2756cc5dc128",
+          "role": "$NOAH token (first launched coin)",
+          "source": "https://anewone.xyz/docs.html"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://anewone.xyz",
+          "title": "A NEW ONE website"
+        },
+        {
+          "url": "https://anewone.xyz/docs.html",
+          "title": "A NEW ONE docs"
+        },
+        {
+          "url": "https://github.com/izzetcakmak/anewone",
+          "title": "anewone GitHub repository README",
+          "date": "2026-10-30"
+        },
+        {
+          "url": "https://partners.circle.com/partner/a-new-one",
+          "title": "Circle Alliance Directory: A New One",
+          "date": "2026-10-14"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/a-new-one/"
     },
     {
       "slug": "aave",
@@ -322,7 +389,9 @@
       "aliases": [
         "Aerodrome",
         "Aero Lite",
-        "Velodrome"
+        "Velodrome",
+        "Aero Slipstream",
+        "Aero Basic"
       ],
       "category": "dexs",
       "status": "live",
@@ -338,7 +407,7 @@
           "title": "Metadex Metarouter on Arc explorer"
         }
       ],
-      "summary": "Exchange from Dromos Labs. On 2026-09-16 it announced Aero Lite on Arc: a swap interface and Slipstream pools for core pairs, with a Metarouter and pool factories deployed on Arc.",
+      "summary": "Exchange from Dromos Labs with Slipstream concentrated-liquidity and basic pools on Arc. It launched Aero Lite on Arc on 2026-09-16; the full Aero launch on 2026-10-21 named Arc among seven networks.",
       "website": "https://aero.xyz",
       "x": "aeroxyz",
       "github": "https://github.com/Dromos-Labs",
@@ -347,18 +416,73 @@
       "contracts": [
         {
           "address": "0x7275fa44c67bba8d921422e600b4ed396209c886",
-          "role": "Metadex Metarouter",
-          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arc.json"
+          "role": "Metarouter (Aero Lite launch)",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arclitelaunch-arc.json"
         },
         {
           "address": "0x9bc8b3f60d349d687fb44a018967025e3741f9a5",
-          "role": "Metadex volatile pool factory",
-          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arc.json"
+          "role": "Volatile pool factory (Aero Lite launch)",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arclitelaunch-arc.json"
         },
         {
           "address": "0xaed253f1ad84d99f2165256d701b2b481dd4cc16",
-          "role": "Metadex stable pool factory",
-          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arc.json"
+          "role": "Stable pool factory (Aero Lite launch)",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arclitelaunch-arc.json"
+        },
+        {
+          "address": "0x0fef9e88a7b76bcdbf451780c6774fe32965ee98",
+          "role": "Metarouter",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/metarouter-arc.json"
+        },
+        {
+          "address": "0xce44907dc45d3bfa3f5f6035b0e6e8b22d780a42",
+          "role": "Factory registry",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arclitelaunch-arc.json"
+        },
+        {
+          "address": "0x8e6a9fcd1d638cc760ffba397605fe3355de76d2",
+          "role": "Volatile pool factory (current)",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/pools-arc.json"
+        },
+        {
+          "address": "0x78589e876edcebdce72ee3436ab3c9ad3a7cef2d",
+          "role": "Stable pool factory (current)",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/pools-arc.json"
+        },
+        {
+          "address": "0x382409fad8503fbcdbb27a4211551fa03e884078",
+          "role": "Leaf voter",
+          "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/leaf-arc.json"
+        },
+        {
+          "address": "0x7f83235643181e440433400a027618cd50879751",
+          "role": "Slipstream CL pool factory",
+          "source": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cl-arc.json"
+        },
+        {
+          "address": "0x9ee35bf1bd69a03c6f0393582030fce8bb93d418",
+          "role": "Slipstream swap router",
+          "source": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cl-arc.json"
+        },
+        {
+          "address": "0x4857db576ee0e45f10525ec59527bfd10beec60b",
+          "role": "Slipstream NFT position manager",
+          "source": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cl-arc.json"
+        },
+        {
+          "address": "0xb89df768af2cfe637ceb352c587fe8edaf491d03",
+          "role": "Slipstream CL pool factory (Aero Lite launch)",
+          "source": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cllitelaunch-arc.json"
+        },
+        {
+          "address": "0xb4702e1375f712da2e0d5f534c30c0c1513edb2b",
+          "role": "Slipstream swap router (Aero Lite launch)",
+          "source": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cllitelaunch-arc.json"
+        },
+        {
+          "address": "0xc84bb45d43cd25d02b83b4c085eaa4e08da8f473",
+          "role": "Slipstream NFT position manager (Aero Lite launch)",
+          "source": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cllitelaunch-arc.json"
         }
       ],
       "index_ids": [
@@ -376,18 +500,123 @@
           "date": "2026-10-20"
         },
         {
-          "url": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arc.json",
-          "title": "metadex-public Arc deployment addresses",
-          "date": "2026-10-20"
-        },
-        {
           "url": "https://www.arc.io/pressroom/circle-launches-arc-public-testnet",
           "title": "Circle launches Arc public testnet",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/metarouter-arc.json",
+          "title": "metadex-public: metarouter-arc.json"
+        },
+        {
+          "url": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/arclitelaunch-arc.json",
+          "title": "metadex-public: arclitelaunch-arc.json"
+        },
+        {
+          "url": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/pools-arc.json",
+          "title": "metadex-public: pools-arc.json"
+        },
+        {
+          "url": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/leaf-arc.json",
+          "title": "metadex-public: leaf-arc.json"
+        },
+        {
+          "url": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cl-arc.json",
+          "title": "metadex-slipstream-public: cl-arc.json"
+        },
+        {
+          "url": "https://github.com/dromos-labs/metadex-slipstream-public/blob/main/deployment-addresses/cllitelaunch-arc.json",
+          "title": "metadex-slipstream-public: cllitelaunch-arc.json"
+        },
+        {
+          "url": "https://etherscan.io/address/0x0fef9e88a7b76bcdbf451780c6774fe32965ee98",
+          "title": "Etherscan: Dromos: Metarouter (same address on Ethereum)"
+        },
+        {
+          "url": "https://theblock.co/news/defi/2026-10-21-aerodrome-velodrome-merge-aero-421514",
+          "title": "The Block: Aerodrome and Velodrome merge to launch Aero across seven networks",
+          "date": "2026-10-21"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/aero-slipstream",
+          "title": "DefiLlama: Aero Slipstream"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-31",
       "url": "https://builder.registrai.cc/ecosystem/aerodrome/"
+    },
+    {
+      "slug": "agant",
+      "name": "Agant",
+      "aliases": [
+        "Agant Finance",
+        "Agant Finance Limited",
+        "GBPA",
+        "Agant GBP"
+      ],
+      "category": "stablecoin-issuers",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://explorer.arc.io/address/0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b",
+          "title": "Agant GBP (GBPA) token contract on Arc explorer"
+        },
+        {
+          "url": "https://stablecoins.llama.fi/stablecoin/399",
+          "title": "DefiLlama stablecoins API: Agant GBP (GBPA), Arc chain config"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        }
+      ],
+      "summary": "UK issuer of GBPA, a pound sterling stablecoin, which is deployed on Arc. The GBPA contract on Arc mainnet had a supply of 575,218 GBPA on 2026-10-31, and Arc's 2026-09-16 mainnet post lists GBPA.",
+      "website": "https://www.agant.io",
+      "x": "AgantFinance",
+      "docs": "https://docs.agant.io",
+      "contracts": [
+        {
+          "address": "0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b",
+          "role": "GBPA token (TransparentUpgradeableProxy)",
+          "source": "https://stablecoins.llama.fi/stablecoin/399"
+        },
+        {
+          "address": "0x302a8a24e79c4f987cb7dd4993a8c998079784b1",
+          "role": "GBPA token implementation (verified as GBPA)",
+          "source": "https://explorer.arc.io/address/0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://stablecoins.llama.fi/stablecoin/399",
+          "title": "DefiLlama stablecoins API: Agant GBP"
+        },
+        {
+          "url": "https://defillama.com/stablecoin/agant-gbp",
+          "title": "DefiLlama: Agant GBP (GBPA)"
+        },
+        {
+          "url": "https://explorer.arc.io/address/0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b",
+          "title": "Arc explorer: GBPA token"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://app.rwa.xyz/assets/GBPA",
+          "title": "RWA.xyz: GBPA"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/agant/"
     },
     {
       "slug": "alchemy",
@@ -431,6 +660,96 @@
       "last_reviewed": "2026-10-23",
       "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/alchemy/"
+    },
+    {
+      "slug": "alcove",
+      "name": "Alcove",
+      "category": "wallets",
+      "status": "announced",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/ecosystem/alcove",
+          "title": "Arc ecosystem partner page"
+        }
+      ],
+      "summary": "Mobile wallet by Aleo Labs for sending private dollars on Aleo, backed 1:1 by USDCx. Listed as an Arc ecosystem partner; its own site does not mention Arc.",
+      "website": "https://alcovewallet.com/",
+      "x": "alcove_wallet",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/alcove",
+          "title": "Arc ecosystem directory: Alcove",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://alcovewallet.com/",
+          "title": "Alcove website"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/alcove/"
+    },
+    {
+      "slug": "aleo",
+      "name": "Aleo",
+      "aliases": [
+        "Aleo (via xReserve)",
+        "USDCx on Aleo"
+      ],
+      "category": "bridges",
+      "tags": [
+        "stablecoin-issuers"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://developers.circle.com/release-notes/xreserve-2026",
+          "title": "Circle xReserve release notes 2026: Arc mainnet added as source chain",
+          "date": "2026-09-16",
+          "type": "arc-official-live"
+        },
+        {
+          "url": "https://developers.circle.com/xreserve/references/supported-blockchains-and-domains",
+          "title": "xReserve supported blockchains (Arc mainnet source, Aleo mainnet remote)"
+        }
+      ],
+      "summary": "Privacy layer-1 where USDCx is minted against USDC deposited in Circle xReserve, including the xReserve contract on Arc. Circle's xReserve docs list Arc mainnet as a source chain since 2026-09-16 and Aleo as a mainnet remote chain.",
+      "website": "https://aleo.org/",
+      "x": "AleoHQ",
+      "docs": "https://developer.aleo.org/",
+      "first_live": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/aleo-via-xreserve",
+          "title": "Arc ecosystem directory: Aleo (via xReserve)",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://developers.circle.com/release-notes/xreserve-2026",
+          "title": "Circle xReserve release notes 2026",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://developers.circle.com/xreserve/references/supported-blockchains-and-domains",
+          "title": "xReserve supported blockchains and domains"
+        },
+        {
+          "url": "https://aleo.org/usdcx",
+          "title": "Aleo and Circle launch USDCx"
+        },
+        {
+          "url": "https://www.circle.com/blog/usdcx-on-aleo-testnet-via-circle-xreserve",
+          "title": "Circle blog: USDCx on Aleo testnet via Circle xReserve",
+          "date": "2025-12-09"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC (eth_getCode on xReserve 0x8888888199b2df864bf678259607d6d5ebb4e3ce)",
+          "date": "2026-10-31"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/aleo/"
     },
     {
       "slug": "alethieum",
@@ -506,6 +825,95 @@
       ],
       "last_reviewed": "2026-10-20",
       "url": "https://builder.registrai.cc/ecosystem/alfred-pay/"
+    },
+    {
+      "slug": "allium",
+      "name": "Allium",
+      "category": "infrastructure",
+      "tags": [
+        "developer-tools"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://docs.allium.so/changelog/overview",
+          "title": "Allium changelog: Arc supported on balances and transactions APIs",
+          "date": "2026-09-07",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://docs.allium.so/historical-data/supported-blockchains/evm/arc",
+          "title": "Allium data catalog: Arc"
+        }
+      ],
+      "summary": "Onchain data platform; its data catalog and APIs index Arc (raw, decoded, DEX, lending, stablecoin and RWA tables). Its changelog says Arc balances and transactions are queryable from Arc mainnet launch day.",
+      "website": "https://www.allium.so/",
+      "x": "alliumlabs",
+      "docs": "https://docs.allium.so/",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/allium",
+          "title": "Arc ecosystem directory: Allium",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://docs.allium.so/changelog/overview",
+          "title": "Allium changelog (week of 2026-09-07)",
+          "date": "2026-09-07"
+        },
+        {
+          "url": "https://docs.allium.so/historical-data/supported-blockchains/evm/arc",
+          "title": "Allium data catalog: Arc"
+        },
+        {
+          "url": "https://www.allium.so/",
+          "title": "Allium website"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/allium/"
+    },
+    {
+      "slug": "allnodes",
+      "name": "Allnodes",
+      "aliases": [
+        "PublicNode"
+      ],
+      "category": "infrastructure",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://arc.publicnode.com/",
+          "title": "PublicNode (Allnodes): RPC Gateway to Arc, Mainnet endpoint",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://arc-rpc.publicnode.com",
+          "title": "PublicNode Arc RPC: eth_chainId returns 0x13b2 (5042)",
+          "date": "2026-10-31"
+        }
+      ],
+      "summary": "Node hosting and staking provider; its PublicNode service runs a free public Arc RPC endpoint (arc-rpc.publicnode.com). The PublicNode Arc page lists it under Mainnet and the endpoint returns chain ID 5042.",
+      "website": "https://www.allnodes.com/",
+      "docs": "https://arc.publicnode.com/",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/allnodes",
+          "title": "Arc ecosystem directory: Allnodes",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://arc.publicnode.com/",
+          "title": "PublicNode: RPC Gateway to Arc"
+        },
+        {
+          "url": "https://arc-rpc.publicnode.com",
+          "title": "PublicNode Arc RPC (eth_chainId, eth_blockNumber checked)",
+          "date": "2026-10-31"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/allnodes/"
     },
     {
       "slug": "allunity",
@@ -808,6 +1216,70 @@
       ],
       "last_reviewed": "2026-10-26",
       "url": "https://builder.registrai.cc/ecosystem/arcland/"
+    },
+    {
+      "slug": "arclens",
+      "name": "ArcLens",
+      "aliases": [
+        "Arc Lens",
+        "arclenz",
+        "Lens AI"
+      ],
+      "category": "infrastructure",
+      "tags": [
+        "ai-agents"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://github.com/arclens-app/arclens",
+          "title": "ArcLens GitHub README: Arc mainnet",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://partners.circle.com/partner/arclens",
+          "title": "Circle Alliance Directory: ArcLens",
+          "date": "2026-09-29"
+        }
+      ],
+      "summary": "Arc ecosystem directory and data platform with project listings, campaigns, an explorer and a pay-per-call AI agent API over x402. Its README lists the ArcLensRegistry contract on Arc mainnet (chain ID 5042).",
+      "website": "https://arclenz.xyz",
+      "x": "arclens_app",
+      "github": "https://github.com/arclens-app/arclens",
+      "docs": "https://docs.arclenz.xyz",
+      "contracts": [
+        {
+          "address": "0x458025a5d469d46243680edbf35c98fa44a1ba2f",
+          "role": "ArcLensRegistry (project verification records)",
+          "source": "https://github.com/arclens-app/arclens"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://arclenz.xyz",
+          "title": "ArcLens website"
+        },
+        {
+          "url": "https://docs.arclenz.xyz",
+          "title": "ArcLens docs"
+        },
+        {
+          "url": "https://github.com/arclens-app/arclens/blob/main/docs/pages/agent-api.mdx",
+          "title": "ArcLens docs: Agent API"
+        },
+        {
+          "url": "https://github.com/arclens-app/arclens",
+          "title": "ArcLens GitHub README",
+          "date": "2026-10-29"
+        },
+        {
+          "url": "https://partners.circle.com/partner/arclens",
+          "title": "Circle Alliance Directory: ArcLens",
+          "date": "2026-09-29"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/arclens/"
     },
     {
       "slug": "arclight",
@@ -1235,6 +1707,89 @@
         "domain:argus.world"
       ],
       "url": "https://builder.registrai.cc/ecosystem/argus/"
+    },
+    {
+      "slug": "ark-launch",
+      "name": "ARK Launch",
+      "category": "launchpads",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://github.com/yinyuan659-dev/ark",
+          "title": "ARK Launch contracts README: Arc mainnet deployments",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/ark-launch",
+          "title": "DefiLlama: ARK Launch (Arc)"
+        }
+      ],
+      "summary": "Token launchpad on Arc that launches fixed-supply tokens into Uniswap V3 USDC pools with the LP position locked. Its repo lists Arc mainnet contracts deployed on 2026-09-16.",
+      "website": "https://ark-ai.xyz",
+      "x": "ARKwbe4",
+      "github": "https://github.com/yinyuan659-dev/ark",
+      "contracts": [
+        {
+          "address": "0x9b9a136d04e8e19a934de062f0fbb929b3c7aedb",
+          "role": "LaunchFactory (gen2)",
+          "source": "https://github.com/yinyuan659-dev/ark"
+        },
+        {
+          "address": "0x4982e02ef7a31a7a0cdd3a9935f3c856effa5190",
+          "role": "FeeLocker (gen2)",
+          "source": "https://github.com/yinyuan659-dev/ark"
+        },
+        {
+          "address": "0xd217db3226a31fa9035bf98531f282df95a79730",
+          "role": "Treasury",
+          "source": "https://github.com/yinyuan659-dev/ark"
+        },
+        {
+          "address": "0x3d0b83e115205edf37e48a8eb6d92e2c7492a00c",
+          "role": "LaunchFactory (gen1)",
+          "source": "https://github.com/yinyuan659-dev/ark/blob/main/deployments/arc-mainnet.json"
+        },
+        {
+          "address": "0x4f260e5e9b475c36ee296e23b1818692408d9f4b",
+          "role": "FeeLocker (gen1)",
+          "source": "https://github.com/yinyuan659-dev/ark/blob/main/deployments/arc-mainnet.json"
+        },
+        {
+          "address": "0x35e3c5ec589f37f93da4fa8ec5610c84519e0229",
+          "role": "UniswapV3Factory (gen1, own deployment)",
+          "source": "https://github.com/yinyuan659-dev/ark/blob/main/deployments/arc-mainnet.json"
+        },
+        {
+          "address": "0xf14ccc0f35aca278b57722c2baf48acc0221c432",
+          "role": "NonfungiblePositionManager (gen1, own deployment)",
+          "source": "https://github.com/yinyuan659-dev/ark/blob/main/deployments/arc-mainnet.json"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/yinyuan659-dev/ark",
+          "title": "ARK Launch contracts repository (README)"
+        },
+        {
+          "url": "https://github.com/yinyuan659-dev/ark/blob/main/deployments/arc-mainnet.json",
+          "title": "ARK Launch Arc mainnet deployment record"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/ark-launch",
+          "title": "DefiLlama: ARK Launch"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/pull/21106",
+          "title": "DefiLlama-Adapters PR #21106: Add ARK Launch (Arc)",
+          "date": "2026-09-17"
+        },
+        {
+          "url": "https://ark-ai.xyz",
+          "title": "ARK Launch app"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/ark-launch/"
     },
     {
       "slug": "arrays",
@@ -1710,15 +2265,25 @@
       "tags": [
         "custody"
       ],
-      "status": "announced",
+      "status": "live",
       "status_evidence": [
         {
           "url": "https://www.arc.io/pressroom/circle-launches-arc-public-testnet",
           "title": "Circle: Arc public testnet launch (2025-10-28)",
           "date": "2025-10-28"
+        },
+        {
+          "url": "https://en.newsroom.bdacs.co.kr/260917-krw1-circle-arc/",
+          "title": "BDACS: KRW1 is Live on Arc",
+          "date": "2026-09-16",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://krw1.kr/",
+          "title": "KRW1 site: Live chains (Ethereum, Avalanche, Arc mainnet)"
         }
       ],
-      "summary": "Korean digital asset firm that issues the KRW1 stablecoin and offers digital asset custody. Named as the KRW1 issuer among stablecoin issuers joining Arc testnet in Circle's 2025-10-28 announcement.",
+      "summary": "Korean digital asset custodian that issues KRW1, a won-pegged stablecoin backed 1:1 by bank deposits. BDACS's 2026-09-16 release says KRW1 is live on Arc mainnet.",
       "first_announced": "2025-10-28",
       "index_ids": [],
       "sources": [
@@ -1731,9 +2296,29 @@
           "url": "https://www.arc.io/ecosystem/bdacs-krw1-2",
           "title": "Arc ecosystem directory: BDACS (KRW1)",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://en.newsroom.bdacs.co.kr/260917-krw1-circle-arc/",
+          "title": "BDACS: KRW1 is Live on Arc",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://newsroom.bdacs.co.kr/presscenter/pr/260917-krw1-circle-arc/",
+          "title": "BDACS press release (Korean): KRW1 joins Arc mainnet",
+          "date": "2026-09-17"
+        },
+        {
+          "url": "https://krw1.kr/",
+          "title": "KRW1 website"
+        },
+        {
+          "url": "https://krw1.kr/api/icons?type=live",
+          "title": "KRW1 site data: live chains list",
+          "date": "2026-10-31"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-31",
+      "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/bdacs/"
     },
     {
@@ -1837,10 +2422,21 @@
           "url": "https://panews.io/articles/01a0aa19-95a9-7031-8e04-fa5eea0bb1c7",
           "title": "PANews relay of Binance USDC on Arc deposit notice",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://etherscan.io/address/0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055",
+          "title": "Etherscan: Binance: Hot Wallet 34 (same address as on Arc)"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-31",
       "first_live": "2026-09-16",
+      "contracts": [
+        {
+          "address": "0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055",
+          "role": "Exchange hot wallet (smart account; Etherscan tag on the same address: Binance: Hot Wallet 34)",
+          "source": "https://etherscan.io/address/0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055"
+        }
+      ],
       "url": "https://builder.registrai.cc/ecosystem/binance/"
     },
     {
@@ -1908,6 +2504,49 @@
       ],
       "last_reviewed": "2026-10-20",
       "url": "https://builder.registrai.cc/ecosystem/birdeye/"
+    },
+    {
+      "slug": "bitget",
+      "name": "Bitget",
+      "category": "exchanges",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://www.bitget.com/support/articles/12560603895329",
+          "title": "Bitget Will Support USD Coin (USDC)-ARC Network Service",
+          "date": "2026-09-16",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://www.bitget.com/support/articles/12560603895369",
+          "title": "Bitget announcement on resuming USDC - ARC withdrawals",
+          "date": "2026-09-17",
+          "type": "mainnet-support"
+        }
+      ],
+      "summary": "Centralized crypto exchange with spot and derivatives trading that supports USDC deposits and withdrawals on Arc. It opened USDC-ARC deposits on 2026-09-16 and withdrawals on 2026-09-17.",
+      "website": "https://www.bitget.com",
+      "x": "bitget",
+      "first_announced": "2026-09-16",
+      "first_live": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.bitget.com/support/articles/12560603895329",
+          "title": "Bitget: USDC-ARC network service",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.bitget.com/support/articles/12560603895369",
+          "title": "Bitget: resuming USDC - ARC withdrawals",
+          "date": "2026-09-17"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/bitget",
+          "title": "DefiLlama: Bitget (CEX reserves, includes Arc)"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/bitget/"
     },
     {
       "slug": "bitget-wallet",
@@ -2198,6 +2837,49 @@
       ],
       "last_reviewed": "2026-10-23",
       "url": "https://builder.registrai.cc/ecosystem/blackrock/"
+    },
+    {
+      "slug": "blockaid",
+      "name": "Blockaid",
+      "category": "infrastructure",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://www.blockaid.io/blog/blockaid-brings-real-time-transaction-protection-to-arc-with-metamask",
+          "title": "Blockaid Brings Real-Time Transaction Protection to Arc with MetaMask",
+          "date": "2026-09-16",
+          "type": "mainnet-support"
+        }
+      ],
+      "summary": "Onchain security provider that simulates and screens wallet transactions and classifies tokens; it covers Arc in MetaMask. Its 2026-09-16 blog post says it added Arc support at mainnet launch.",
+      "website": "https://www.blockaid.io/",
+      "x": "blockaid_",
+      "docs": "https://docs.blockaid.io/",
+      "first_announced": "2026-09-16",
+      "first_live": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/blockaid",
+          "title": "Arc ecosystem directory: Blockaid",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://www.blockaid.io/blog/blockaid-brings-real-time-transaction-protection-to-arc-with-metamask",
+          "title": "Blockaid blog: real-time transaction protection on Arc with MetaMask",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://github.com/MetaMask/core/pull/11144",
+          "title": "MetaMask/core PR #11144: enable Arc token scanning",
+          "date": "2026-10-28"
+        },
+        {
+          "url": "https://www.blockaid.io/",
+          "title": "Blockaid website"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/blockaid/"
     },
     {
       "slug": "blockdaemon",
@@ -2795,6 +3477,49 @@
       "last_reviewed": "2026-10-28",
       "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/bungee/"
+    },
+    {
+      "slug": "bvnk",
+      "name": "BVNK",
+      "category": "payments",
+      "status": "announced",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/ecosystem/bvnk",
+          "title": "Arc ecosystem listing: BVNK"
+        }
+      ],
+      "summary": "Stablecoin payments infrastructure for businesses. Named among global payments firms and fintechs that will enable stablecoin settlement on Arc in Arc's 2026-09-16 mainnet post.",
+      "website": "https://www.bvnk.com",
+      "first_announced": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/ecosystem/bvnk",
+          "title": "Arc ecosystem listing: BVNK"
+        },
+        {
+          "url": "https://www.circle.com/pressroom/bvnk-and-circle-partner-to-expand-usdc-utility-for-global-business-payments",
+          "title": "BVNK and Circle partner to expand USDC utility for global business payments",
+          "date": "2024-10-17"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/bvnk/"
     },
     {
       "slug": "bybit",
@@ -3414,6 +4139,48 @@
       "url": "https://builder.registrai.cc/ecosystem/coingecko/"
     },
     {
+      "slug": "coinmarketcap",
+      "name": "CoinMarketCap",
+      "aliases": [
+        "CMC"
+      ],
+      "category": "infrastructure",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://coinmarketcap.com/view/arc-ecosystem/",
+          "title": "CoinMarketCap: Arc Ecosystem token category",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://coinmarketcap.com/dexscan/networks/arc/",
+          "title": "CoinMarketCap DexScan network list: Arc, chain ID 5042"
+        }
+      ],
+      "summary": "Crypto market data site; it tracks Arc as a DexScan network (chain ID 5042) and lists an Arc Ecosystem token category. That category lists Arc tokens such as ARGUS and FAZE alongside USDC and EURC.",
+      "website": "https://coinmarketcap.com/",
+      "x": "CoinMarketCap",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/coinmarketcap",
+          "title": "Arc ecosystem directory: CoinMarketCap",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://coinmarketcap.com/view/arc-ecosystem/",
+          "title": "CoinMarketCap: Arc Ecosystem",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://coinmarketcap.com/dexscan/networks/arc/",
+          "title": "CoinMarketCap DexScan (embedded platform list)",
+          "date": "2026-10-31"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/coinmarketcap/"
+    },
+    {
       "slug": "coins-ph",
       "name": "Coins.PH",
       "aliases": [
@@ -3712,7 +4479,8 @@
       "slug": "curve",
       "name": "Curve",
       "aliases": [
-        "Curve Finance"
+        "Curve Finance",
+        "Curve DEX"
       ],
       "category": "dexs",
       "status": "live",
@@ -3794,9 +4562,17 @@
           "url": "https://www.arc.io/pressroom/circle-launches-arc-public-testnet",
           "title": "Circle launches Arc public testnet",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/curve-dex",
+          "title": "DefiLlama: Curve DEX (includes Arc)"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/curve/contracts.json",
+          "title": "DefiLlama Curve adapter contracts (arc section)"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-31",
       "url": "https://builder.registrai.cc/ecosystem/curve/"
     },
     {
@@ -3870,6 +4646,53 @@
       "last_reviewed": "2026-10-23",
       "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/dcent/"
+    },
+    {
+      "slug": "defillama",
+      "name": "DefiLlama",
+      "aliases": [
+        "DeFiLlama"
+      ],
+      "category": "infrastructure",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://api.llama.fi/v2/chains",
+          "title": "DefiLlama chains API: Arc, chainId 5042",
+          "date": "2026-10-31",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://defillama.com/chain/arc",
+          "title": "DefiLlama: Arc chain page"
+        }
+      ],
+      "summary": "DeFi data aggregator that tracks Arc as a chain (chain ID 5042) with TVL and protocol listings. Its chains API listed Arc with about $584M TVL on 2026-10-31.",
+      "website": "https://defillama.com/",
+      "docs": "https://api-docs.defillama.com/",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/defillama",
+          "title": "Arc ecosystem directory: DeFiLlama",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://api.llama.fi/v2/chains",
+          "title": "DefiLlama chains API",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://api.llama.fi/v2/historicalChainTvl/Arc",
+          "title": "DefiLlama historical Arc TVL",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://defillama.com/chain/arc",
+          "title": "DefiLlama: Arc"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/defillama/"
     },
     {
       "slug": "definitive",
@@ -4207,6 +5030,51 @@
       "url": "https://builder.registrai.cc/ecosystem/dmall/"
     },
     {
+      "slug": "doppler-finance",
+      "name": "Doppler Finance",
+      "aliases": [
+        "Doppler"
+      ],
+      "category": "asset-managers",
+      "status": "announced",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/ecosystem/doppler",
+          "title": "Arc ecosystem partner page"
+        }
+      ],
+      "summary": "Yield platform with vaults for XRP and RLUSD that allocate deposits to strategies such as arbitrage and basis trading. Listed as an Arc ecosystem partner; its site and docs do not mention Arc.",
+      "website": "https://doppler.finance/",
+      "x": "doppler_fi",
+      "docs": "https://docs.doppler.finance/",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/doppler",
+          "title": "Arc ecosystem directory: Doppler",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://doppler.finance/",
+          "title": "Doppler Finance website"
+        },
+        {
+          "url": "https://docs.doppler.finance/llms-full.txt",
+          "title": "Doppler Finance docs (full text)"
+        },
+        {
+          "url": "https://blog.doppler.finance/",
+          "title": "Doppler Finance blog"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/doppler-finance",
+          "title": "DefiLlama: Doppler Finance (chains Ripple, Ethereum)",
+          "date": "2026-10-31"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/doppler-finance/"
+    },
+    {
       "slug": "drpc",
       "name": "dRPC",
       "category": "infrastructure",
@@ -4292,6 +5160,38 @@
       "url": "https://builder.registrai.cc/ecosystem/dtcc/"
     },
     {
+      "slug": "dune",
+      "name": "Dune",
+      "category": "infrastructure",
+      "tags": [
+        "developer-tools"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://docs.dune.com/data-catalog/evm/arc/overview",
+          "title": "Dune data catalog: Arc overview",
+          "type": "mainnet-support"
+        }
+      ],
+      "summary": "Onchain data query platform; it indexes Arc under the arc schema (blocks, transactions, logs, traces, decoded contracts). Its docs list Arc chain ID 5042 (mainnet).",
+      "website": "https://dune.com/",
+      "docs": "https://docs.dune.com/data-catalog/evm/arc/overview",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/dune",
+          "title": "Arc ecosystem directory: Dune",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://docs.dune.com/data-catalog/evm/arc/overview",
+          "title": "Dune docs: Arc overview"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/dune/"
+    },
+    {
       "slug": "dynamic",
       "name": "Dynamic",
       "category": "developer-tools",
@@ -4328,6 +5228,68 @@
       "url": "https://builder.registrai.cc/ecosystem/dynamic/"
     },
     {
+      "slug": "dyor-swap",
+      "name": "DYOR Swap",
+      "aliases": [
+        "DyorSwap",
+        "DyorSwap AMM",
+        "DYORSwap"
+      ],
+      "category": "dexs",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://api.llama.fi/protocol/dyorswap-amm",
+          "title": "DefiLlama: DyorSwap AMM (chains include Arc)"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/uniswapV2.js",
+          "title": "DefiLlama adapter registry: dyorswap arc factory"
+        },
+        {
+          "url": "https://dyorswap.finance/_next/static/chunks/pages/_app-ce00f340c523f9fe.js",
+          "title": "DyorSwap app bundle: Arc mainnet (5042) chain and factory config"
+        }
+      ],
+      "summary": "Multi-chain AMM DEX for token swaps and liquidity pools, with a pool factory on Arc. DefiLlama lists Arc among its chains, and its app config names factory 0x942b...5c10 on Arc mainnet (chain ID 5042), which holds 50 pairs.",
+      "website": "https://dyorswap.finance",
+      "x": "DYORSWAPDEX",
+      "contracts": [
+        {
+          "address": "0x942bd5bfdc5317c5507e326f8eb4bb6058ab5c10",
+          "role": "AMM pair factory",
+          "source": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/uniswapV2.js"
+        }
+      ],
+      "index_ids": [
+        "integration:dyor-swap"
+      ],
+      "sources": [
+        {
+          "url": "https://dyorswap.finance",
+          "title": "DyorSwap website"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/dyorswap-amm",
+          "title": "DefiLlama protocol API: DyorSwap AMM"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/uniswapV2.js",
+          "title": "DefiLlama-Adapters registries/uniswapV2.js"
+        },
+        {
+          "url": "https://dyorswap.finance/_next/static/chunks/pages/_app-ce00f340c523f9fe.js",
+          "title": "DyorSwap app bundle"
+        },
+        {
+          "url": "https://builder.registrai.cc/apps/integration/dyor-swap/",
+          "title": "Registrai index: DYOR Swap"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/dyor-swap/"
+    },
+    {
       "slug": "ebanx",
       "name": "Ebanx",
       "aliases": [
@@ -4361,6 +5323,63 @@
       "url": "https://builder.registrai.cc/ecosystem/ebanx/"
     },
     {
+      "slug": "eco",
+      "name": "Eco",
+      "aliases": [
+        "Eco Routes"
+      ],
+      "category": "bridges",
+      "tags": [
+        "payments"
+      ],
+      "status": "deployed",
+      "status_evidence": [
+        {
+          "url": "https://github.com/eco/routes-cli/pull/30",
+          "title": "eco/routes-cli PR #30: add Arc mainnet (5042), dedicated Arc Portal",
+          "date": "2026-09-22"
+        },
+        {
+          "url": "https://explorer.arc.io/address/0xec002ca16ce20c2a9f3c6200ef04e7d92a3dfbd8",
+          "title": "Eco Portal contract on Arc explorer"
+        }
+      ],
+      "summary": "Stablecoin execution network; Eco Routes moves USDC across chains through intents that solvers fill. Its Portal contract (v2.10.0) is on Arc mainnet; its routes-cli adds Arc as a destination on staging solvers (2026-09-22).",
+      "website": "https://eco.com/",
+      "github": "https://github.com/eco",
+      "docs": "https://eco.com/docs",
+      "contracts": [
+        {
+          "address": "0xec002ca16ce20c2a9f3c6200ef04e7d92a3dfbd8",
+          "role": "Eco Routes Portal (Arc)",
+          "source": "https://github.com/eco/routes-cli/pull/30"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/eco",
+          "title": "Arc ecosystem directory: Eco",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://github.com/eco/routes-cli/pull/30",
+          "title": "eco/routes-cli PR #30 (opened 2026-09-15, merged 2026-09-22)",
+          "date": "2026-09-22"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: eth_getCode and version() on Portal",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://eco.com/",
+          "title": "Eco website"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/eco/"
+    },
+    {
       "slug": "edgex",
       "name": "edgeX",
       "category": "trading",
@@ -4371,6 +5390,10 @@
           "title": "edgeX x Arc Genesis Is Live",
           "date": "2026-09-16",
           "type": "mainnet-support"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/edgex-bridge",
+          "title": "DefiLlama: edgeX Bridge (Arc)"
         }
       ],
       "summary": "Decentralized exchange for perpetual futures across FX, US stocks, commodities and crypto. On Arc it lists over 150 perpetual pairs margined and settled in USDC.",
@@ -4397,10 +5420,28 @@
           "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
           "title": "Circle launches Arc mainnet",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/edgex-bridge",
+          "title": "DefiLlama: edgeX Bridge"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/sumTokens/data3.js",
+          "title": "DefiLlama sumTokens registry: edgeX (arc owners)"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-31",
       "first_live": "2026-09-16",
+      "aliases": [
+        "edgeX Bridge"
+      ],
+      "contracts": [
+        {
+          "address": "0xc64e528c6439a204da1b519e78aa43f9e4b32f00",
+          "role": "edgeX USDC deposit contract on Arc (ERC-1967 proxy; counted by DefiLlama edgeX Bridge)",
+          "source": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/sumTokens/data3.js"
+        }
+      ],
       "url": "https://builder.registrai.cc/ecosystem/edgex/"
     },
     {
@@ -4563,7 +5604,7 @@
       "slug": "extended",
       "name": "Extended",
       "category": "trading",
-      "status": "announced",
+      "status": "live",
       "status_evidence": [
         {
           "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
@@ -4572,11 +5613,21 @@
         },
         {
           "url": "https://docs.extended.exchange/about-extended/migration-from-starknet-to-arc",
-          "title": "Extended docs: migration from Starknet to Arc",
-          "date": "2026-10-08"
+          "title": "Extended docs: Migration from Starknet to Arc",
+          "date": "2026-10-22",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://docs.extended.exchange/about-extended/technical-architecture",
+          "title": "Extended docs: Technical Architecture (settles on Arc)",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/extended-perps",
+          "title": "DefiLlama: Extended Perps (Arc)"
         }
       ],
-      "summary": "Trading exchange offering crypto and TradFi markets under a single margin account. Named among onchain trading protocols in Circle's 2026-09-16 Arc mainnet announcement.",
+      "summary": "Perpetuals exchange for crypto and TradFi markets under one margin account, settling on Arc with USDC collateral. Its docs say it migrated from Starknet to Arc on 2026-10-22.",
       "website": "https://extended.exchange",
       "x": "extendedapp",
       "docs": "https://docs.extended.exchange",
@@ -4602,9 +5653,38 @@
           "url": "https://www.arc.io/ecosystem/extended",
           "title": "Arc ecosystem listing",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://docs.extended.exchange/about-extended/technical-architecture",
+          "title": "Extended docs: Technical Architecture"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/extended-perps",
+          "title": "DefiLlama: Extended Perps"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/sumTokens/data1.js",
+          "title": "DefiLlama sumTokens registry: extended (arc owners)"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-31",
+      "aliases": [
+        "Extended Perps",
+        "Extended Exchange"
+      ],
+      "contracts": [
+        {
+          "address": "0x4445aacacc2de174b77b37eb27529ce0b36bc580",
+          "role": "Extended settlement contract (ERC-1967 proxy), linked from its docs",
+          "source": "https://docs.extended.exchange/about-extended/technical-architecture"
+        },
+        {
+          "address": "0x89103959eef431bea308027b8a5073c5ddc867a2",
+          "role": "Extended asset-holding contract (ERC-1967 proxy), counted by DefiLlama",
+          "source": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/sumTokens/data1.js"
+        }
+      ],
+      "first_live": "2026-10-22",
       "url": "https://builder.registrai.cc/ecosystem/extended/"
     },
     {
@@ -4638,6 +5718,71 @@
       ],
       "last_reviewed": "2026-10-20",
       "url": "https://builder.registrai.cc/ecosystem/falconx/"
+    },
+    {
+      "slug": "fast",
+      "name": "Fast",
+      "aliases": [
+        "Fast AllSet"
+      ],
+      "category": "payments",
+      "tags": [
+        "bridges",
+        "ai-agents"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://github.com/fastxyz/fast-sdk/blob/main/app/cli/src/config/networks.ts",
+          "title": "Fast CLI mainnet network config: arc (chain 5042), AllSet bridge"
+        },
+        {
+          "url": "https://explorer.arc.io/address/0x8677edaa374b7a47ff0093947aabe4acbb2d4538",
+          "title": "Fast AllSet bridge contract on Arc explorer"
+        }
+      ],
+      "summary": "Payments network for people and AI agents; its AllSet bridge moves USDC between EVM chains and Fast. Its CLI mainnet config bundles Arc (chain 5042) with an AllSet bridge contract that holds USDC on Arc.",
+      "website": "https://fast.xyz/",
+      "x": "fastxyz",
+      "github": "https://github.com/fastxyz",
+      "docs": "https://docs.fast.xyz/",
+      "contracts": [
+        {
+          "address": "0x8677edaa374b7a47ff0093947aabe4acbb2d4538",
+          "role": "AllSet bridge (same address on Polygon and other chains)",
+          "source": "https://github.com/fastxyz/fast-sdk/blob/main/app/cli/src/config/networks.ts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/fast",
+          "title": "Arc ecosystem directory: Fast",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://github.com/fastxyz/fast-sdk/blob/main/app/cli/src/config/networks.ts",
+          "title": "fast-sdk CLI network config"
+        },
+        {
+          "url": "https://github.com/fastxyz/fast-sdk/blob/main/app/cli/CHANGELOG.md",
+          "title": "Fast CLI changelog 1.2.0: bundle Arc mainnet"
+        },
+        {
+          "url": "https://github.com/fastxyz/fast-sdk/blob/main/packages/allset-sdk/README.md",
+          "title": "AllSet SDK README: supported chain IDs incl. 5042 (Arc)"
+        },
+        {
+          "url": "https://docs.fast.xyz/",
+          "title": "Fast docs"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: eth_getCode and USDC balanceOf on AllSet bridge",
+          "date": "2026-10-31"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/fast/"
     },
     {
       "slug": "faze",
@@ -5078,6 +6223,122 @@
       "url": "https://builder.registrai.cc/ecosystem/fomo/"
     },
     {
+      "slug": "fordefi",
+      "name": "Fordefi",
+      "category": "custody",
+      "tags": [
+        "wallets"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://docs.fordefi.com/user-guide/manage-chains/supported-blockchains",
+          "title": "Fordefi docs: Supported Blockchains (EVM list includes Arc)",
+          "type": "mainnet-support"
+        }
+      ],
+      "summary": "Institutional MPC wallet and custody platform with a browser extension for dapps. Its supported-blockchains docs list Arc among its EVM chains, separate from the testnets it labels.",
+      "website": "https://fordefi.com/",
+      "x": "FordefiHQ",
+      "docs": "https://docs.fordefi.com/",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/fordefi",
+          "title": "Arc ecosystem directory: Fordefi",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://docs.fordefi.com/user-guide/manage-chains/supported-blockchains",
+          "title": "Fordefi docs: Supported Blockchains"
+        },
+        {
+          "url": "https://fordefi.com/",
+          "title": "Fordefi website"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/fordefi/"
+    },
+    {
+      "slug": "forte-aud",
+      "name": "Forte AUD",
+      "aliases": [
+        "AUDF"
+      ],
+      "category": "stablecoin-issuers",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://www.forteaud.com/",
+          "title": "Forte AUD site: AUDF supported blockchains include Arc",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://explorer.arc.io/address/0xd2a530170d71a9cfe1651fb468e2b98f7ed7456b",
+          "title": "AUDF token on Arc explorer"
+        }
+      ],
+      "summary": "AUDF, an Australian dollar stablecoin issued by Forte Securities Australia Pty Limited (AFSL 492490). Its site lists Arc among AUDF networks; the token on Arc had about 301,000 AUDF supply on 2026-10-31.",
+      "website": "https://www.forteaud.com/",
+      "x": "forte_tech_sol",
+      "contracts": [
+        {
+          "address": "0xd2a530170d71a9cfe1651fb468e2b98f7ed7456b",
+          "role": "AUDF token (name 'Forte AUD', 6 decimals)",
+          "source": "https://www.forteaud.com/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/forte",
+          "title": "Arc ecosystem directory: Forte AUD",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://www.forteaud.com/",
+          "title": "Forte AUD (AUDF) website"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: name/symbol/decimals/totalSupply of AUDF",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://www.cointree.com/news/cointree-becomes-first-exchange-to-list-licensed-australian-stablecoin-forte-aud-audf/",
+          "title": "Cointree: first exchange to list AUDF"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/forte-aud/"
+    },
+    {
+      "slug": "forte-securities",
+      "name": "Forte Securities",
+      "category": "trading",
+      "status": "announced",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/ecosystem/forte-securities",
+          "title": "Arc ecosystem partner page"
+        }
+      ],
+      "summary": "London inter-dealer broker and OTF operator for fixed income, equity derivatives and FX (FCA FRN 478424). Listed as an Arc ecosystem partner; its own site does not mention Arc.",
+      "website": "https://fortesecurities.com/",
+      "sources": [
+        {
+          "url": "https://www.arc.io/ecosystem/forte-securities",
+          "title": "Arc ecosystem directory: Forte Securities",
+          "date": "2026-10-31"
+        },
+        {
+          "url": "https://fortesecurities.com/",
+          "title": "Forte Securities website"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/forte-securities/"
+    },
+    {
       "slug": "frenlaunch",
       "name": "frenlaunch",
       "category": "launchpads",
@@ -5284,6 +6545,70 @@
       ],
       "last_reviewed": "2026-10-20",
       "url": "https://builder.registrai.cc/ecosystem/gate/"
+    },
+    {
+      "slug": "gate-web3",
+      "name": "Gate Web3",
+      "aliases": [
+        "Gate Wallet",
+        "Gate Web3 Wallet"
+      ],
+      "category": "wallets",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16",
+          "type": "arc-official-live"
+        },
+        {
+          "url": "https://www.techflowpost.com/en-US/newsletter/136281",
+          "title": "Gate Integrates with Arc Ecosystem, Further Strengthening Multi-Chain Web3 Layout",
+          "date": "2026-09-15"
+        }
+      ],
+      "summary": "Gate's self-custodial multichain wallet, separate from the Gate exchange. Named among digital wallets in Circle's 2026-09-16 Arc mainnet announcement; Gate said on 2026-09-15 that Gate Wallet supports Arc assets and DApps.",
+      "website": "https://web3.gate.com",
+      "first_announced": "2026-09-15",
+      "first_live": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.techflowpost.com/en-US/newsletter/136281",
+          "title": "TechFlow: Gate integrates with Arc ecosystem",
+          "date": "2026-09-15"
+        },
+        {
+          "url": "https://beincrypto.com/gate-arc-support-zero-gas-trading/",
+          "title": "BeInCrypto: Gate integrates Arc support"
+        },
+        {
+          "url": "https://web3.gate.com/",
+          "title": "Gate Web3 website"
+        },
+        {
+          "url": "https://www.gate.com/announcements/article/101771",
+          "title": "Gate announcement: USDC on Arc",
+          "date": "2026-09-16"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/gate-web3/"
     },
     {
       "slug": "gauntlet",
@@ -6634,6 +7959,55 @@
       "url": "https://builder.registrai.cc/ecosystem/kucoin/"
     },
     {
+      "slug": "kucoin-web3",
+      "name": "KuCoin Web3",
+      "aliases": [
+        "KuCoin Web3 Wallet",
+        "KuCoin Wallet"
+      ],
+      "category": "wallets",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16",
+          "type": "arc-official-live"
+        }
+      ],
+      "summary": "KuCoin's self-custodial multichain web3 wallet, separate from the KuCoin exchange. Named among digital wallets in Circle's 2026-09-16 Arc mainnet announcement and Arc's mainnet post.",
+      "website": "https://www.kucoin.com/web3",
+      "first_announced": "2026-09-16",
+      "first_live": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.kucoin.com/web3",
+          "title": "KuCoin Web3 wallet page"
+        },
+        {
+          "url": "https://www.kucoin.com/blog/th-kucoin-goes-live-on-arc-at-mainnet-launch-broadening-access-to-onchain-finance",
+          "title": "KuCoin Goes Live on Arc at Mainnet Launch"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/kucoin-web3/"
+    },
+    {
       "slug": "kyberswap",
       "name": "KyberSwap",
       "category": "dexs",
@@ -6652,6 +8026,11 @@
           "url": "https://www.arc.io/blog/arc-economic-os-internet",
           "title": "Arc: economic OS for the internet (mainnet launch post)",
           "date": "2026-09-16"
+        },
+        {
+          "url": "https://docs.kyberswap.com/developer-guide/aggregator-api/contracts",
+          "title": "KyberSwap docs: Aggregator contracts & addresses (Arc, chain ID 5042)",
+          "type": "mainnet-support"
         }
       ],
       "summary": "DEX aggregator with swap, limit order and cross-chain swap products. Its blog describes Arc as a destination chain, with 23 source networks listed in the cross-chain selector.",
@@ -6663,8 +8042,18 @@
       "contracts": [
         {
           "address": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
-          "role": "KyberSwap router",
-          "source": "https://lift.fun/config.js (VITE_ARC_KYBER_ROUTER)"
+          "role": "KyberSwap MetaAggregationRouterV2",
+          "source": "https://docs.kyberswap.com/developer-guide/aggregator-api/contracts"
+        },
+        {
+          "address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+          "role": "KyberSwap AggregationExecutorProxy",
+          "source": "https://docs.kyberswap.com/developer-guide/aggregator-api/contracts"
+        },
+        {
+          "address": "0x2f577a41bec1be1152aeea12e73b7391d15f655d",
+          "role": "KyberSwap InputScalingHelperV2",
+          "source": "https://docs.kyberswap.com/developer-guide/aggregator-api/contracts"
         }
       ],
       "index_ids": [
@@ -6685,9 +8074,17 @@
           "url": "https://lift.fun/config.js",
           "title": "Lift runtime config (router address)",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://docs.kyberswap.com/developer-guide/aggregator-api/contracts",
+          "title": "KyberSwap docs: Aggregator contracts & addresses"
+        },
+        {
+          "url": "https://etherscan.io/address/0x8f10b468b06c6fd214b65f87778827f7d113f996",
+          "title": "Etherscan: KyberSwap: Aggregation Executor Proxy (same address on Ethereum)"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-31",
       "url": "https://builder.registrai.cc/ecosystem/kyberswap/"
     },
     {
@@ -7149,7 +8546,9 @@
       "slug": "lift",
       "name": "Lift",
       "aliases": [
-        "LIFT"
+        "LIFT",
+        "LIFT V1",
+        "LIFT V2"
       ],
       "category": "launchpads",
       "status": "live",
@@ -7157,6 +8556,10 @@
         {
           "url": "https://explorer.arc.io/address/0x1ca37b3c40e89aad48b5ad3352269c2293cfd3da",
           "title": "Lift Factory V4 on Arc explorer"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/lift-v2",
+          "title": "DefiLlama: LIFT V2 (Arc)"
         }
       ],
       "summary": "Token launchpad that deploys tokens on Arc; the site describes fixed-supply tokens launched into a locked liquidity pool with no owner. Its factory and vault contracts are deployed on Arc mainnet.",
@@ -7186,6 +8589,11 @@
           "address": "0x3f29dd25d1f6ad3d09d1d4a880f8a869e3039153",
           "role": "Launch Factory (earlier)",
           "source": "https://lift.fun/config.js"
+        },
+        {
+          "address": "0x81dabcdbdca5a58b89967f28a3e6bd1677ca159c",
+          "role": "LaunchpadFactory (first generation; no longer launches)",
+          "source": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/lift-v1/index.js"
         }
       ],
       "index_ids": [
@@ -7201,9 +8609,22 @@
           "url": "https://lift.fun/config.js",
           "title": "Lift runtime config (contract addresses)",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/lift-v1",
+          "title": "DefiLlama: LIFT V1"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/lift-v2",
+          "title": "DefiLlama: LIFT V2"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/lift-v1/index.js",
+          "title": "DefiLlama adapter: LIFT V1"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-31",
+      "x": "liftdotfun",
       "url": "https://builder.registrai.cc/ecosystem/lift/"
     },
     {
@@ -7262,7 +8683,9 @@
       "slug": "lunya",
       "name": "Lunya",
       "aliases": [
-        "Lunya"
+        "Lunya",
+        "Lunya DEX",
+        "Lunya Launchpad"
       ],
       "category": "dexs",
       "status": "live",
@@ -7323,6 +8746,41 @@
           "address": "0x225375b9e6c26e1c3de691f3864d1f2ebed1c25a",
           "role": "Launchpad: Liquidity Locker",
           "source": "https://docs.lunya.io/developers/contracts"
+        },
+        {
+          "address": "0x1ec3a928d8b578fb29317b3675851c3d6bd3b335",
+          "role": "Exchange: Pool Deployer",
+          "source": "https://docs.lunya.io/developers/contracts"
+        },
+        {
+          "address": "0x82eaca02d46b0663d9af54b643d4e0f01f73c0de",
+          "role": "Exchange: Public Lister",
+          "source": "https://docs.lunya.io/developers/contracts"
+        },
+        {
+          "address": "0x3d9c0db2d81188726f5a4b3823ca4fa8ae2fff38",
+          "role": "Exchange: Terms Lister",
+          "source": "https://docs.lunya.io/developers/contracts"
+        },
+        {
+          "address": "0x18d551af9f10c13c7e3aa5215b4e7685b3f739c6",
+          "role": "Exchange: Plugin Factory",
+          "source": "https://docs.lunya.io/developers/contracts"
+        },
+        {
+          "address": "0xf85f2e89f7c6ee7749725eec69e4b1d3547d63cd",
+          "role": "Exchange: Liquidity Helper",
+          "source": "https://docs.lunya.io/developers/contracts"
+        },
+        {
+          "address": "0x4ff3dab2a02a77ba19bbf3079186ef966f658c4e",
+          "role": "Exchange: Tick Lens",
+          "source": "https://docs.lunya.io/developers/contracts"
+        },
+        {
+          "address": "0x3df02c2113e91d18c00e469849010df5bcd3e784",
+          "role": "Exchange: Eternal Farming",
+          "source": "https://docs.lunya.io/developers/contracts"
         }
       ],
       "sources": [
@@ -7357,7 +8815,7 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-20",
+      "last_reviewed": "2026-10-31",
       "tags": [
         "launchpads"
       ],
@@ -7531,7 +8989,9 @@
       "slug": "mercurifi",
       "name": "Mercurifi",
       "aliases": [
-        "Mercurifi Launch"
+        "Mercurifi Launch",
+        "Mercurifi Launchpad",
+        "Mercurifi Trade"
       ],
       "category": "launchpads",
       "status": "live",
@@ -7596,6 +9056,26 @@
           "address": "0x34e3321e97bba4f5c7a0acc6b09c50be9173912d",
           "role": "Treasury (2-of-3 Safe)",
           "source": "https://github.com/mercuri-finance/mercuri-launch-contracts"
+        },
+        {
+          "address": "0xbcd634d133ec05abfab018e78138b370c4f912b0",
+          "role": "Guardian (pause/unpause new launches; 2-of-3 multisig)",
+          "source": "https://docs.mercuri.finance/contracts"
+        },
+        {
+          "address": "0x816c7269fdcf621b7d8cb99a5afbe9daddbd3b58",
+          "role": "AgentAccountFactory",
+          "source": "https://docs.mercuri.finance/agents/networks"
+        },
+        {
+          "address": "0x318a0e1353e812a36fc7c52a88af8d6a96909483",
+          "role": "AgentPolicyRegistry",
+          "source": "https://docs.mercuri.finance/agents/networks"
+        },
+        {
+          "address": "0x36acc3eb67571e592a45c88656c4b3c4f7fb7bee",
+          "role": "AgentAccount (implementation)",
+          "source": "https://docs.mercuri.finance/agents/networks"
         }
       ],
       "sources": [
@@ -7633,9 +9113,13 @@
           "url": "https://api.llama.fi/protocol/mercurifi-trade",
           "title": "DefiLlama: Mercurifi Trade",
           "date": "2026-10-20"
+        },
+        {
+          "url": "https://docs.mercuri.finance/agents/networks",
+          "title": "Mercurifi docs: Agent Accounts networks and addresses"
         }
       ],
-      "last_reviewed": "2026-10-23",
+      "last_reviewed": "2026-10-31",
       "tags": [
         "dexs"
       ],
@@ -7907,6 +9391,75 @@
       "url": "https://builder.registrai.cc/ecosystem/murmur/"
     },
     {
+      "slug": "mysphere",
+      "name": "MySphere",
+      "aliases": [
+        "MySphere Startpad",
+        "mysphere.fun"
+      ],
+      "category": "launchpads",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://mysphere.fun/how",
+          "title": "MySphere: How it works",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://mysphere.fun/_next/static/chunks/1407-2d3dde0333e4eafc.js",
+          "title": "MySphere app bundle: Arc mainnet contract config"
+        }
+      ],
+      "summary": "Social app on Base whose Startpad token launchpad also runs on Arc mainnet, with bonding curves counted in USDC. Its how-it-works page names Arc mainnet for Startpad and its app config lists four Arc mainnet (chain ID 5042) contracts.",
+      "website": "https://mysphere.fun",
+      "docs": "https://mysphere.fun/how",
+      "contracts": [
+        {
+          "address": "0xd5f65cfbe6a1aa1b6f82cbe0a336ddfcd39a5340",
+          "role": "Startpad launchpad",
+          "source": "https://mysphere.fun/_next/static/chunks/1407-2d3dde0333e4eafc.js"
+        },
+        {
+          "address": "0x49fd3a54b23a0ee1d6a7720f493618f5ccf4681d",
+          "role": "Liquidity vault",
+          "source": "https://mysphere.fun/_next/static/chunks/1407-2d3dde0333e4eafc.js"
+        },
+        {
+          "address": "0x9669d2809710ad8218793e0cd55317ccd984e044",
+          "role": "Launch hook",
+          "source": "https://mysphere.fun/_next/static/chunks/1407-2d3dde0333e4eafc.js"
+        },
+        {
+          "address": "0x04bdad462b66b152689076975db1197766a69568",
+          "role": "Token factory",
+          "source": "https://mysphere.fun/_next/static/chunks/1407-2d3dde0333e4eafc.js"
+        }
+      ],
+      "index_ids": [
+        "integration:mysphere"
+      ],
+      "sources": [
+        {
+          "url": "https://mysphere.fun",
+          "title": "MySphere website"
+        },
+        {
+          "url": "https://mysphere.fun/how",
+          "title": "MySphere: How it works"
+        },
+        {
+          "url": "https://mysphere.fun/_next/static/chunks/1407-2d3dde0333e4eafc.js",
+          "title": "MySphere app bundle (chunk 1407)"
+        },
+        {
+          "url": "https://builder.registrai.cc/apps/integration/mysphere/",
+          "title": "Registrai index: MySphere"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/mysphere/"
+    },
+    {
       "slug": "new-york-life-investment-management",
       "name": "New York Life Investment Management",
       "aliases": [
@@ -7983,6 +9536,54 @@
       ],
       "last_reviewed": "2026-10-20",
       "url": "https://builder.registrai.cc/ecosystem/noah/"
+    },
+    {
+      "slug": "node101",
+      "name": "node101",
+      "aliases": [
+        "NODE101 Technology Inc."
+      ],
+      "category": "infrastructure",
+      "tags": [
+        "validators"
+      ],
+      "status": "announced",
+      "status_evidence": [
+        {
+          "url": "https://partners.circle.com/partner/node101",
+          "title": "Circle Alliance Directory: node101",
+          "date": "2026-08-20"
+        },
+        {
+          "url": "https://node101.io/en/rpc/arc",
+          "title": "node101: Arc RPC Plans and Dedicated Nodes"
+        }
+      ],
+      "summary": "Blockchain infrastructure company offering RPC plans, dedicated nodes, staking and white-label validation, with an Arc RPC product page. The Circle Alliance Directory lists it with Arc support; its Arc page describes Arc Testnet.",
+      "website": "https://node101.io",
+      "x": "node_101",
+      "github": "https://github.com/node101-io",
+      "sources": [
+        {
+          "url": "https://node101.io/en",
+          "title": "node101 website"
+        },
+        {
+          "url": "https://node101.io/en/rpc/arc",
+          "title": "node101: Arc RPC Plans and Dedicated Nodes"
+        },
+        {
+          "url": "https://partners.circle.com/partner/node101",
+          "title": "Circle Alliance Directory: node101",
+          "date": "2026-08-20"
+        },
+        {
+          "url": "https://docs.arc.io/arc/references/rpc-endpoints.md",
+          "title": "Arc docs: RPC endpoints"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/node101/"
     },
     {
       "slug": "nonco",
@@ -8464,6 +10065,88 @@
       "url": "https://builder.registrai.cc/ecosystem/pairpoint-by-vodafone/"
     },
     {
+      "slug": "pancakeswap",
+      "name": "PancakeSwap",
+      "aliases": [
+        "PancakeSwap Infinity",
+        "PCS Infinity"
+      ],
+      "category": "dexs",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses",
+          "title": "PancakeSwap developer docs: Infinity addresses",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/pancakeswap-infinity",
+          "title": "DefiLlama: PancakeSwap Infinity (Arc)"
+        }
+      ],
+      "summary": "DEX whose Infinity version (hook-based concentrated liquidity pools, singleton vault) is deployed on Arc. Its developer docs list the Arc Vault, CLPoolManager and router addresses.",
+      "website": "https://pancakeswap.finance",
+      "x": "PancakeSwap",
+      "github": "https://github.com/pancakeswap",
+      "docs": "https://developer.pancakeswap.finance",
+      "contracts": [
+        {
+          "address": "0x238a358808379702088667322f80ac48bad5e6c4",
+          "role": "Infinity Vault",
+          "source": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses"
+        },
+        {
+          "address": "0xa0ffb9c1ce1fe56963b0321b32e7a0302114058b",
+          "role": "Infinity CLPoolManager",
+          "source": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses"
+        },
+        {
+          "address": "0x55f4c8aba71a1e923edc303eb4feff14608cc226",
+          "role": "Infinity CLPositionManager",
+          "source": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses"
+        },
+        {
+          "address": "0xd0737c9762912dd34c3271197e362aa736df0926",
+          "role": "Infinity CLQuoter",
+          "source": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses"
+        },
+        {
+          "address": "0xd9c500dff816a1da21a48a732d3498bf09dc9aeb",
+          "role": "Infinity UniversalRouter",
+          "source": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses"
+        },
+        {
+          "address": "0x31c2f6fcff4f8759b3bd5bf0e1084a055615c768",
+          "role": "Permit2",
+          "source": "https://developer.pancakeswap.finance/contracts/permit2/addresses"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses",
+          "title": "PancakeSwap Infinity addresses"
+        },
+        {
+          "url": "https://developer.pancakeswap.finance/contracts/permit2/addresses",
+          "title": "PancakeSwap Permit2 addresses"
+        },
+        {
+          "url": "https://developer.pancakeswap.finance/contracts/unified-swap-api/overview",
+          "title": "PancakeSwap Unified Swap API overview (lists chain 5042, Arc)"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/pancakeswap-infinity",
+          "title": "DefiLlama: PancakeSwap Infinity"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/pancakeswap-infinity/index.js",
+          "title": "DefiLlama adapter: PancakeSwap Infinity (Arc config)"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/pancakeswap/"
+    },
+    {
       "slug": "parabolarc",
       "name": "Parabolarc",
       "category": "launchpads",
@@ -8820,6 +10503,65 @@
       "last_reviewed": "2026-10-28",
       "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/pimlico/"
+    },
+    {
+      "slug": "pools-trade",
+      "name": "pools.trade",
+      "aliases": [
+        "Pools"
+      ],
+      "category": "launchpads",
+      "status": "announced",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/ecosystem/pools-trade",
+          "title": "Arc ecosystem listing: pools.trade"
+        }
+      ],
+      "summary": "Token launchpad from Uniswap Labs that runs on Uniswap v4 pools, live on Robinhood Chain. Named among onchain trading protocols in Circle's 2026-09-16 Arc mainnet announcement; no Arc deployment found.",
+      "website": "https://pools.xyz",
+      "x": "TradePools",
+      "first_announced": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "title": "Circle launches Arc mainnet (press release)",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/ecosystem/pools-trade",
+          "title": "Arc ecosystem listing: pools.trade"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/pools",
+          "title": "DefiLlama: Pools (pools.trade)"
+        },
+        {
+          "url": "https://docs.bitquery.io/docs/blockchain/robinhood/pools-trade-api/",
+          "title": "Bitquery: Pools.trade API, Uniswap launchpad on Robinhood Chain"
+        },
+        {
+          "url": "https://pools.xyz/",
+          "title": "Pools website"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/pools-trade/"
     },
     {
       "slug": "privy",
@@ -9314,6 +11056,21 @@
           "address": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
           "role": "Relay approval proxy",
           "source": "https://api.relay.link/chains"
+        },
+        {
+          "address": "0x0729e2a4716d9f7dd17858d5d504426d228697f7",
+          "role": "RelayRouter (v3.2 erc20Router)",
+          "source": "https://api.relay.link/chains"
+        },
+        {
+          "address": "0x5567954cd026cebfe486062cb75848e0f1c12e58",
+          "role": "Relay approval proxy (v3.2)",
+          "source": "https://api.relay.link/chains"
+        },
+        {
+          "address": "0x4cd00e387622c35bddb9b4c962c136462338bc31",
+          "role": "RelayDepository (protocol v2)",
+          "source": "https://api.relay.link/chains"
         }
       ],
       "index_ids": [
@@ -9331,7 +11088,7 @@
           "date": "2026-10-20"
         }
       ],
-      "last_reviewed": "2026-10-28",
+      "last_reviewed": "2026-10-31",
       "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/relay/"
     },
@@ -10172,6 +11929,89 @@
       "url": "https://builder.registrai.cc/ecosystem/symbiosis/"
     },
     {
+      "slug": "syn-dao",
+      "name": "Syn DAO",
+      "aliases": [
+        "SynArc",
+        "Syn DAO Pro"
+      ],
+      "category": "payments",
+      "tags": [
+        "ai-agents"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://www.syndaopro.xyz/",
+          "title": "Syn DAO website",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://github.com/kellycryptos/SynArc",
+          "title": "SynArc GitHub README: Arc Mainnet contracts",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/syn-dao",
+          "title": "DefiLlama: Syn DAO (chains: Arc)",
+          "date": "2026-10-23"
+        }
+      ],
+      "summary": "USDC treasury, governance and milestone-escrow platform on Arc for organizations, creators and AI agents. Its README lists treasury, governor, sARC token and escrow contracts on Arc mainnet (chain ID 5042); DefiLlama lists it on Arc.",
+      "website": "https://www.syndaopro.xyz",
+      "x": "syndaopro",
+      "github": "https://github.com/kellycryptos/SynArc",
+      "docs": "https://syndaopro.xyz/docs/sdk",
+      "contracts": [
+        {
+          "address": "0x8205e9782fe54fd2aad895b436b695db169f3d7b",
+          "role": "SynArcTreasury (release valve)",
+          "source": "https://github.com/kellycryptos/SynArc"
+        },
+        {
+          "address": "0x4f76fc6a76b16f58826739ac8eecf7067fde0025",
+          "role": "SynArcGovernor",
+          "source": "https://github.com/kellycryptos/SynArc"
+        },
+        {
+          "address": "0x8f4b429794aba4607d177b100cc5e481d22d0ad4",
+          "role": "SynArcToken (sARC) governance token",
+          "source": "https://github.com/kellycryptos/SynArc"
+        },
+        {
+          "address": "0x99955b487ae5519a2b1ff677f9bed3a6145b750d",
+          "role": "SynArcCrowdfund milestone escrow",
+          "source": "https://github.com/kellycryptos/SynArc"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.syndaopro.xyz/",
+          "title": "Syn DAO website"
+        },
+        {
+          "url": "https://github.com/kellycryptos/SynArc",
+          "title": "SynArc GitHub README"
+        },
+        {
+          "url": "https://api.llama.fi/protocol/syn-dao",
+          "title": "DefiLlama protocol API: Syn DAO",
+          "date": "2026-10-23"
+        },
+        {
+          "url": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/treasury/syndao.js",
+          "title": "DefiLlama adapter: syndao.js"
+        },
+        {
+          "url": "https://partners.circle.com/partner/syn-dao",
+          "title": "Circle Alliance Directory: Syn DAO",
+          "date": "2026-10-20"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/syn-dao/"
+    },
+    {
       "slug": "synthra",
       "name": "Synthra",
       "category": "dexs",
@@ -10240,6 +12080,44 @@
       ],
       "last_reviewed": "2026-10-20",
       "url": "https://builder.registrai.cc/ecosystem/taurus/"
+    },
+    {
+      "slug": "tazapay",
+      "name": "Tazapay",
+      "category": "payments",
+      "status": "announced",
+      "status_evidence": [
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/ecosystem/tazapay",
+          "title": "Arc ecosystem listing: Tazapay"
+        }
+      ],
+      "summary": "Singapore-based B2B cross-border payments company that Circle agreed to acquire on 2026-09-08. Named among payments firms that will enable stablecoin settlement on Arc in Arc's 2026-09-16 mainnet post.",
+      "website": "https://tazapay.com",
+      "first_announced": "2026-09-16",
+      "sources": [
+        {
+          "url": "https://www.arc.io/blog/arc-economic-os-internet",
+          "title": "Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+          "date": "2026-09-16"
+        },
+        {
+          "url": "https://www.arc.io/ecosystem/tazapay",
+          "title": "Arc ecosystem listing: Tazapay"
+        },
+        {
+          "url": "https://www.circle.com/pressroom/circle-expands-global-payments-infrastructure-with-agreement-to-acquire-singapore-based-cross-border-payments-platform-tazapay",
+          "title": "Circle: agreement to acquire Tazapay",
+          "date": "2026-09-08"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/tazapay/"
     },
     {
       "slug": "team-finance",
@@ -11372,6 +13250,63 @@
       ],
       "last_reviewed": "2026-10-20",
       "url": "https://builder.registrai.cc/ecosystem/wisdomtree/"
+    },
+    {
+      "slug": "wizpay",
+      "name": "WizPay",
+      "category": "payments",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://wizpay.xyz/#mainnet-contracts",
+          "title": "WizPay: Mainnet contracts",
+          "type": "mainnet-support"
+        },
+        {
+          "url": "https://docs.wizpay.xyz/introduction",
+          "title": "WizPay docs: Introduction",
+          "type": "mainnet-support"
+        }
+      ],
+      "summary": "Non-custodial stablecoin payments app on Arc for sends, payroll, invoices and payment links, USDC/EURC swaps and CCTP V2 bridging. Its site lists payroll and swap contracts on Arc mainnet (chain ID 5042).",
+      "website": "https://wizpay.xyz",
+      "x": "wizpay_arc",
+      "github": "https://github.com/deseti/wizpay-core",
+      "docs": "https://docs.wizpay.xyz",
+      "contracts": [
+        {
+          "address": "0x77ac7cb6507d404b5530fc03e3d39baaede10c34",
+          "role": "WizPayPayrollMainnet",
+          "source": "https://wizpay.xyz/#mainnet-contracts"
+        },
+        {
+          "address": "0x7a051f17b237750ef9d4e63fb75381b9f8755774",
+          "role": "WizPaySwapExecutorMainnet",
+          "source": "https://wizpay.xyz/#mainnet-contracts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://wizpay.xyz",
+          "title": "WizPay website",
+          "date": "2026-09-25"
+        },
+        {
+          "url": "https://docs.wizpay.xyz/introduction",
+          "title": "WizPay docs: Introduction"
+        },
+        {
+          "url": "https://app.wizpay.xyz",
+          "title": "WizPay app"
+        },
+        {
+          "url": "https://partners.circle.com/partner/wizpay",
+          "title": "Circle Alliance Directory: WizPay",
+          "date": "2026-09-29"
+        }
+      ],
+      "last_reviewed": "2026-10-31",
+      "url": "https://builder.registrai.cc/ecosystem/wizpay/"
     },
     {
       "slug": "wonk-fun",

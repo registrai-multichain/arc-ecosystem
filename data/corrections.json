@@ -3,6 +3,402 @@
   "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
   "corrections": [
     {
+      "id": 146,
+      "date": "2026-10-31",
+      "slug": "binance",
+      "field": "contracts",
+      "change": "Added 1 contract on Arc: Exchange hot wallet (smart account; Etherscan tag on the same address: Binance: Hot Wallet 34)",
+      "source": "https://etherscan.io/address/0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055",
+      "from": "review"
+    },
+    {
+      "id": 145,
+      "date": "2026-10-31",
+      "slug": "kucoin-web3",
+      "field": "other",
+      "change": "Added to the directory: KuCoin Web3, live on mainnet, since 2026-09-16, per Circle launches Arc mainnet (press release)",
+      "source": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+      "from": "review"
+    },
+    {
+      "id": 144,
+      "date": "2026-10-31",
+      "slug": "gate-web3",
+      "field": "other",
+      "change": "Added to the directory: Gate Web3, live on mainnet, since 2026-09-16, per Circle launches Arc mainnet (press release)",
+      "source": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+      "from": "review"
+    },
+    {
+      "id": 143,
+      "date": "2026-10-31",
+      "slug": "tazapay",
+      "field": "other",
+      "change": "Added to the directory: Tazapay, announced, per Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+      "source": "https://www.arc.io/blog/arc-economic-os-internet",
+      "from": "review"
+    },
+    {
+      "id": 142,
+      "date": "2026-10-31",
+      "slug": "pools-trade",
+      "field": "other",
+      "change": "Added to the directory: pools.trade, announced, per Circle launches Arc mainnet (press release)",
+      "source": "https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+      "from": "review"
+    },
+    {
+      "id": 141,
+      "date": "2026-10-31",
+      "slug": "bvnk",
+      "field": "other",
+      "change": "Added to the directory: BVNK, announced, per Arc blog: Arc Mainnet Is Live: The Economic OS for the Internet",
+      "source": "https://www.arc.io/blog/arc-economic-os-internet",
+      "from": "review"
+    },
+    {
+      "id": 140,
+      "date": "2026-10-31",
+      "slug": "agant",
+      "field": "other",
+      "change": "Added to the directory: Agant, live on mainnet, per Agant GBP (GBPA) token contract on Arc explorer",
+      "source": "https://explorer.arc.io/address/0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b",
+      "from": "review"
+    },
+    {
+      "id": 139,
+      "date": "2026-10-31",
+      "slug": "aerodrome",
+      "field": "summary",
+      "change": "Summary updated with the new evidence",
+      "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/metarouter-arc.json",
+      "from": "review"
+    },
+    {
+      "id": 138,
+      "date": "2026-10-31",
+      "slug": "aerodrome",
+      "field": "contracts",
+      "change": "Added 11 contracts on Arc (roles on the project page)",
+      "source": "https://github.com/dromos-labs/metadex-public/blob/main/deployment-addresses/metarouter-arc.json",
+      "from": "review"
+    },
+    {
+      "id": 137,
+      "date": "2026-10-31",
+      "slug": "relay",
+      "field": "contracts",
+      "change": "Added 3 contracts on Arc: RelayRouter (v3.2 erc20Router), Relay approval proxy (v3.2), RelayDepository (protocol v2)",
+      "source": "https://api.relay.link/chains",
+      "from": "review"
+    },
+    {
+      "id": 136,
+      "date": "2026-10-31",
+      "slug": "kyberswap",
+      "field": "contracts",
+      "change": "Added 2 contracts on Arc: KyberSwap AggregationExecutorProxy, KyberSwap InputScalingHelperV2",
+      "source": "https://docs.kyberswap.com/developer-guide/aggregator-api/contracts",
+      "from": "review"
+    },
+    {
+      "id": 135,
+      "date": "2026-10-31",
+      "slug": "lift",
+      "field": "contracts",
+      "change": "Added 1 contract on Arc: LaunchpadFactory (first generation; no longer launches)",
+      "source": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/lift-v1/index.js",
+      "from": "review"
+    },
+    {
+      "id": 134,
+      "date": "2026-10-31",
+      "slug": "extended",
+      "field": "summary",
+      "change": "Summary updated with the new evidence",
+      "source": "https://docs.extended.exchange/about-extended/migration-from-starknet-to-arc",
+      "from": "review"
+    },
+    {
+      "id": 133,
+      "date": "2026-10-31",
+      "slug": "extended",
+      "field": "status",
+      "change": "Announced → Live on mainnet, since 2026-10-22, per Extended docs: Migration from Starknet to Arc",
+      "source": "https://docs.extended.exchange/about-extended/migration-from-starknet-to-arc",
+      "from": "review"
+    },
+    {
+      "id": 132,
+      "date": "2026-10-31",
+      "slug": "extended",
+      "field": "contracts",
+      "change": "Added 2 contracts on Arc: Extended settlement contract (ERC-1967 proxy), linked from its docs, Extended asset-holding contract (ERC-1967 proxy), counted by DefiLlama",
+      "source": "https://docs.extended.exchange/about-extended/technical-architecture",
+      "from": "review"
+    },
+    {
+      "id": 131,
+      "date": "2026-10-31",
+      "slug": "edgex",
+      "field": "contracts",
+      "change": "Added 1 contract on Arc: edgeX USDC deposit contract on Arc (ERC-1967 proxy; counted by DefiLlama edgeX Bridge)",
+      "source": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/registries/sumTokens/data3.js",
+      "from": "review"
+    },
+    {
+      "id": 130,
+      "date": "2026-10-31",
+      "slug": "mercurifi",
+      "field": "contracts",
+      "change": "Added 4 contracts on Arc: Guardian (pause/unpause new launches; 2-of-3 multisig), AgentAccountFactory, AgentPolicyRegistry, AgentAccount (implementation)",
+      "source": "https://docs.mercuri.finance/contracts",
+      "from": "review"
+    },
+    {
+      "id": 129,
+      "date": "2026-10-31",
+      "slug": "lunya",
+      "field": "contracts",
+      "change": "Added 7 contracts on Arc: Exchange: Pool Deployer, Exchange: Public Lister, Exchange: Terms Lister, Exchange: Plugin Factory, Exchange: Liquidity Helper, Exchange: Tick Lens, Exchange: Eternal Farming",
+      "source": "https://docs.lunya.io/developers/contracts",
+      "from": "review"
+    },
+    {
+      "id": 128,
+      "date": "2026-10-31",
+      "slug": "bitget",
+      "field": "other",
+      "change": "Added to the directory: Bitget, live on mainnet, since 2026-09-16, per Bitget Will Support USD Coin (USDC)-ARC Network Service",
+      "source": "https://www.bitget.com/support/articles/12560603895329",
+      "from": "review"
+    },
+    {
+      "id": 127,
+      "date": "2026-10-31",
+      "slug": "pancakeswap",
+      "field": "other",
+      "change": "Added to the directory: PancakeSwap, live on mainnet, per PancakeSwap developer docs: Infinity addresses",
+      "source": "https://developer.pancakeswap.finance/contracts/infinity/resources/addresses",
+      "from": "review"
+    },
+    {
+      "id": 126,
+      "date": "2026-10-31",
+      "slug": "ark-launch",
+      "field": "other",
+      "change": "Added to the directory: ARK Launch, live on mainnet, per ARK Launch contracts README: Arc mainnet deployments",
+      "source": "https://github.com/yinyuan659-dev/ark",
+      "from": "review"
+    },
+    {
+      "id": 125,
+      "date": "2026-10-31",
+      "slug": "mysphere",
+      "field": "other",
+      "change": "Added to the directory: MySphere, live on mainnet, per MySphere: How it works",
+      "source": "https://mysphere.fun/how",
+      "from": "review"
+    },
+    {
+      "id": 124,
+      "date": "2026-10-31",
+      "slug": "dyor-swap",
+      "field": "other",
+      "change": "Added to the directory: DYOR Swap, live on mainnet, per DefiLlama: DyorSwap AMM (chains include Arc)",
+      "source": "https://api.llama.fi/protocol/dyorswap-amm",
+      "from": "review"
+    },
+    {
+      "id": 123,
+      "date": "2026-10-31",
+      "slug": "node101",
+      "field": "other",
+      "change": "Added to the directory: node101, announced, per Circle Alliance Directory: node101",
+      "source": "https://partners.circle.com/partner/node101",
+      "from": "review"
+    },
+    {
+      "id": 122,
+      "date": "2026-10-31",
+      "slug": "wizpay",
+      "field": "other",
+      "change": "Added to the directory: WizPay, live on mainnet, per WizPay: Mainnet contracts",
+      "source": "https://wizpay.xyz/#mainnet-contracts",
+      "from": "review"
+    },
+    {
+      "id": 121,
+      "date": "2026-10-31",
+      "slug": "arclens",
+      "field": "other",
+      "change": "Added to the directory: ArcLens, live on mainnet, per ArcLens GitHub README: Arc mainnet",
+      "source": "https://github.com/arclens-app/arclens",
+      "from": "review"
+    },
+    {
+      "id": 120,
+      "date": "2026-10-31",
+      "slug": "syn-dao",
+      "field": "other",
+      "change": "Added to the directory: Syn DAO, live on mainnet, per Syn DAO website",
+      "source": "https://www.syndaopro.xyz/",
+      "from": "review"
+    },
+    {
+      "id": 119,
+      "date": "2026-10-31",
+      "slug": "a-new-one",
+      "field": "other",
+      "change": "Added to the directory: A New One, live on mainnet, since 2026-09-16, per A NEW ONE docs: Contracts",
+      "source": "https://anewone.xyz/docs.html",
+      "from": "review"
+    },
+    {
+      "id": 118,
+      "date": "2026-10-31",
+      "slug": "doppler-finance",
+      "field": "other",
+      "change": "Added to the directory: Doppler Finance, announced, per Arc ecosystem partner page",
+      "source": "https://www.arc.io/ecosystem/doppler",
+      "from": "review"
+    },
+    {
+      "id": 117,
+      "date": "2026-10-31",
+      "slug": "forte-securities",
+      "field": "other",
+      "change": "Added to the directory: Forte Securities, announced, per Arc ecosystem partner page",
+      "source": "https://www.arc.io/ecosystem/forte-securities",
+      "from": "review"
+    },
+    {
+      "id": 116,
+      "date": "2026-10-31",
+      "slug": "forte-aud",
+      "field": "other",
+      "change": "Added to the directory: Forte AUD, live on mainnet, per Forte AUD site: AUDF supported blockchains include Arc",
+      "source": "https://www.forteaud.com/",
+      "from": "review"
+    },
+    {
+      "id": 115,
+      "date": "2026-10-31",
+      "slug": "fordefi",
+      "field": "other",
+      "change": "Added to the directory: Fordefi, live on mainnet, per Fordefi docs: Supported Blockchains (EVM list includes Arc)",
+      "source": "https://docs.fordefi.com/user-guide/manage-chains/supported-blockchains",
+      "from": "review"
+    },
+    {
+      "id": 114,
+      "date": "2026-10-31",
+      "slug": "fast",
+      "field": "other",
+      "change": "Added to the directory: Fast, live on mainnet, per Fast CLI mainnet network config: arc (chain 5042), AllSet bridge",
+      "source": "https://github.com/fastxyz/fast-sdk/blob/main/app/cli/src/config/networks.ts",
+      "from": "review"
+    },
+    {
+      "id": 113,
+      "date": "2026-10-31",
+      "slug": "eco",
+      "field": "other",
+      "change": "Added to the directory: Eco, deployed, per eco/routes-cli PR #30: add Arc mainnet (5042), dedicated Arc Portal",
+      "source": "https://github.com/eco/routes-cli/pull/30",
+      "from": "review"
+    },
+    {
+      "id": 112,
+      "date": "2026-10-31",
+      "slug": "dune",
+      "field": "other",
+      "change": "Added to the directory: Dune, live on mainnet, per Dune data catalog: Arc overview",
+      "source": "https://docs.dune.com/data-catalog/evm/arc/overview",
+      "from": "review"
+    },
+    {
+      "id": 111,
+      "date": "2026-10-31",
+      "slug": "defillama",
+      "field": "other",
+      "change": "Added to the directory: DefiLlama, live on mainnet, per DefiLlama chains API: Arc, chainId 5042",
+      "source": "https://api.llama.fi/v2/chains",
+      "from": "review"
+    },
+    {
+      "id": 110,
+      "date": "2026-10-31",
+      "slug": "coinmarketcap",
+      "field": "other",
+      "change": "Added to the directory: CoinMarketCap, live on mainnet, per CoinMarketCap: Arc Ecosystem token category",
+      "source": "https://coinmarketcap.com/view/arc-ecosystem/",
+      "from": "review"
+    },
+    {
+      "id": 109,
+      "date": "2026-10-31",
+      "slug": "blockaid",
+      "field": "other",
+      "change": "Added to the directory: Blockaid, live on mainnet, since 2026-09-16, per Blockaid Brings Real-Time Transaction Protection to Arc with MetaMask",
+      "source": "https://www.blockaid.io/blog/blockaid-brings-real-time-transaction-protection-to-arc-with-metamask",
+      "from": "review"
+    },
+    {
+      "id": 108,
+      "date": "2026-10-31",
+      "slug": "bdacs",
+      "field": "summary",
+      "change": "Summary updated with the new evidence",
+      "source": "https://en.newsroom.bdacs.co.kr/260917-krw1-circle-arc/",
+      "from": "review"
+    },
+    {
+      "id": 107,
+      "date": "2026-10-31",
+      "slug": "bdacs",
+      "field": "status",
+      "change": "Announced → Live on mainnet, since 2026-09-16, per BDACS: KRW1 is Live on Arc",
+      "source": "https://en.newsroom.bdacs.co.kr/260917-krw1-circle-arc/",
+      "from": "review"
+    },
+    {
+      "id": 106,
+      "date": "2026-10-31",
+      "slug": "allnodes",
+      "field": "other",
+      "change": "Added to the directory: Allnodes, live on mainnet, per PublicNode (Allnodes): RPC Gateway to Arc, Mainnet endpoint",
+      "source": "https://arc.publicnode.com/",
+      "from": "review"
+    },
+    {
+      "id": 105,
+      "date": "2026-10-31",
+      "slug": "allium",
+      "field": "other",
+      "change": "Added to the directory: Allium, live on mainnet, per Allium changelog: Arc supported on balances and transactions APIs",
+      "source": "https://docs.allium.so/changelog/overview",
+      "from": "review"
+    },
+    {
+      "id": 104,
+      "date": "2026-10-31",
+      "slug": "aleo",
+      "field": "other",
+      "change": "Added to the directory: Aleo, live on mainnet, since 2026-09-16, per Circle xReserve release notes 2026: Arc mainnet added as source chain",
+      "source": "https://developers.circle.com/release-notes/xreserve-2026",
+      "from": "review"
+    },
+    {
+      "id": 103,
+      "date": "2026-10-31",
+      "slug": "alcove",
+      "field": "other",
+      "change": "Added to the directory: Alcove, announced, per Arc ecosystem partner page",
+      "source": "https://www.arc.io/ecosystem/alcove",
+      "from": "review"
+    },
+    {
       "id": 102,
       "date": "2026-10-26",
       "slug": "opensea",
