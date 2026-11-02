@@ -1,8 +1,8 @@
 # Arc ecosystem data
 
-Open data on the Arc ecosystem from Registrai (registrai.cc): 291 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-11-01 UTC.
+Open data on the Arc ecosystem from Registrai (registrai.cc): 297 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-11-02 UTC.
 
-291 projects: 136 live on Arc mainnet, 21 deployed, 134 announced. Each has a page with its status, the evidence for it, its sources and a review date.
+297 projects: 142 live on Arc mainnet, 21 deployed, 134 announced. Each has a page with its status, the evidence for it, its sources and a review date.
 
 ## Pages
 
@@ -21,26 +21,26 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 291 projects with 
 
 ### Categories
 
-- [Payment apps on Arc](https://builder.registrai.cc/ecosystem/payments/) (48)
-- [Infrastructure for Arc](https://builder.registrai.cc/ecosystem/infrastructure/) (28)
+- [Payment apps on Arc](https://builder.registrai.cc/ecosystem/payments/) (51)
+- [Infrastructure for Arc](https://builder.registrai.cc/ecosystem/infrastructure/) (29)
 - [DEXs on Arc](https://builder.registrai.cc/ecosystem/dexs/) (27)
 - [Launchpads on Arc](https://builder.registrai.cc/ecosystem/launchpads/) (27)
 - [Wallets that support Arc](https://builder.registrai.cc/ecosystem/wallets/) (27)
 - [Exchanges that support Arc](https://builder.registrai.cc/ecosystem/exchanges/) (20)
 - [Banks building on Arc](https://builder.registrai.cc/ecosystem/banks/) (18)
+- [AI agents on Arc](https://builder.registrai.cc/ecosystem/ai-agents/) (15)
 - [Asset managers on Arc](https://builder.registrai.cc/ecosystem/asset-managers/) (15)
 - [Bridges and cross-chain on Arc](https://builder.registrai.cc/ecosystem/bridges/) (15)
 - [Lending on Arc](https://builder.registrai.cc/ecosystem/lending/) (15)
-- [AI agents on Arc](https://builder.registrai.cc/ecosystem/ai-agents/) (13)
+- [Trading on Arc](https://builder.registrai.cc/ecosystem/trading/) (14)
 - [Custody on Arc](https://builder.registrai.cc/ecosystem/custody/) (13)
-- [Trading on Arc](https://builder.registrai.cc/ecosystem/trading/) (13)
+- [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (13)
 - [Arc validators](https://builder.registrai.cc/ecosystem/validators/) (12)
-- [Developer tools for Arc](https://builder.registrai.cc/ecosystem/developer-tools/) (12)
 - [Tokenization and RWA on Arc](https://builder.registrai.cc/ecosystem/rwa/) (12)
 - [Stablecoin issuers on Arc](https://builder.registrai.cc/ecosystem/stablecoin-issuers/) (11)
 - [Market makers on Arc](https://builder.registrai.cc/ecosystem/market-makers/) (10)
 - [games](https://builder.registrai.cc/ecosystem/games/) (6)
-- [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (4)
+- [Games and consumer apps on Arc](https://builder.registrai.cc/ecosystem/consumer/) (5)
 - [On/off-ramps for Arc](https://builder.registrai.cc/ecosystem/ramps/) (3)
 
 ## Files
@@ -61,7 +61,7 @@ In `arc-daily.csv`, `snapshot_date` is the day of the 00:00 UTC snapshot: suppli
 
 ## Cite
 
-Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-11-01.
+Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-11-02.
 
 ## Schedule
 

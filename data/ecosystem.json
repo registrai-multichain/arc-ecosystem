@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-10-31",
-  "count": 291,
+  "updated": "2026-11-01",
+  "count": 297,
   "entities": [
     {
       "slug": "0x",
@@ -2320,6 +2320,56 @@
       "last_reviewed": "2026-10-31",
       "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/bdacs/"
+    },
+    {
+      "slug": "beacon-oracle",
+      "name": "BEACON Oracle",
+      "category": "infrastructure",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://explorer.arc.io/address/0xe0e4894106b1e517752515d40601ec890262e0ea",
+          "title": "USDCNGNOracle (ERC1967 proxy, description \"USDC / NGN\") on Arc explorer"
+        },
+        {
+          "url": "https://explorer.arc.io/block/28544623",
+          "title": "Arc mainnet block 28544623: first block with code at 0xe0e4894106b1e517752515d40601ec890262e0ea",
+          "date": "2026-10-29"
+        }
+      ],
+      "summary": "USDC/NGN price oracle: an off-chain reporter publishes the median of exchange and FX sources to a Chainlink-compatible contract. On Arc mainnet since 2026-10-29; 51 rounds from 2026-10-31 to 2026-11-01 07:25 UTC, then no update, so reads revert. Built with Arc Studio.",
+      "website": "https://beacon-oracle.vercel.app",
+      "github": "https://github.com/Elijah463/beacon-oracle",
+      "first_live": "2026-10-29",
+      "contracts": [
+        {
+          "address": "0xe0e4894106b1e517752515d40601ec890262e0ea",
+          "role": "USDCNGNOracle (ERC1967 proxy, description \"USDC / NGN\")",
+          "source": "https://github.com/Elijah463/beacon-oracle/blob/HEAD/README.md"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Elijah463/beacon-oracle",
+          "title": "Elijah463/beacon-oracle on GitHub"
+        },
+        {
+          "url": "https://github.com/Elijah463/beacon-oracle/blob/HEAD/console.jsonl",
+          "title": "console.jsonl: Arc Studio export file (preview.studio.arc.io)"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: latestRound() is 51; getRoundData(1) updated 2026-10-31 00:23 UTC and getRoundData(51) 2026-11-01 07:25 UTC; latestAnswer() reverts once a round is over maxStaleness (3600 s)",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://builder.registrai.cc/arc/studio/",
+          "title": "Registrai: apps built with Arc Studio",
+          "date": "2026-11-01"
+        }
+      ],
+      "last_reviewed": "2026-11-01",
+      "url": "https://builder.registrai.cc/ecosystem/beacon-oracle/"
     },
     {
       "slug": "beefy",
@@ -7183,6 +7233,73 @@
       "url": "https://builder.registrai.cc/ecosystem/huma-finance/"
     },
     {
+      "slug": "humanlayer",
+      "name": "HumanLayer",
+      "category": "ai-agents",
+      "tags": [
+        "payments"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://explorer.arc.io/address/0x43762d26a9c035d70c04d3cef58db46227073e1e",
+          "title": "HumanLayer bounty escrow (active deployment) on Arc explorer"
+        },
+        {
+          "url": "https://explorer.arc.io/block/28664886",
+          "title": "Arc mainnet block 28664886: first block with code at 0x3f77cbaec7798024c1ea91755dffeb0c516767fe",
+          "date": "2026-10-30"
+        }
+      ],
+      "summary": "USDC bounty marketplace: buyers post research and data tasks, escrow the reward and pay workers when a submission is approved, with a 2% fee. Built with Arc Studio; contract on Arc mainnet since 2026-10-30, with an agent API.",
+      "website": "https://agent-human-layer.vercel.app",
+      "github": "https://github.com/I-am-Esmart/HumanLayer",
+      "first_live": "2026-10-30",
+      "contracts": [
+        {
+          "address": "0x43762d26a9c035d70c04d3cef58db46227073e1e",
+          "role": "HumanLayer bounty escrow (active deployment)",
+          "source": "https://github.com/I-am-Esmart/HumanLayer/blob/HEAD/contracts/deployments/arc-mainnet-HumanLayer.json"
+        },
+        {
+          "address": "0x3f77cbaec7798024c1ea91755dffeb0c516767fe",
+          "role": "HumanLayer bounty escrow (earlier deployment)",
+          "source": "https://github.com/I-am-Esmart/HumanLayer/blob/HEAD/contracts/deployments/arc-mainnet-HumanLayer-v3.json"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/I-am-Esmart/HumanLayer",
+          "title": "I-am-Esmart/HumanLayer on GitHub"
+        },
+        {
+          "url": "https://github.com/I-am-Esmart/HumanLayer/blob/HEAD/console.jsonl",
+          "title": "console.jsonl: Arc Studio export file (preview.studio.arc.io)"
+        },
+        {
+          "url": "https://agent-human-layer.vercel.app/health",
+          "title": "HumanLayer Agent API health: chain 5042 and the active contract",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://github.com/I-am-Esmart/HumanLayer/blob/HEAD/docs/arc-network-configuration.md",
+          "title": "HumanLayer: Arc network configuration"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: eth_getCode and contract creation block",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://builder.registrai.cc/arc/studio/",
+          "title": "Registrai: apps built with Arc Studio",
+          "date": "2026-11-01"
+        }
+      ],
+      "last_reviewed": "2026-11-01",
+      "url": "https://builder.registrai.cc/ecosystem/humanlayer/"
+    },
+    {
       "slug": "imc",
       "name": "IMC",
       "category": "market-makers",
@@ -9168,6 +9285,59 @@
       "url": "https://builder.registrai.cc/ecosystem/metamask/"
     },
     {
+      "slug": "meter",
+      "name": "Meter",
+      "category": "payments",
+      "tags": [
+        "developer-tools"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://explorer.arc.io/address/0x423b8701da3a251a3a3fc2d241b71e8d05744c91",
+          "title": "MeterRegistry on Arc explorer"
+        },
+        {
+          "url": "https://explorer.arc.io/block/27958292",
+          "title": "Arc mainnet block 27958292: first block with code at 0x423b8701da3a251a3a3fc2d241b71e8d05744c91",
+          "date": "2026-10-26"
+        }
+      ],
+      "summary": "Pay-per-call API gateway: a caller pays a registered endpoint in USDC through the MeterRegistry contract and sends the transaction hash as proof. Contract on Arc mainnet since 2026-10-26; built with Arc Studio.",
+      "website": "https://getmeter.vercel.app",
+      "github": "https://github.com/thesithunyein/meter",
+      "first_live": "2026-10-26",
+      "contracts": [
+        {
+          "address": "0x423b8701da3a251a3a3fc2d241b71e8d05744c91",
+          "role": "MeterRegistry",
+          "source": "https://github.com/thesithunyein/meter/blob/HEAD/README.md"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/thesithunyein/meter",
+          "title": "thesithunyein/meter on GitHub"
+        },
+        {
+          "url": "https://github.com/thesithunyein/meter/blob/HEAD/console.jsonl",
+          "title": "console.jsonl: Arc Studio export file (preview.studio.arc.io)"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: eth_getCode and contract creation block",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://builder.registrai.cc/arc/studio/",
+          "title": "Registrai: apps built with Arc Studio",
+          "date": "2026-11-01"
+        }
+      ],
+      "last_reviewed": "2026-11-01",
+      "url": "https://builder.registrai.cc/ecosystem/meter/"
+    },
+    {
       "slug": "mexc",
       "name": "MEXC",
       "category": "exchanges",
@@ -10147,6 +10317,56 @@
       "url": "https://builder.registrai.cc/ecosystem/pancakeswap/"
     },
     {
+      "slug": "pante",
+      "name": "Pante",
+      "category": "consumer",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://explorer.arc.io/address/0xafad8536f3511b3f7bee6f3ba4b74dee699d5645",
+          "title": "PANTE token (ERC-20) on Arc explorer"
+        },
+        {
+          "url": "https://explorer.arc.io/block/22610869",
+          "title": "Arc mainnet block 22610869: first block with code at 0xafad8536f3511b3f7bee6f3ba4b74dee699d5645",
+          "date": "2026-09-25"
+        }
+      ],
+      "summary": "PANTE, a token on Arc mainnet with a 1 billion supply, and a site that links to its Synthra launchpad, swap and pool pages. Token contract on Arc mainnet since 2026-09-25; the site was built with Arc Studio.",
+      "website": "https://pante.vercel.app",
+      "github": "https://github.com/nheoshikuyanhemo/Pante",
+      "first_live": "2026-09-25",
+      "contracts": [
+        {
+          "address": "0xafad8536f3511b3f7bee6f3ba4b74dee699d5645",
+          "role": "PANTE token (ERC-20)",
+          "source": "https://github.com/nheoshikuyanhemo/Pante/blob/HEAD/src/contracts/PanteToken.ts"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/nheoshikuyanhemo/Pante",
+          "title": "nheoshikuyanhemo/Pante on GitHub"
+        },
+        {
+          "url": "https://github.com/nheoshikuyanhemo/Pante/blob/HEAD/vite.config.ts",
+          "title": "vite.config.ts: Arc Studio export file (preview.studio.arc.io)"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: eth_getCode and contract creation block",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://builder.registrai.cc/arc/studio/",
+          "title": "Registrai: apps built with Arc Studio",
+          "date": "2026-11-01"
+        }
+      ],
+      "last_reviewed": "2026-11-01",
+      "url": "https://builder.registrai.cc/ecosystem/pante/"
+    },
+    {
       "slug": "parabolarc",
       "name": "Parabolarc",
       "category": "launchpads",
@@ -10562,6 +10782,69 @@
       ],
       "last_reviewed": "2026-10-31",
       "url": "https://builder.registrai.cc/ecosystem/pools-trade/"
+    },
+    {
+      "slug": "predictagent",
+      "name": "PredictAgent",
+      "category": "ai-agents",
+      "tags": [
+        "trading"
+      ],
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://explorer.arc.io/address/0xf4dcf358ecea1b66fe3d61bbb1c17b23f109c65f",
+          "title": "PredictAgent escrow contract (active) on Arc explorer"
+        },
+        {
+          "url": "https://explorer.arc.io/tx/0xc26132b0a3336a6102ca8aebfe5b067d4f7631b66fe302b41057e3ab3d0df06c",
+          "title": "Deploy transaction of the first PredictAgent contract 0xd64d1fd08e81bbf5aaa194a138d005aa4d4e75ff (Arc mainnet block 26454987), linked from the README",
+          "date": "2026-10-17"
+        },
+        {
+          "url": "https://explorer.arc.io/block/26822365",
+          "title": "Arc mainnet block 26822365: first block with code at 0xf4dcf358ecea1b66fe3d61bbb1c17b23f109c65f",
+          "date": "2026-10-19"
+        }
+      ],
+      "summary": "Price-signal marketplace for AI agents: buyers pay USDC per signal, held in escrow until the seller reveals a prediction committed onchain. Built with Arc Studio for the Arc Microgrants program; first contract on Arc mainnet 2026-10-17, the active one since 2026-10-19.",
+      "website": "https://predict-agent.vercel.app",
+      "github": "https://github.com/Agozie180/PredictAgent",
+      "first_live": "2026-10-17",
+      "contracts": [
+        {
+          "address": "0xf4dcf358ecea1b66fe3d61bbb1c17b23f109c65f",
+          "role": "PredictAgent escrow contract (active: the app's config and README)",
+          "source": "https://github.com/Agozie180/PredictAgent/blob/HEAD/vercel.json"
+        },
+        {
+          "address": "0xd64d1fd08e81bbf5aaa194a138d005aa4d4e75ff",
+          "role": "PredictAgent escrow contract (first deployment, same code and owner)",
+          "source": "https://github.com/Agozie180/PredictAgent/blob/HEAD/README.md"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Agozie180/PredictAgent",
+          "title": "Agozie180/PredictAgent on GitHub"
+        },
+        {
+          "url": "https://github.com/Agozie180/PredictAgent/blob/HEAD/traces.jsonl",
+          "title": "traces.jsonl: Arc Studio export file (preview.studio.arc.io)"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: eth_getCode and contract creation block",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://builder.registrai.cc/arc/studio/",
+          "title": "Registrai: apps built with Arc Studio",
+          "date": "2026-11-01"
+        }
+      ],
+      "last_reviewed": "2026-11-01",
+      "url": "https://builder.registrai.cc/ecosystem/predictagent/"
     },
     {
       "slug": "privy",
@@ -11508,6 +11791,56 @@
       "last_reviewed": "2026-10-28",
       "first_live": "2026-09-16",
       "url": "https://builder.registrai.cc/ecosystem/solonpad/"
+    },
+    {
+      "slug": "splitty",
+      "name": "Splitty",
+      "category": "payments",
+      "status": "live",
+      "status_evidence": [
+        {
+          "url": "https://explorer.arc.io/address/0x941e49c0cf2f76cc4f79d9fd1e4a892893e90032",
+          "title": "SplittyBatcher (ERC-20 batch transfers) on Arc explorer"
+        },
+        {
+          "url": "https://explorer.arc.io/block/22190976",
+          "title": "Arc mainnet block 22190976: first block with code at 0x941e49c0cf2f76cc4f79d9fd1e4a892893e90032",
+          "date": "2026-09-22"
+        }
+      ],
+      "summary": "Batch USDC payments: send USDC or any ERC-20 on Arc to many wallets in one transaction, funded from other chains through Circle Gateway. Its SplittyBatcher contract has been on Arc mainnet since 2026-09-22; built with Arc Studio.",
+      "website": "https://splitty.live",
+      "github": "https://github.com/SPLITTY-ORG/SPLITTY",
+      "first_live": "2026-09-22",
+      "contracts": [
+        {
+          "address": "0x941e49c0cf2f76cc4f79d9fd1e4a892893e90032",
+          "role": "SplittyBatcher (ERC-20 batch transfers)",
+          "source": "https://github.com/SPLITTY-ORG/SPLITTY/blob/HEAD/documentation/reference/contract-addresses.md"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/SPLITTY-ORG/SPLITTY",
+          "title": "SPLITTY-ORG/SPLITTY on GitHub"
+        },
+        {
+          "url": "https://github.com/SPLITTY-ORG/SPLITTY/blob/HEAD/vite.config.ts",
+          "title": "vite.config.ts: Arc Studio export file (preview.studio.arc.io)"
+        },
+        {
+          "url": "https://rpc.mainnet.arc.io",
+          "title": "Arc mainnet RPC: eth_getCode and contract creation block",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://builder.registrai.cc/arc/studio/",
+          "title": "Registrai: apps built with Arc Studio",
+          "date": "2026-11-01"
+        }
+      ],
+      "last_reviewed": "2026-11-01",
+      "url": "https://builder.registrai.cc/ecosystem/splitty/"
     },
     {
       "slug": "stablecorp",

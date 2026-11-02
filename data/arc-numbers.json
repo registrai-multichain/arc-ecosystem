@@ -1,36 +1,36 @@
 {
   "version": 1,
   "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
-  "generated_at": "2026-11-01T06:29:58.824Z",
+  "generated_at": "2026-11-02T06:31:28.933Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 28945019,
+    "block_height": 29115621,
     "block_time_s": 0.507,
-    "as_of": "2026-11-01T06:29:58.824Z",
+    "as_of": "2026-11-02T06:31:28.933Z",
     "rpc_url": "https://rpc.mainnet.arc.io",
     "explorer_url": "https://explorer.arc.io"
   },
   "stablecoins": {
-    "usdc_supply": 1085160367.179309,
-    "eurc_supply": 9253734.121143,
-    "as_of": "2026-11-01T06:29:58.824Z",
-    "all_stablecoins_usd": 1096988221.99,
-    "tvl_usd": 589444718,
-    "defillama_date": "2026-11-01",
+    "usdc_supply": 1079799639.261907,
+    "eurc_supply": 7618783.558032,
+    "as_of": "2026-11-02T06:31:28.933Z",
+    "all_stablecoins_usd": 1097512045.8799999,
+    "tvl_usd": 578626361,
+    "defillama_date": "2026-11-02",
     "tokens": [
       {
         "symbol": "USDC",
         "issuer": "Circle",
         "address": "0x3600000000000000000000000000000000000000",
-        "supply": 1085160367.179309
+        "supply": 1079799639.261907
       },
       {
         "symbol": "EURC",
         "issuer": "Circle",
         "address": "0xbef5f6d51cb62b58e6a8f77868681825c6fe21c1",
-        "supply": 9253734.121143
+        "supply": 7618783.558032
       },
       {
         "symbol": "AUDD",
@@ -119,39 +119,39 @@
     ]
   },
   "activity_24h": {
-    "data_until": "2026-11-01T06:00:00Z",
-    "usdc_moved_usd_est": 129048918.6,
-    "eurc_moved_usd_est": 1118709.9,
-    "usdc_transfers_est": 318000,
-    "app_payments": 63683,
-    "app_usd": 12603338.72,
-    "attributed_share_pct": 9.77,
-    "transactions_est": 346000,
+    "data_until": "2026-11-02T06:00:00Z",
+    "usdc_moved_usd_est": 213777414.3,
+    "eurc_moved_usd_est": 11138126.4,
+    "usdc_transfers_est": 520380,
+    "app_payments": 81188,
+    "app_usd": 17071361.16,
+    "attributed_share_pct": 7.99,
+    "transactions_est": 541000,
     "tx_sample": {
       "blocks": 240,
-      "from_block": 28775315,
-      "to_block": 28945019
+      "from_block": 28945917,
+      "to_block": 29115621
     },
     "active_accounts": {
-      "date": "2026-10-31",
-      "count": 13290
+      "date": "2026-11-01",
+      "count": 12205
     }
   },
   "ecosystem": {
-    "projects": 291,
-    "live": 136,
+    "projects": 297,
+    "live": 142,
     "deployed": 21,
     "announced": 134,
     "top_categories": [
       {
         "id": "payments",
         "label": "Payment apps on Arc",
-        "count": 48
+        "count": 51
       },
       {
         "id": "infrastructure",
         "label": "Infrastructure for Arc",
-        "count": 28
+        "count": 29
       },
       {
         "id": "dexs",
@@ -180,11 +180,11 @@
       "aei": 42
     },
     "index_close": {
-      "abi": 938.433,
-      "aii": 914.642,
-      "aei": 940.689
+      "abi": 939.277,
+      "aii": 907.446,
+      "aei": 934.25
     },
-    "data_until": "2026-11-01T06:00:00Z"
+    "data_until": "2026-11-02T06:00:00Z"
   },
   "timeline": [
     {
@@ -206,8 +206,8 @@
   "errors": [],
   "attributed_share_7d": {
     "window_days": 7,
-    "until": "2026-11-01T00:00:00Z",
-    "pct": 7.22,
+    "until": "2026-11-02T00:00:00Z",
+    "pct": 7.37,
     "daily_min": 4.59,
     "daily_max": 13.33,
     "complete": true
