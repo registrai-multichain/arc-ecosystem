@@ -4,9 +4,41 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 297 projects with 
 
 297 projects: 142 live on Arc mainnet, 21 deployed, 134 announced. Each has a page with its status, the evidence for it, its sources and a review date.
 
+## Arc at a glance
+
+- Arc is the Layer-1 blockchain built by Circle. Its public mainnet launched on 16 September 2026 ([source](https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet)).
+- Gas is paid in USDC. Mainnet chain ID: 5042. Public RPC: https://rpc.mainnet.arc.io. Block explorer: https://explorer.arc.io ([Arc docs](https://docs.arc.io/arc/references/rpc-endpoints)).
+- USDC on Arc: 1,079,799,639; EURC: 7,618,784, read from the chain on 2 November 2026.
+
+Every fact with its source: [Arc blockchain: facts with sources](https://builder.registrai.cc/arc/facts/). Figures that change, with daily history: [Arc in numbers](https://builder.registrai.cc/arc/).
+
+## Most-used apps on Arc, last 7 days
+
+To 2026-11-02 06:00 UTC, by stablecoin payments received (USD). Source: Arc Ecosystem Index (Registrai); definitions on the [methodology](https://builder.registrai.cc/methodology/) page. Hourly, with every app: [Most-used apps on Arc](https://builder.registrai.cc/arc/most-used-apps/).
+
+| # | App | Category | Received (USD) | Payments |
+|---:|---|---|---:|---:|
+| 1 | [Uniswap](https://builder.registrai.cc/ecosystem/uniswap/) | DEXs | $48,347,861 | 452,524 |
+| 2 | [KyberSwap](https://builder.registrai.cc/ecosystem/kyberswap/) | DEXs | $3,991,996 | 11,320 |
+| 3 | [0x](https://builder.registrai.cc/ecosystem/0x/) | DEXs | $2,804,664 | 8,068 |
+| 4 | [Archery](https://builder.registrai.cc/ecosystem/archery/) | DEXs | $2,214,681 | 15,249 |
+| 5 | [Morpho](https://builder.registrai.cc/ecosystem/morpho/) | Lending | $1,984,804 | 3,461 |
+| 6 | [Relay](https://builder.registrai.cc/ecosystem/relay/) | Bridges and cross-chain | $1,831,605 | 11,774 |
+| 7 | [rhino.fi](https://builder.registrai.cc/ecosystem/rhino-fi/) | Bridges and cross-chain | $1,639,701 | 2,488 |
+| 8 | [LI.FI](https://builder.registrai.cc/ecosystem/li-fi/) | Bridges and cross-chain | $1,509,099 | 15,488 |
+| 9 | [Aave](https://builder.registrai.cc/ecosystem/aave/) | Lending | $763,916 | 739 |
+| 10 | [OKX Wallet](https://builder.registrai.cc/ecosystem/okx-wallet/) | Wallets | $756,915 | 19,480 |
+
+## Arc data API and MCP server
+
+- Data API: https://builder.registrai.cc/api/v1, public JSON, no key, CORS open. For example `/ecosystem` (every project), `/arc` (Arc in numbers), `/arc/apps-week` (apps over 7 days), `/indices`. Reference: https://builder.registrai.cc/data-api/
+- MCP server for AI agents, read-only, no key: https://builder.registrai.cc/api/mcp (official MCP Registry: `cc.registrai/arc-data`)
+
 ## Pages
 
+- [Registrai: data on the Arc ecosystem](https://builder.registrai.cc/): every page below in one list
 - [Arc ecosystem directory](https://builder.registrai.cc/ecosystem/)
+- [Arc blockchain: facts with sources](https://builder.registrai.cc/arc/facts/)
 - [Arc in numbers](https://builder.registrai.cc/arc/): chain and stablecoin figures with daily snapshots
 - [Most-used apps on Arc, last 7 days](https://builder.registrai.cc/arc/most-used-apps/)
 - [Apps that accept USDC on Arc](https://builder.registrai.cc/arc/apps-that-accept-usdc/)
@@ -16,8 +48,9 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 297 projects with 
 - [Indices](https://builder.registrai.cc/builders-index/): Arc Builders, Integrations and Ecosystem indices
 - [Methodology](https://builder.registrai.cc/methodology/): definitions, sources and limits
 - [Corrections log](https://builder.registrai.cc/ecosystem/corrections/)
+- [Apps built with Arc Studio](https://builder.registrai.cc/arc/studio/): weekly
+- [AI answers about Arc](https://builder.registrai.cc/arc/ai-answers/): which pages AI models cite for Arc questions, weekly
 - [Data API](https://builder.registrai.cc/data-api/): free JSON, no key
-- MCP server for AI agents: https://builder.registrai.cc/api/mcp (official MCP Registry: `cc.registrai/arc-data`)
 
 ### Categories
 

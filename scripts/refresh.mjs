@@ -1,5 +1,5 @@
 // scripts/refresh.mjs — fetch the public API, stage in tmp/, validate, then replace data/ and README.md.
-import { mkdirSync, rmSync, writeFileSync, renameSync, readdirSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, writeFileSync, renameSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { APPS_HEADER, ARC_DAILY_HEADER, ECOSYSTEM_HEADER, appsCsvRows, arcDailyCsvRows, ecosystemCsvRows, renderReadme, summarize, toCsv, validateApps, validateArcNumbers, validateEcosystem } from "./lib.mjs";
@@ -68,7 +68,9 @@ export async function refresh({ root, fetcher = fetch, today = new Date().toISOS
   else log("apps-week: 503, keeping yesterday's apps-7d files");
   for (const [f, body] of Object.entries(files)) writeFileSync(join(tmp, f), body);
 
-  writeFileSync(join(tmp, "README.md"), renderReadme({ ...summarize(entities), updated: today }));
+  // the answer sections read today's figures, or yesterday's apps when the week endpoint was down (503)
+  const week = apps ?? (() => { try { return JSON.parse(readFileSync(join(root, "data", "apps-7d.json"), "utf8")); } catch { return null; } })();
+  writeFileSync(join(tmp, "README.md"), renderReadme({ ...summarize(entities), updated: today, arc: arcNow, week }));
 
   mkdirSync(join(root, "data"), { recursive: true });
   for (const f of readdirSync(tmp)) renameSync(join(tmp, f), f === "README.md" ? join(root, f) : join(root, "data", f));

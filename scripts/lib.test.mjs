@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { toCsv, validateEcosystem, validateArcNumbers, validateApps, ecosystemCsvRows, appsCsvRows, arcDailyCsvRows, renderReadme, renderHfCard, summarize, ECOSYSTEM_HEADER, ARC_DAILY_HEADER } from "./lib.mjs";
+import { arcSection, topAppsSection, toCsv, validateEcosystem, validateArcNumbers, validateApps, ecosystemCsvRows, appsCsvRows, arcDailyCsvRows, renderReadme, renderHfCard, summarize, ECOSYSTEM_HEADER, ARC_DAILY_HEADER } from "./lib.mjs";
 
 test("toCsv: RFC 4180 quoting, nulls empty, formula guard on text only", () => {
   const csv = toCsv(["a", "b", "c"], [["x,y", 'say "hi"', "line1\nline2"], [null, undefined, 5], ["=HYPERLINK(1)", "-3", "@x"], ["+1", -2, "plain"]]);
@@ -88,4 +88,27 @@ test("Hugging Face card: metadata the Hub reads, then the README with the GitHub
   assert.ok(!body.includes("scripts/LICENSE"));
   // the GitHub README is unchanged
   assert.ok(renderReadme({ count: 1, live: 1, deployed: 0, announced: 0, updated: "x", categories: [] }).includes("Scripts: MIT (scripts/LICENSE)."));
+});
+
+test("README answer sections: Arc at a glance and the week's top apps, from the data files; left out when missing", () => {
+  const arc = { generated_at: "2026-11-02T00:03:00Z", network: { chain_id: 5042, gas_token: "USDC", mainnet_since: "2026-09-16", rpc_url: "https://rpc.mainnet.arc.io", explorer_url: "https://explorer.arc.io" },
+    stablecoins: { usdc_supply: 1079799639.26, eurc_supply: 7618783.5, as_of: "2026-11-02T06:31:28Z" }, timeline: [{ date: "2026-09-16", text: "Arc mainnet launched", source: "https://www.arc.io/pressroom/x" }] };
+  const a = arcSection(arc);
+  assert.match(a, /public mainnet launched on 16 September 2026 \(\[source\]\(https:\/\/www\.arc\.io\/pressroom\/x\)\)/);
+  assert.match(a, /chain ID: 5042\. Public RPC: https:\/\/rpc\.mainnet\.arc\.io/);
+  assert.match(a, /USDC on Arc: 1,079,799,639; EURC: 7,618,784, read from the chain on 2 November 2026/);
+  assert.ok(a.includes("https://builder.registrai.cc/arc/facts/"));
+  const week = { until: "2026-11-02T06:00:00Z", window_hours: 168, apps: [
+    { name: "Small", category: "dexs", usd: 5, payments: 1, url: "https://builder.registrai.cc/ecosystem/small/" },
+    { name: "Big|Pipe", category: "lending", usd: 1234567.8, payments: 4500, url: "https://builder.registrai.cc/ecosystem/big/" }] };
+  const t = topAppsSection(week);
+  assert.match(t, /## Most-used apps on Arc, last 7 days/);
+  assert.match(t, /\| 1 \| \[Big\\\|Pipe\]\(https:\/\/builder\.registrai\.cc\/ecosystem\/big\/\) \| Lending \| \$1,234,568 \| 4,500 \|/);   // most first, pipes escaped
+  assert.match(t, /\| 2 \| \[Small\]/);
+  assert.equal(arcSection(null), "");
+  assert.equal(topAppsSection({ apps: [] }), "");
+  const md = renderReadme({ count: 1, live: 1, deployed: 0, announced: 0, updated: "2026-11-02", categories: [], arc, week });
+  assert.ok(md.indexOf("## Arc at a glance") < md.indexOf("## Most-used apps") && md.indexOf("## Most-used apps") < md.indexOf("## Arc data API and MCP server"));
+  assert.ok(!/undefined|NaN/.test(md));
+  assert.ok(!renderReadme({ count: 1, live: 1, deployed: 0, announced: 0, updated: "x", categories: [] }).includes("## Arc at a glance"));
 });

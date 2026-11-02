@@ -6,4 +6,5 @@ import { renderHfCard, summarize } from "./lib.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const eco = JSON.parse(readFileSync(resolve(root, "data/ecosystem.json"), "utf8"));
-process.stdout.write(renderHfCard({ ...summarize(eco.entities), updated: new Date().toISOString().slice(0, 10) }));
+const read = (f) => { try { return JSON.parse(readFileSync(resolve(root, "data", f), "utf8")); } catch { return null; } };
+process.stdout.write(renderHfCard({ ...summarize(eco.entities), updated: new Date().toISOString().slice(0, 10), arc: read("arc-numbers.json"), week: read("apps-7d.json") }));
