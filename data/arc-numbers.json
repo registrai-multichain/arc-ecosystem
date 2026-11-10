@@ -1,36 +1,36 @@
 {
   "version": 1,
   "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
-  "generated_at": "2026-11-09T06:57:13.666Z",
+  "generated_at": "2026-11-10T07:33:47.008Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 30309495,
-    "block_time_s": 0.5068,
-    "as_of": "2026-11-09T06:57:13.666Z",
+    "block_height": 30484285,
+    "block_time_s": 0.5069,
+    "as_of": "2026-11-10T07:33:47.008Z",
     "rpc_url": "https://rpc.mainnet.arc.io",
     "explorer_url": "https://explorer.arc.io"
   },
   "stablecoins": {
-    "usdc_supply": 1286938968.320079,
-    "eurc_supply": 9718053.834591,
-    "as_of": "2026-11-09T06:57:13.666Z",
-    "all_stablecoins_usd": 1309230310.56,
-    "tvl_usd": 597296540,
-    "defillama_date": "2026-11-09",
+    "usdc_supply": 1291775317.6122,
+    "eurc_supply": 8356396.912753,
+    "as_of": "2026-11-10T07:33:47.008Z",
+    "all_stablecoins_usd": 1314295588.25,
+    "tvl_usd": 597479523,
+    "defillama_date": "2026-11-10",
     "tokens": [
       {
         "symbol": "USDC",
         "issuer": "Circle",
         "address": "0x3600000000000000000000000000000000000000",
-        "supply": 1286938968.320079
+        "supply": 1291775317.6122
       },
       {
         "symbol": "EURC",
         "issuer": "Circle",
         "address": "0xbef5f6d51cb62b58e6a8f77868681825c6fe21c1",
-        "supply": 9718053.834591
+        "supply": 8356396.912753
       },
       {
         "symbol": "AUDD",
@@ -119,22 +119,22 @@
     ]
   },
   "activity_24h": {
-    "data_until": "2026-11-09T06:00:00Z",
-    "usdc_moved_usd_est": 258550077.6,
-    "eurc_moved_usd_est": 5898413.4,
-    "usdc_transfers_est": 459030,
-    "app_payments": 71596,
-    "app_usd": 17617123.71,
-    "attributed_share_pct": 6.81,
-    "transactions_est": 535000,
+    "data_until": "2026-11-10T07:00:00Z",
+    "usdc_moved_usd_est": 3564716960.7,
+    "eurc_moved_usd_est": 91495682.7,
+    "usdc_transfers_est": 343710,
+    "app_payments": 63432,
+    "app_usd": 18274575.33,
+    "attributed_share_pct": 0.51,
+    "transactions_est": 523000,
     "tx_sample": {
       "blocks": 240,
-      "from_block": 30139724,
-      "to_block": 30309495
+      "from_block": 30314547,
+      "to_block": 30484285
     },
     "active_accounts": {
-      "date": "2026-11-08",
-      "count": 9485
+      "date": "2026-11-09",
+      "count": 13227
     }
   },
   "ecosystem": {
@@ -180,11 +180,11 @@
       "aei": 42
     },
     "index_close": {
-      "abi": 962.079,
-      "aii": 865.803,
-      "aei": 898.185
+      "abi": 958.668,
+      "aii": 859.553,
+      "aei": 892.159
     },
-    "data_until": "2026-11-09T06:00:00Z"
+    "data_until": "2026-11-10T07:00:00Z"
   },
   "timeline": [
     {
@@ -206,9 +206,9 @@
   "errors": [],
   "attributed_share_7d": {
     "window_days": 7,
-    "until": "2026-11-09T00:00:00Z",
-    "pct": 9.31,
-    "daily_min": 3.54,
+    "until": "2026-11-10T00:00:00Z",
+    "pct": 5.05,
+    "daily_min": 0.6,
     "daily_max": 21.44,
     "complete": true
   }
