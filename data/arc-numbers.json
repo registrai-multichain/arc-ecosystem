@@ -1,36 +1,36 @@
 {
   "version": 1,
   "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
-  "generated_at": "2026-11-15T06:53:08.398Z",
+  "generated_at": "2026-11-16T06:55:39.127Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 31331009,
+    "block_height": 31501834,
     "block_time_s": 0.5067,
-    "as_of": "2026-11-15T06:53:08.398Z",
+    "as_of": "2026-11-16T06:55:39.127Z",
     "rpc_url": "https://rpc.mainnet.arc.io",
     "explorer_url": "https://explorer.arc.io"
   },
   "stablecoins": {
-    "usdc_supply": 1446293994.31069,
-    "eurc_supply": 12911373.686803,
-    "as_of": "2026-11-15T06:53:08.398Z",
-    "all_stablecoins_usd": 1452840080.88,
-    "tvl_usd": 604773904,
-    "defillama_date": "2026-11-15",
+    "usdc_supply": 1465285676.517951,
+    "eurc_supply": 10087220.968433,
+    "as_of": "2026-11-16T06:55:39.127Z",
+    "all_stablecoins_usd": 1464371372.74,
+    "tvl_usd": 608551380,
+    "defillama_date": "2026-11-16",
     "tokens": [
       {
         "symbol": "USDC",
         "issuer": "Circle",
         "address": "0x3600000000000000000000000000000000000000",
-        "supply": 1446293994.31069
+        "supply": 1465285676.517951
       },
       {
         "symbol": "EURC",
         "issuer": "Circle",
         "address": "0xbef5f6d51cb62b58e6a8f77868681825c6fe21c1",
-        "supply": 12911373.686803
+        "supply": 10087220.968433
       },
       {
         "symbol": "AUDD",
@@ -72,7 +72,7 @@
         "symbol": "GBPA",
         "issuer": "Agant",
         "address": "0xbbe6aab0ed76e90aea0d1cd978ec231c8adcdf8b",
-        "supply": 573780.138645
+        "supply": 572717.682645
       },
       {
         "symbol": "JPYC",
@@ -119,22 +119,22 @@
     ]
   },
   "activity_24h": {
-    "data_until": "2026-11-15T06:00:00Z",
-    "usdc_moved_usd_est": 521441879.1,
-    "eurc_moved_usd_est": 22351737.9,
-    "usdc_transfers_est": 420930,
-    "app_payments": 86152,
-    "app_usd": 72619244.08,
-    "attributed_share_pct": 13.93,
-    "transactions_est": 427000,
+    "data_until": "2026-11-16T06:00:00Z",
+    "usdc_moved_usd_est": 535027404,
+    "eurc_moved_usd_est": 19540184.4,
+    "usdc_transfers_est": 414360,
+    "app_payments": 82693,
+    "app_usd": 50065553.64,
+    "attributed_share_pct": 9.36,
+    "transactions_est": 298000,
     "tx_sample": {
       "blocks": 240,
-      "from_block": 31161204,
-      "to_block": 31331009
+      "from_block": 31332029,
+      "to_block": 31501834
     },
     "active_accounts": {
-      "date": "2026-11-14",
-      "count": 9292
+      "date": "2026-11-15",
+      "count": 9460
     }
   },
   "ecosystem": {
@@ -180,11 +180,11 @@
       "aei": 42
     },
     "index_close": {
-      "abi": 921.987,
-      "aii": 828.995,
-      "aei": 861.863
+      "abi": 911.05,
+      "aii": 821.742,
+      "aei": 855.02
     },
-    "data_until": "2026-11-15T06:00:00Z"
+    "data_until": "2026-11-16T06:00:00Z"
   },
   "timeline": [
     {
@@ -206,10 +206,10 @@
   "errors": [],
   "attributed_share_7d": {
     "window_days": 7,
-    "until": "2026-11-15T00:00:00Z",
-    "pct": 3.46,
+    "until": "2026-11-16T00:00:00Z",
+    "pct": 3.86,
     "daily_min": 0.6,
-    "daily_max": 13.65,
+    "daily_max": 22.52,
     "complete": true
   }
 }
