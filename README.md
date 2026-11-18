@@ -1,6 +1,6 @@
 # Arc ecosystem data
 
-Open data on the Arc ecosystem from Registrai (registrai.cc): 297 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-11-17 UTC.
+Open data on the Arc ecosystem from Registrai (registrai.cc): 297 projects with status and sources, daily app activity and Arc chain figures. CC BY 4.0. Updated 2026-11-18 UTC.
 
 297 projects: 142 live on Arc mainnet, 21 deployed, 134 announced. Each has a page with its status, the evidence for it, its sources and a review date.
 
@@ -8,26 +8,26 @@ Open data on the Arc ecosystem from Registrai (registrai.cc): 297 projects with 
 
 - Arc is the Layer-1 blockchain built by Circle. Its public mainnet launched on 16 September 2026 ([source](https://www.arc.io/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet)).
 - Gas is paid in USDC. Mainnet chain ID: 5042. Public RPC: https://rpc.mainnet.arc.io. Block explorer: https://explorer.arc.io ([Arc docs](https://docs.arc.io/arc/references/rpc-endpoints)).
-- USDC on Arc: 1,535,914,656; EURC: 10,299,829, read from the chain on 17 November 2026.
+- USDC on Arc: 1,540,569,290; EURC: 13,580,426, read from the chain on 18 November 2026.
 
 Every fact with its source: [Arc blockchain: facts with sources](https://builder.registrai.cc/arc/facts/). Figures that change, with daily history: [Arc in numbers](https://builder.registrai.cc/arc/).
 
 ## Most-used apps on Arc, last 7 days
 
-To 2026-11-17 08:00 UTC, by stablecoin payments received (USD). Source: Arc Ecosystem Index (Registrai); definitions on the [methodology](https://builder.registrai.cc/methodology/) page. Hourly, with every app: [Most-used apps on Arc](https://builder.registrai.cc/arc/most-used-apps/).
+To 2026-11-18 07:00 UTC, by stablecoin payments received (USD). Source: Arc Ecosystem Index (Registrai); definitions on the [methodology](https://builder.registrai.cc/methodology/) page. Hourly, with every app: [Most-used apps on Arc](https://builder.registrai.cc/arc/most-used-apps/).
 
 | # | App | Category | Received (USD) | Payments |
 |---:|---|---|---:|---:|
-| 1 | [Uniswap](https://builder.registrai.cc/ecosystem/uniswap/) | DEXs | $50,677,395 | 433,707 |
-| 2 | [Morpho](https://builder.registrai.cc/ecosystem/morpho/) | Lending | $3,437,719 | 2,541 |
-| 3 | [KyberSwap](https://builder.registrai.cc/ecosystem/kyberswap/) | DEXs | $2,967,815 | 9,347 |
-| 4 | [rhino.fi](https://builder.registrai.cc/ecosystem/rhino-fi/) | Bridges and cross-chain | $1,576,521 | 2,709 |
-| 5 | [Relay](https://builder.registrai.cc/ecosystem/relay/) | Bridges and cross-chain | $949,912 | 6,459 |
-| 6 | [LI.FI](https://builder.registrai.cc/ecosystem/li-fi/) | Bridges and cross-chain | $943,194 | 9,457 |
-| 7 | [Archery](https://builder.registrai.cc/ecosystem/archery/) | DEXs | $594,495 | 3,463 |
-| 8 | [Across](https://builder.registrai.cc/ecosystem/across/) | Bridges and cross-chain | $410,234 | 1,338 |
-| 9 | [0x](https://builder.registrai.cc/ecosystem/0x/) | DEXs | $297,834 | 1,787 |
-| 10 | [OKX Wallet](https://builder.registrai.cc/ecosystem/okx-wallet/) | Wallets | $291,597 | 2,532 |
+| 1 | [Uniswap](https://builder.registrai.cc/ecosystem/uniswap/) | DEXs | $52,683,552 | 458,833 |
+| 2 | [Morpho](https://builder.registrai.cc/ecosystem/morpho/) | Lending | $3,314,914 | 2,621 |
+| 3 | [KyberSwap](https://builder.registrai.cc/ecosystem/kyberswap/) | DEXs | $2,857,560 | 8,858 |
+| 4 | [rhino.fi](https://builder.registrai.cc/ecosystem/rhino-fi/) | Bridges and cross-chain | $1,593,455 | 2,551 |
+| 5 | [Relay](https://builder.registrai.cc/ecosystem/relay/) | Bridges and cross-chain | $926,279 | 6,276 |
+| 6 | [LI.FI](https://builder.registrai.cc/ecosystem/li-fi/) | Bridges and cross-chain | $865,110 | 8,944 |
+| 7 | [Across](https://builder.registrai.cc/ecosystem/across/) | Bridges and cross-chain | $362,482 | 1,286 |
+| 8 | [Archery](https://builder.registrai.cc/ecosystem/archery/) | DEXs | $354,182 | 2,240 |
+| 9 | [0x](https://builder.registrai.cc/ecosystem/0x/) | DEXs | $309,553 | 1,695 |
+| 10 | [Aave](https://builder.registrai.cc/ecosystem/aave/) | Lending | $249,684 | 217 |
 
 ## Arc data API and MCP server
 
@@ -94,7 +94,7 @@ In `arc-daily.csv`, `snapshot_date` is the day of the 00:00 UTC snapshot: suppli
 
 ## Cite
 
-Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-11-17.
+Registrai, Arc ecosystem data, builder.registrai.cc, CC BY 4.0, retrieved 2026-11-18.
 
 ## Schedule
 
