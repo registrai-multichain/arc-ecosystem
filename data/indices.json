@@ -1,28 +1,28 @@
 {
   "version": 1,
   "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
-  "data_until": "2026-11-23T07:00:00Z",
+  "data_until": "2026-11-24T09:00:00Z",
   "indices": {
     "abi": {
       "name": "Arc Builders Index",
-      "close": 839.852,
-      "close_24h_ago": 849.77,
+      "close": 828.866,
+      "close_24h_ago": 839.06,
       "base": 1000,
       "base_date": "2026-10-02T00:00:00Z",
       "members": 19
     },
     "aii": {
       "name": "Arc Integrations Index",
-      "close": 778.772,
-      "close_24h_ago": 785.8,
+      "close": 771.651,
+      "close_24h_ago": 778.29,
       "base": 1000,
       "base_date": "2026-10-02T00:00:00Z",
       "members": 23
     },
     "aei": {
       "name": "Arc Ecosystem Index",
-      "close": 813.478,
-      "close_24h_ago": 820.04,
+      "close": 806.298,
+      "close_24h_ago": 813.03,
       "base": 1000,
       "base_date": "2026-10-02T00:00:00Z",
       "members": 42
