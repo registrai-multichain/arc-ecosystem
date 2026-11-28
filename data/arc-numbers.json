@@ -1,36 +1,36 @@
 {
   "version": 1,
   "attribution": "Registrai, builder.registrai.cc, CC BY 4.0",
-  "generated_at": "2026-11-27T08:52:16.095Z",
+  "generated_at": "2026-11-28T08:11:13.909Z",
   "network": {
     "chain_id": 5042,
     "gas_token": "USDC",
     "mainnet_since": "2026-09-16",
-    "block_height": 33390607,
-    "block_time_s": 0.5066,
-    "as_of": "2026-11-27T08:52:16.095Z",
+    "block_height": 33555734,
+    "block_time_s": 0.5065,
+    "as_of": "2026-11-28T08:11:13.909Z",
     "rpc_url": "https://rpc.mainnet.arc.io",
     "explorer_url": "https://explorer.arc.io"
   },
   "stablecoins": {
-    "usdc_supply": 1695923969.935561,
-    "eurc_supply": 12046845.628198,
-    "as_of": "2026-11-27T08:52:16.095Z",
-    "all_stablecoins_usd": 1711455748.27,
-    "tvl_usd": 594324734,
-    "defillama_date": "2026-11-27",
+    "usdc_supply": 1720087335.444695,
+    "eurc_supply": 12778390.901004,
+    "as_of": "2026-11-28T08:11:13.909Z",
+    "all_stablecoins_usd": 1724420856.82,
+    "tvl_usd": 587000669,
+    "defillama_date": "2026-11-28",
     "tokens": [
       {
         "symbol": "USDC",
         "issuer": "Circle",
         "address": "0x3600000000000000000000000000000000000000",
-        "supply": 1695923969.935561
+        "supply": 1720087335.444695
       },
       {
         "symbol": "EURC",
         "issuer": "Circle",
         "address": "0xbef5f6d51cb62b58e6a8f77868681825c6fe21c1",
-        "supply": 12046845.628198
+        "supply": 12778390.901004
       },
       {
         "symbol": "AUDD",
@@ -126,15 +126,15 @@
     "app_payments": 44170,
     "app_usd": 23288211.18,
     "attributed_share_pct": 4.49,
-    "transactions_est": 432000,
+    "transactions_est": 387000,
     "tx_sample": {
       "blocks": 240,
-      "from_block": 33220769,
-      "to_block": 33390607
+      "from_block": 33385863,
+      "to_block": 33555734
     },
     "active_accounts": {
-      "date": "2026-11-26",
-      "count": 7877
+      "date": "2026-11-27",
+      "count": 16032
     }
   },
   "ecosystem": {
